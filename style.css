@@ -23,6 +23,7 @@ body {
     justify-content: space-between;
     background-color: #e6e6e6;
 }
+
 .menu ul {
     padding: 10px;
     display: flex;
@@ -30,14 +31,17 @@ body {
     font-size: 16px;
     font-weight: 500;
 }
+
 .menu ul li {
     margin: 10px;
 }
+
 .menu ul li a {
     text-decoration: none;
     color: #000;
     position: relative;
 }
+
 .menu ul li a::after {
     content: '';
     position: absolute;
@@ -51,6 +55,7 @@ body {
     opacity: 0; 
     transition: opacity 0.2s ease; 
 }
+
 .menu ul li a:hover::after {
     opacity: 1;
 }
