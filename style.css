@@ -183,6 +183,9 @@ nav {
     transform: translateY(-.5rem);
     color: var(--primary);
 }
+.menu-bar {
+    display: none;
+}
 
 /* --- header --- */
 header {
@@ -212,7 +215,7 @@ header {
 .typed-text {
     background: var(--gradient);
     border-bottom: 4px solid var(--black);
-    color: var(--black);
+    color: var(--background);
 }
 .header-right {
     position: relative;
@@ -488,4 +491,231 @@ footer {
 }
 .footer-container i {
     color: red;
+}
+
+
+/* --- responsive --- */
+@media (max-width: 1200px) {
+    h1 {
+        font-size: 46px;
+    }
+}
+
+@media (max-width: 1024px) {
+    section>p {
+        width: 60%;
+    }
+
+    /* --- navbar --- */
+    nav {
+        background: var(--gradient);
+    }
+    .logo {
+        color: var(--background);
+    }
+    .nav-links {
+        display: none;
+    }
+    .menu-button {
+        display: inline-block;
+        background: transparent;
+        color: var(--background);
+        font-size: 1.6rem;
+        transition: var(--transition);
+    }
+    .menu-button:hover {
+        transform: scale(1.2);
+    }
+
+    /* --- menu bar --- */
+    .menu-bar {
+        display: flex;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: 5rem;
+        align-items: center;
+        justify-content: center;
+        background: var(--gradient);
+        z-index: 2;
+        transition: var(--transition);
+    }
+    .menu-none {
+        bottom: -100%;
+        transition: var(--transition);
+    }
+    .menubar-container {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 4rem;
+        justify-content: center;
+    }
+    .menubar-container a {
+        font-size: 1.6rem;
+        color: var(--background);
+        transition: var(--transition);
+    }
+    .menubar-container a:hover {
+        transform: scale(1.2);
+    }
+    
+    /* --- header --- */
+    header {
+        height: 100%;
+    }
+    .header-container {
+        grid-template-columns: 1fr;
+        padding: 0;
+        padding-bottom: 5rem;
+        text-align: center;
+    }
+    .header-left a {
+        margin-bottom: 1.5rem;
+    }
+    .header-right {
+        width: 400px;
+        height: 400px;
+        margin: 0 auto;
+        grid-row: 1;
+        padding-top: 12rem;
+        margin-bottom: 7rem;
+    }
+    .moon {
+        right: 45px;
+    }
+    
+    /* --- about --- */
+    .about-container {
+        width: 80%;
+    }
+    .about-cards {
+        gap: 2%;
+    }
+
+    /* --- portfolio --- */
+    .portfolio-projects {
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 5rem;
+    }
+
+    /* --- contact --- */
+    .container-contact {
+        width: 80%;
+    }
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 36px;
+    }
+    h2 {
+        font-size: 1.6rem;
+    }
+    h3 {
+        font-size: 1.3rem;
+    }
+    p {
+        font-size: 16px;
+    }
+    .btn {
+        padding: 12px 26px;
+    }
+
+    /* --- navbar --- */
+    nav {
+        height: 4rem;
+    }
+    .logo h3 {
+        font-size: 1.5rem;
+    }
+    .menu-button {
+        font-size: 1.5rem;
+    }
+
+    /* --- menu bar --- */
+    .menu-bar {
+        height: 3.5rem;
+
+    }
+    .menubar-container {
+        gap: 3.5rem;
+        justify-content: space-between;
+    }
+    .menubar-container a {
+        font-size: 1.3rem;
+    }
+
+    /* --- header --- */
+    header {
+        height: 100%;
+    }
+    .header-right {
+        width: 280px;
+        height: 280px;
+    }
+    .moon {
+        height: 1.5rem;
+        width: 1.5rem;
+        right: 20px;
+        top: 35px;
+    }
+    .header-container {
+        padding-bottom: .5rem;
+    }
+    .header-container p {
+        width: 100%;
+    }
+    .social-links {
+        justify-content: center;
+        position: relative;
+        padding-top: 1.5rem;
+        padding-bottom: 2rem;
+    }
+    .header-left {
+        padding-top: 2rem;
+    }
+
+    /* --- about --- */
+    .about-container {
+        width: 90%;
+    }
+    .about-cards {
+        grid-template-columns: 1fr 1fr;
+        gap: 4%;
+        padding-bottom: 2rem;
+    }
+
+    /* --- skills --- */
+    .skills-container {
+        grid-template-columns: 1fr;
+        margin-top: -3rem;
+    }
+    .skills-right {
+        margin-top: 2rem;
+    }
+
+    /* --- portfolio --- */
+    .portfolio-tabs {
+        gap: 1rem;
+    }
+    .portfolio-tabs .btn-sm {
+        padding: 8px 18px !important;
+    }
+    .portfolio-projects {
+        grid-template-columns: 1fr;
+        gap: 1.4rem;
+        margin-bottom: -5rem;
+    }
+
+    /* --- contact --- */
+    .container-contact {
+        width: 90%;
+        grid-template-columns: 1fr;
+    }
+    .contact-left {
+        flex-direction: row;
+        justify-content: center;
+        margin-bottom: 2rem;
+    }
 }
