@@ -37,3 +37,22 @@ window.addEventListener('scroll',()=>{
 
     nav.classList.toggle('nav-scroll', window.scrollY > 0);
 });
+
+// typed text js
+document.addEventListener('DOMContentLoaded', function() {
+    let typed = new Typed('.typed-text', {
+        strings: ['Front End', 'Web Design'],
+        typeSpeed: 100,
+        backSpeed: 50,
+        backDelay: 1000,
+        loop: true,
+    });
+});
+
+// menu bar
+let menuBar = document.querySelector('.menu-bar');
+let menuButton = document.querySelector('.menu-button');
+
+menuButton.addEventListener('click',()=>{
+    menuBar.classList.toggle('menu-none')
+});
