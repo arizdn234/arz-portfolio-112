@@ -39,15 +39,15 @@ window.addEventListener('scroll',()=>{
 });
 
 // typed text js
-document.addEventListener('DOMContentLoaded', function() {
-    let typed = new Typed('.typed-text', {
-        strings: ['Front End', 'Web Design'],
-        typeSpeed: 100,
-        backSpeed: 50,
-        backDelay: 1000,
-        loop: true,
-    });
-});
+// document.addEventListener('DOMContentLoaded', function() {
+//     let typed = new Typed('.typed-text', {
+//         strings: ['Front End', 'Web Design'],
+//         typeSpeed: 100,
+//         backSpeed: 50,
+//         backDelay: 1000,
+//         loop: true,
+//     });
+// });
 
 // menu bar
 let menuBar = document.querySelector('.menu-bar');

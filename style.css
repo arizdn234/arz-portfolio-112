@@ -12,17 +12,27 @@
 }
 
 :root {
-    --primary: #8638E5;
+    --primary: #008080;
     --background: #ffffff;
     --background2: #f5f5f5;
     --black: #000000;
     --light: #313131;
     --light2: #e6e6e6;
-    --gradient: linear-gradient(to bottom, #8638E5, #E538A0);
-    --gradient2: linear-gradient(to right, #ffffff, #E538A0, #8638E5);
+    --gradient: linear-gradient(164deg, rgba(0,73,71,1) 0%, rgba(0,176,159,1) 100%, rgba(0,212,255,1) 100%);
+    --gradient2: linear-gradient(164deg, rgb(39, 87, 85) 0%, rgb(86, 184, 124) 100%, rgb(0, 183, 255) 100%);
 
     --transition: .4s ease;
 }
+
+::-moz-selection { /* Code for Firefox */
+    color: var(--light2);
+    background: var(--primary);
+  }
+  
+  ::selection {
+    color: var(--light2);
+    background: var(--primary);
+  }
 
 body {
     background: var(--background);
@@ -671,6 +681,11 @@ footer {
         position: relative;
         padding-top: 1.5rem;
         padding-bottom: 2rem;
+        border: 1px solid red;
+    }
+    .social-links a {
+        border: 1px solid red;
+        width: 3em;
     }
     .header-left {
         padding-top: 2rem;
