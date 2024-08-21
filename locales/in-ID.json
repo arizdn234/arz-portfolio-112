@@ -1,0 +1,172 @@
+{
+  "title": "Portfolio",
+  "navbar": {
+    "links": [
+      { "text": "Beranda", "href": "#" },
+      { "text": "Tentang", "href": "#About" },
+      { "text": "Keahlian", "href": "#Skills" },
+      { "text": "Portofolio", "href": "#Portfolio" },
+      { "text": "Kontak", "href": "#Contact" }
+    ],
+    "languageSelector": {
+      "icon": "fa-solid fa-globe",
+      "options": [
+        { "text": "Inggris", "value": "en-EN" },
+        { "text": "Indonesia", "value": "in-ID" }
+      ]
+    },
+    "menuButton": { "icon": "fa fa-bars" }
+  },
+  "menuBar": {
+    "links": [
+      { "icon": "fa fa-home", "href": "#" },
+      { "icon": "fa fa-user", "href": "#About" },
+      { "icon": "fa-solid fa-code", "href": "#Skills" },
+      { "icon": "fa-solid fa-file-code", "href": "#Portfolio" },
+      { "icon": "fa fa-message", "href": "#Contact" }
+    ]
+  },
+  "header": {
+    "greeting": "Hai. Saya Ari Zidan",
+    "description": "Saya adalah seorang profesional teknologi dengan berbagai keahlian dalam pengembangan perangkat lunak, analisis data, dan manajemen basis data. Dengan keterampilan komunikasi yang kuat, tingkat tanggung jawab yang tinggi, dan kemampuan bekerja dalam tim, saya mampu mengatasi tantangan kompleks dengan pendekatan yang terstruktur dan analitis. Pengalaman saya dalam menggunakan berbagai bahasa pemrograman dan alat teknologi modern memungkinkan saya untuk menciptakan solusi yang efisien dan inovatif untuk memenuhi kebutuhan bisnis.",
+    "buttons": [
+      { "text": "Curriculum Vitae", "href": "BE-01-EN.pdf", "class": "btn btn-white" },
+      { "text": "Pekerjakan Saya", "href": "mailto:zidanerizal17@gmail.com", "class": "HireMe btn btn-white" }
+    ],
+    "image": "images/profile.jpeg",
+    "socialLinks": [
+      { "icon": "fab fa-instagram", "href": "https://www.instagram.com/z.id21" },
+      { "icon": "fab fa-whatsapp", "href": "https://wa.me/6281529474830?text=Hai, bisakah kita bicara tentang..." },
+      { "icon": "fab fa-linkedin", "href": "https://www.linkedin.com/in/arizidan" },
+      { "icon": "fab fa-github", "href": "https://github.com/arizdn234" }
+    ]
+  },
+  "about": {
+    "title": "Tentang Saya",
+    "cards": [
+      {
+        "icon": "fa-solid fa-handshake",
+        "title": "Kerja Sama Tim",
+        "description": "Dalam kerja sama tim, saya merasa bahwa bekerja bersama membuat setiap tugas lebih mudah dan lebih menyenangkan bagi saya."
+      },
+      {
+        "icon": "fa-solid fa-people-arrows",
+        "title": "Komunikasi",
+        "description": "Kemampuan komunikasi saya memungkinkan saya untuk berinteraksi dengan orang lain dengan mudah, bahkan dalam percakapan santai tentang hal-hal sehari-hari."
+      },
+      {
+        "icon": "fa-solid fa-clock-rotate-left",
+        "title": "Manajemen Waktu",
+        "description": "Dengan keterampilan manajemen waktu yang baik, saya tetap fokus dan memprioritaskan untuk hasil terbaik."
+      }
+    ],
+    "subtitle": "Pengembang Perangkat Lunak",
+    "paragraphs": [
+      "Dalam pengembangan perangkat lunak, saya telah bekerja secara ekstensif dengan berbagai bahasa pemrograman seperti Python, JavaScript, Go, PHP, dan SQL. Fleksibilitas ini memungkinkan saya untuk mengembangkan, menguji, dan memelihara aplikasi perangkat lunak yang andal dan dapat diskalakan. Baik itu membangun sistem backend atau mengembangkan aplikasi web, saya membawa pemahaman yang mendalam tentang arsitektur perangkat lunak dan praktik terbaik.",
+      "Dalam bidang analisis data, keterampilan saya meliputi pengumpulan, pemrosesan, dan interpretasi data untuk mendapatkan wawasan yang dapat ditindaklanjuti. Saya mahir menggunakan alat seperti Jupyter untuk komputasi interaktif dan ilmu data, memungkinkan saya untuk menganalisis data secara efisien dan mengkomunikasikan temuan dengan efektif kepada para pemangku kepentingan.",
+      "Ketika berbicara tentang manajemen basis data, saya memiliki pengalaman langsung dengan basis data relasional seperti PostgreSQL dan MySQL, serta basis data NoSQL seperti MongoDB. Pengetahuan saya tentang Object-Relational Mappers (ORM) seperti Sequelize.js, Prisma, dan SQLAlchemy memungkinkan saya untuk menjembatani kesenjangan antara kode aplikasi dan operasi basis data, memastikan data disimpan, diambil, dan dimanipulasi dengan cara yang mulus dan efisien.",
+      "Selain keterampilan teknis, saya bangga dengan kemampuan komunikasi saya yang kuat, yang memungkinkan saya untuk menjelaskan konsep teknis yang kompleks kepada audiens teknis maupun non-teknis. Rasa tanggung jawab saya memastikan bahwa saya berkomitmen untuk menyelesaikan pekerjaan berkualitas tinggi tepat waktu, sementara sifat kolaboratif saya memungkinkan saya untuk berkembang dalam lingkungan tim, berkontribusi pada penyelesaian proyek yang sukses.",
+      "Lebih jauh lagi, pendekatan saya yang terstruktur dan analitis terhadap pemecahan masalah memberdayakan saya untuk menghadapi tantangan kompleks dengan membaginya menjadi tugas-tugas yang dapat dikelola. Saya fokus pada pemahaman masalah mendasar sebelum merumuskan solusi inovatif yang selaras dengan tujuan bisnis.",
+      "Pengalaman saya dengan alat teknologi modern, termasuk Docker untuk containerization, GitHub untuk pengendalian versi dan kolaborasi, dan Postman untuk pengujian API, membekali saya dengan kemampuan untuk membangun, mengirim, dan memelihara aplikasi dengan cara yang efisien dan sesuai dengan standar industri.",
+      "Secara keseluruhan, keahlian dan pengalaman saya yang beragam memungkinkan saya untuk menciptakan solusi yang efektif dan inovatif yang disesuaikan untuk memenuhi kebutuhan spesifik dari setiap bisnis. Saya bersemangat tentang teknologi dan terus mencari cara untuk meningkatkan keterampilan saya agar tetap unggul dalam bidang yang terus berkembang ini."
+    ],
+    "expandButton": { "expandTrue": "Sembunyikan", "expandFalse": "Lihat Selengkapnya" },
+    "ctaButton": { "text": "Pekerjakan Saya", "href": "#Contact", "class": "btn btn-white" }
+  },
+  "skills": {
+    "title": "Keahlian Saya",
+    "left": {
+      "cards": [
+        {
+          "icon": "fab fa-html5",
+          "title": "HTML",
+          "description": "Bahasa markup yang membangun struktur dan konten halaman web menggunakan tag dan elemen terstruktur secara hierarkis."
+        },
+        {
+          "icon": "fab fa-css3",
+          "title": "CSS",
+          "description": "Bahasa pemrograman yang mengatur tampilan, layout, dan gaya halaman web dengan aturan pemformatan dan desain."
+        },
+        {
+          "icon": "fab fa-js",
+          "title": "JavaScript",
+          "description": "Bahasa pemrograman yang memungkinkan interaksi dinamis, mengontrol perilaku halaman web, dan menghasilkan respons interaktif dari pengguna."
+        }
+      ]
+    },
+    "right": {
+      "subtitle": "Apa yang Bisa Saya Lakukan?",
+      "progressBars": [
+        { "icon": "fab fa-html5", "title": "HTML", "percentage": "90%" },
+        { "icon": "fab fa-css3", "title": "CSS", "percentage": "80%" },
+        { "icon": "fab fa-js", "title": "JavaScript", "percentage": "50%" },
+        { "icon": "fab fa-bootstrap", "title": "Bootstrap", "percentage": "65%" },
+        { "icon": "fab fa-figma", "title": "Figma", "percentage": "75%" }
+      ]
+    }
+  },
+  "portfolio": {
+    "title": "Proyek Terbaru",
+    "description": "Selama pengalaman saya belajar dan pemrograman, saya berhasil menyelesaikan sejumlah proyek yang relevan dan signifikan.",
+    "tabs": [
+      { "name": "Semua", "class": "tab-active" },
+      { "name": "Tugas" },
+      { "name": "ProyekAkhir" }
+    ],
+    "projects": [
+      {
+        "name": "ProyekAkhir",
+        "title": "Proyek Akhir 1",
+        "image": "images/FP1.svg",
+        "description": "Permainan dengan nama \"Save Me Please\" di mana pengguna bertugas untuk menebak setiap jawaban dari soal yang telah disediakan.",
+        "links": [
+          { "text": "Langsung", "href": "https://wdp-12.github.io/finalproject1-kelompok6/", "class": "btn btn-sm" },
+          { "text": "Github", "href": "https://github.com/wdp-12/finalproject1-kelompok6", "class": "btn btn-sm btn-white" }
+        ]
+      },
+      {
+        "name": "ProyekAkhir",
+        "title": "Proyek Akhir 2",
+        "image": "images/FP2.svg",
+        "description": "Sebuah landing page yang dibuat dengan menggunakan Figma. Kami diminta untuk membuat setiap baris kode dari landing page ini.",
+        "links": [
+          { "text": "Langsung", "href": "https://finalproject2-kelompok6.vercel.app/", "class": "btn btn-sm" },
+          { "text": "Github", "href": "https://github.com/wdp-12/Finalproject2-kelompok6", "class": "btn btn-sm btn-white" }
+        ]
+      },
+      {
+        "name": "ProyekAkhir",
+        "title": "Proyek Akhir 3",
+        "image": "images/FP3.svg",
+        "description": "Pembuatan website \"To the Moon\" yang mengimplementasikan efek parallax di dalamnya.",
+        "links": [
+          { "text": "Langsung", "href": "https://wdp-12.github.io/Finalproject3-kelompok1/", "class": "btn btn-sm" },
+          { "text": "Github", "href": "https://github.com/wdp-12/Finalproject3-kelompok1", "class": "btn btn-sm btn-white" }
+        ]
+      },
+      {
+        "name": "Tugas",
+        "title": "Minggu 1",
+        "image": "images/week1.svg",
+        "description": "Pembuatan Halaman Web Portofolio dalam minggu pertama pelatihan.",
+        "links": [
+          { "text": "Langsung", "href": "https://arizdn234.github.io/week1/", "class": "btn btn-sm" },
+          { "text": "Github", "href": "https://github.com/arizdn234/week1", "class": "btn btn-sm btn-white" }
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "title": "Hubungi Saya",
+    "description": "Silakan hubungi saya untuk menawarkan pekerjaan dan berdiskusi tentang pengembangan perangkat lunak.",
+    "form": {
+      "inputs": [
+        { "type": "text", "placeholder": "Nama Anda", "name": "Name", "required": true },
+        { "type": "email", "placeholder": "Email Anda", "name": "Email", "required": true },
+        { "type": "text", "placeholder": "Subjek", "name": "Subject", "required": true }
+      ],
+      "textarea": { "placeholder": "Pesan", "name": "Message", "required": true },
+      "submitButton": { "text": "Kirim", "class": "btn btn-white" }
+    }
+  }
+}
