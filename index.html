@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 <body>
     <!-- navbar -->
@@ -19,6 +19,15 @@
                 <li><a href="#Portfolio">Portfolio</a></li>
                 <li><a href="#Contact">Contact</a></li>
             </ul>
+        
+            <div class="language-select-wrapper">
+                <i class="fa-solid fa-globe"></i>
+                <select id="language-selector">
+                    <option value="en-EN">English</option>
+                    <option value="in-ID">Bahasa Indonesia</option>
+                </select>
+            </div>
+        
             <button class="menu-button"><i class="fa fa-bars"></i></button>
         </div>
     </nav>
@@ -38,8 +47,11 @@
     <header>
         <div class="container header-container">
             <div class="header-left">
-                <h1>Hi. I'm Ari Zidan</h1>
-                <p>I am a technology professional with a wide range of skills in software development, data analysis, and database management. With strong communication skills, high levels of responsibility, and the ability to work in a team, I am able to overcome complex challenges with a structured and analytical approach. My experience in using various programming languages ​​and modern technology tools allows me to create efficient and innovative solutions to meet business needs.
+                <h1>
+                    <!-- header greeting -->
+                </h1>
+                <p>
+                    <!-- header description -->
                 </p>
                 
                 <a target="_blank" href="BE-01-EN.pdf" class="btn btn-white">Curriculum Vitae</a>
@@ -64,53 +76,48 @@
 
     <!-- about -->
     <section id="About">
-        <h2>About Me</h2>
+        <h2>
+            <!-- about title section -->
+        </h2>
         <div class="container about-container">
             <div class="about-cards">
                 <div class="card card-primary about-card">
                     <span><i class="fa-solid fa-handshake"></i></span>
-                    <h5>Teamwork</h5>
-                    <small>In teamwork, I feel that working together makes any task easier and more enjoyable for me.</small>
+                    <h5>
+                        <!-- card title -->
+                    </h5>
+                    <small>
+                        <!-- card description -->
+                    </small>
                 </div>
                 <div class="card card-primary about-card">
                     <span><i class="fa-solid fa-people-arrows"></i></i></span>
-                    <h5>Communication</h5>
-                    <small>My communication skills allow me to interact with people easily, even in casual conversations about everyday things.</small>
+                    <h5>
+                        <!-- card title -->
+                    </h5>
+                    <small>
+                        <!-- card description -->
+                    </small>
                 </div>
                 <div class="card card-primary about-card">
                     <span><i class="fa-solid fa-clock-rotate-left"></i></span>
-                    <h5>Time Management</h5>
-                    <small>With good time management skills, I maintain focus and prioritize for best results.</small>
+                    <h5>
+                        <!-- card title -->
+                    </h5>
+                    <small>
+                        <!-- card description -->
+                    </small>
                 </div>
             </div>
-            <h3>Software Developer</h3>
-            <p>
-                In software development, I have worked extensively with various programming languages such as Python, JavaScript, Go, and SQL. This versatility allows me to develop, test, and maintain software applications that are both reliable and scalable. Whether it's building backend systems or developing web applications, I bring a thorough understanding of software architecture and best practices.
-            </p>
-            
-            <p>
-                In the realm of data analysis, my skills include collecting, processing, and interpreting data to derive actionable insights. I am proficient in using tools like Jupyter for interactive computing and data science, enabling me to analyze data efficiently and effectively communicate findings to stakeholders.   
-            </p>
-
-            <p>
-                When it comes to database management, I have hands-on experience with relational databases like PostgreSQL and MySQL, as well as NoSQL databases such as MongoDB. My knowledge of Object-Relational Mappers (ORMs) like Sequelize.js, Prisma, and SQLAlchemy allows me to bridge the gap between application code and database operations, ensuring data is stored, retrieved, and manipulated in a seamless and efficient manner.
-            </p>
-
-            <p>
-                Beyond technical skills, I pride myself on my strong communication abilities, which enable me to articulate complex technical concepts to both technical and non-technical audiences. My sense of responsibility ensures that I am committed to delivering high-quality work on time, while my collaborative nature allows me to thrive in team environments, contributing to the successful completion of projects.
-            </p>
-
-            <p>
-                Furthermore, my structured and analytical approach to problem-solving empowers me to tackle complex challenges by breaking them down into manageable tasks. I focus on understanding the underlying issues before devising innovative solutions that align with business objectives.
-            </p>
-
-            <p>
-                My experience with modern technology tools, including Docker for containerization, GitHub for version control and collaboration, and Postman for API testing, equips me with the ability to build, deploy, and maintain applications in a way that is both efficient and aligned with industry standards.
-            </p>
-
-            <p>
-                In summary, my diverse skill set and experience allow me to create effective and innovative solutions tailored to meet the specific needs of any business. I am passionate about technology and constantly seeking to improve my skills to stay ahead in this ever-evolving field.
-            </p>
+            <h3>
+                <!-- about subtitle -->
+            </h3>
+            <div class="about-text-container">
+                <div class="about-text">
+                    <!-- about text -->
+                </div>
+            </div>
+            <button id="toggle-button" class="btn btn-white"></button>
             <a href="#Contact" class="btn btn-white">Hire Me</a>
         </div>
     </section>
