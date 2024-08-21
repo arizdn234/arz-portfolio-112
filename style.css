@@ -168,6 +168,19 @@ nav {
 .nav-scroll .nav-links a:hover {
     color: var(--black);
 }
+.nav-scroll .language-select-wrapper select {
+    background-color: var(--light);
+    color: var(--primary);
+    border: 1px solid var(--background);
+}
+
+.nav-scroll .language-select-wrapper i {
+    color: var(--background);
+}
+
+.nav-scroll .language-select-wrapper::after {
+    color: var(--background);
+}
 .nav-container {
     display: flex;
     align-items: center;
@@ -197,6 +210,46 @@ nav {
     border-bottom: 1px solid #008080;
     /* border-radius: 15px; */
 }
+.language-select-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.language-select-wrapper i {
+    font-size: 1.2rem;
+    color: var(--primary);
+    transition: var(--transition);
+}
+
+#language-selector {
+    padding: 5px 10px;
+    width: 12em;
+    border-radius: 5px;
+    border: 1px solid var(--primary);
+    font-size: 1rem;
+    outline: none;
+    appearance: none;
+    background-color: var(--background);
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+#language-selector:hover {
+    background-color: var(--primary);
+    color: var(--background2);
+    transform: scale(.97);
+}
+
+.language-select-wrapper::after {
+    content: '\f0dd';
+    font-family: "Font Awesome 6 Free"; 
+    font-weight: 900;
+    font-size: 0.8rem;
+    margin-left: -20px;
+    pointer-events: none;
+}
+
 .menu-bar {
     display: none;
 }
@@ -330,8 +383,14 @@ header {
     margin-bottom: 1rem;
 }
 .about-container p {
-    margin-bottom: 2rem;
+    margin-bottom: .7rem;
     text-align: justify;
+}
+
+.about-text-container button {
+    position: absolute;
+    right: 11em;
+    border-radius: 12px;
 }
 
 /* --- skills --- */
@@ -529,8 +588,21 @@ footer {
     .logo {
         color: var(--background);
     }
+    .language-select-wrapper::after,
+    .language-select-wrapper,
+    .language-select-wrapper i,
     .nav-links {
         display: none;
+    }
+    .language-select-wrapper {
+        display: block;
+    }
+    #language-selector {
+        /* position: fixed; */
+        width: 7em;
+        display: block;
+        top: 5em;
+        left: 0;
     }
     .menu-button {
         display: inline-block;
@@ -687,11 +759,6 @@ footer {
         position: relative;
         padding-top: 1.5rem;
         padding-bottom: 2rem;
-        border: 1px solid red;
-    }
-    .social-links a {
-        border: 1px solid red;
-        width: 3em;
     }
     .header-left {
         padding-top: 2rem;
