@@ -69,6 +69,7 @@ section>p {
 p {
     line-height: 150%;
     font-size: 17px;
+    /* text-align: justify; */
 }
 
 img {
@@ -134,6 +135,7 @@ img {
 .card-primary:hover {
     background: var(--gradient);
     color: #ffffff;
+    cursor: pointer;
 }
 .container {
     max-width: 1420px;
@@ -190,8 +192,10 @@ nav {
     display: inline-block;
 }
 .nav-links li a:hover {
-    transform: translateY(-.5rem);
+    transform: translateY(-.2rem);
     color: var(--primary);
+    border-bottom: 1px solid #008080;
+    /* border-radius: 15px; */
 }
 .menu-bar {
     display: none;
@@ -274,6 +278,7 @@ header {
     box-shadow: 0 0 1rem var(--primary);
 }
 .social-links {
+    margin-left: 1em;
     position: absolute;
     bottom: 2rem;
     display: flex;
@@ -281,7 +286,7 @@ header {
     gap: 2rem;
 }
 .social-links a {
-    font-size: 1.2rem;
+    font-size: 2rem;
     color: var(--black);
     transition: var(--transition);
 }
@@ -326,6 +331,7 @@ header {
 }
 .about-container p {
     margin-bottom: 2rem;
+    text-align: justify;
 }
 
 /* --- skills --- */
