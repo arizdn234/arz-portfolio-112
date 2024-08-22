@@ -78,30 +78,62 @@
     "left": {
       "cards": [
         {
-          "icon": "fab fa-html5",
-          "title": "HTML",
-          "description": "Bahasa markup yang membangun struktur dan konten halaman web menggunakan tag dan elemen terstruktur secara hierarkis."
+          "icon": "fa-brands fa-golang",
+          "title": "Golang",
+          "description": "From Golang, I learned about efficiency in programming and the importance of concurrency for building scalable and high-performance applications."
         },
         {
-          "icon": "fab fa-css3",
-          "title": "CSS",
-          "description": "Bahasa pemrograman yang mengatur tampilan, layout, dan gaya halaman web dengan aturan pemformatan dan desain."
+          "icon": "fab fa-python",
+          "title": "Python",
+          "description": "From Python, I learned about simplicity in programming and its application in web development, data analysis, and automation."
         },
         {
-          "icon": "fab fa-js",
+          "icon": "fa-brands fa-js",
           "title": "JavaScript",
-          "description": "Bahasa pemrograman yang memungkinkan interaksi dinamis, mengontrol perilaku halaman web, dan menghasilkan respons interaktif dari pengguna."
+          "description": "From JavaScript, I learned how to create interactivity and dynamic content on websites, as well as the importance of asynchronous programming."
         }
       ]
     },
     "right": {
       "subtitle": "What Can I do?",
-      "progressBars": [
-        { "icon": "fab fa-html5", "title": "HTML", "percentage": "90%" },
-        { "icon": "fab fa-css3", "title": "CSS", "percentage": "80%" },
-        { "icon": "fab fa-js", "title": "JavaScript", "percentage": "50%" },
-        { "icon": "fab fa-bootstrap", "title": "Bootstrap", "percentage": "65%" },
-        { "icon": "fab fa-figma", "title": "Figma", "percentage": "75%" }
+      "skillBtn": [
+        { "icon": "fas fa-database", "title": "&nbsp;PostgreSQL" },
+        { "icon": "fas fa-database", "title": "&nbsp;MySQL" },
+        { "icon": "fas fa-database", "title": "&nbsp;SQLite" },
+        { "icon": "fas fa-database", "title": "&nbsp;MongoDB" },
+
+        { "icon": "fas fa-code", "title": "&nbsp;Sequelize.js (Node.js)" },
+        { "icon": "fas fa-code", "title": "&nbsp;Prisma ORM (Node.js)" },
+        { "icon": "fas fa-code", "title": "&nbsp;GORM (Go)" },
+        { "icon": "fas fa-code", "title": "&nbsp;Eloquent (Laravel)" },
+        { "icon": "fas fa-code", "title": "&nbsp;SQLAlchemy (Flask/Django)" },
+
+        { "icon": "fas fa-laptop-code", "title": "&nbsp;Python" },
+        { "icon": "fas fa-laptop-code", "title": "&nbsp;JavaScript" },
+        { "icon": "fas fa-laptop-code", "title": "&nbsp;Go (Golang)" },
+        { "icon": "fas fa-laptop-code", "title": "&nbsp;PHP" },
+        { "icon": "fas fa-database", "title": "&nbsp;SQL" },
+
+        { "icon": "fas fa-tools", "title": "&nbsp;Docker" },
+        { "icon": "fas fa-database", "title": "&nbsp;Navicat" },
+        { "icon": "fas fa-database", "title": "&nbsp;DBeaver" },
+        { "icon": "fas fa-database", "title": "&nbsp;pgAdmin" },
+        { "icon": "fas fa-cloud", "title": "&nbsp;Mongo Atlas" },
+        { "icon": "fas fa-vial", "title": "&nbsp;Postman" },
+        { "icon": "fab fa-github", "title": "&nbsp;GitHub" },
+
+        { "icon": "fas fa-globe", "title": "&nbsp;Django (Python)" },
+        { "icon": "fas fa-globe", "title": "&nbsp;Laravel (PHP)" },
+        { "icon": "fas fa-globe", "title": "&nbsp;Flask (Python)" },
+        { "icon": "fas fa-globe", "title": "&nbsp;FastAPI (Python)" },
+        { "icon": "fas fa-globe", "title": "&nbsp;Express.js (Node.js)" },
+        { "icon": "fas fa-globe", "title": "&nbsp;Gin Gonic (Go)" },
+        { "icon": "fas fa-globe", "title": "&nbsp;Gofiber (Go)" },
+        { "icon": "fab fa-bootstrap", "title": "&nbsp;Bootstrap (CSS)" },
+        { "icon": "fas fa-paint-brush", "title": "&nbsp;Materialize CSS (CSS)" },
+        { "icon": "fas fa-paint-brush", "title": "&nbsp;TailwindCSS (CSS)" },
+        { "icon": "fas fa-code", "title": "&nbsp;Alpine.js (JavaScript)" },
+        { "icon": "fas fa-code", "title": "&nbsp;Vite.js (JavaScript)" }
       ]
     }
   },

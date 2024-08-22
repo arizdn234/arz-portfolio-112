@@ -78,19 +78,19 @@
     "left": {
       "cards": [
         {
-          "icon": "fab fa-html5",
-          "title": "HTML",
-          "description": "Bahasa markup yang membangun struktur dan konten halaman web menggunakan tag dan elemen terstruktur secara hierarkis."
+          "icon": "fa-brands fa-golang",
+          "title": "Golang",
+          "description": "Dari Golang, saya belajar tentang efisiensi dalam pemrograman dan pentingnya konkurensi untuk membangun aplikasi yang skalabel dan berkinerja tinggi."
         },
         {
-          "icon": "fab fa-css3",
-          "title": "CSS",
-          "description": "Bahasa pemrograman yang mengatur tampilan, layout, dan gaya halaman web dengan aturan pemformatan dan desain."
+          "icon": "fab fa-python",
+          "title": "Python",
+          "description": "Dari Python, saya belajar tentang kesederhanaan dalam pemrograman dan penerapannya dalam pengembangan web, analisis data, serta otomatisasi."
         },
         {
-          "icon": "fab fa-js",
+          "icon": "fa-brands fa-js",
           "title": "JavaScript",
-          "description": "Bahasa pemrograman yang memungkinkan interaksi dinamis, mengontrol perilaku halaman web, dan menghasilkan respons interaktif dari pengguna."
+          "description": "Dari JavaScript, saya belajar bagaimana menciptakan interaktivitas dan dinamika pada situs web, serta pentingnya pemrograman asinkron."
         }
       ]
     },
