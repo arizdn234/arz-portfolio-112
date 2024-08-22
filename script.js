@@ -91,12 +91,11 @@ document.addEventListener("DOMContentLoaded", () => {
                 
                 // Cards
                 const aboutCards = document.querySelectorAll(".about-card");
-                aboutCards[0].querySelector("h5").innerText = data.about.cards[0].title;
-                aboutCards[0].querySelector("small").innerText = data.about.cards[0].description;
-                aboutCards[1].querySelector("h5").innerText = data.about.cards[1].title;
-                aboutCards[1].querySelector("small").innerText = data.about.cards[1].description;
-                aboutCards[2].querySelector("h5").innerText = data.about.cards[2].title;
-                aboutCards[2].querySelector("small").innerText = data.about.cards[2].description;
+                for (let i = 0; i < aboutCards.length; i++) {
+                    aboutCards[i].querySelector("span i").className = data.about.cards[i].icon;
+                    aboutCards[i].querySelector("h5").innerText = data.about.cards[i].title;
+                    aboutCards[i].querySelector("small").innerText = data.about.cards[i].description;
+                }
                 
                 // About Section
                 document.querySelector(".about-container h3").innerText = data.about.subtitle;
