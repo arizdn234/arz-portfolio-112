@@ -138,7 +138,33 @@ document.addEventListener("DOMContentLoaded", () => {
 
                 document.querySelector(".about-container a:nth-of-type(1)").innerText = data.about.ctaButton.text;
                 
-                // 
+                // Skills
+                document.querySelector("#Skills h2").innerText = data.skills.title;
+                document.querySelector("#Skills .skills-container .skills-right h3").innerText = data.skills.right.subtitle;
+                // skillsCards
+                const skillsCards = document.querySelectorAll(".skills-left .skill-card");
+                skillsCards.forEach((skillsCard, index) => {
+                    skillsCard.querySelector("span i").className = data.skills.left.cards[index].icon;
+                    skillsCard.querySelector("h5").innerText = data.skills.left.cards[index].title;
+                    skillsCard.querySelector("small").innerText = data.skills.left.cards[index].description;
+                });
+                // skillsBtn
+                const skillsRight = document.querySelector(".skills-right .skill-btn-container");
+                data.skills.right.skillBtn.forEach(skill => {
+                    // console.log(skill);
+                    const skillElement = document.createElement("h5");
+                    skillElement.className = "btn btn-white skill-btn";
+
+                    const iconElement = document.createElement("i");
+                    iconElement.className = skill.icon;
+
+                    skillElement.appendChild(iconElement);
+                    skillElement.innerHTML += skill.title;
+
+                    skillsRight.appendChild(skillElement);
+                });
+                
+
             })
             .catch(error => console.error('Error loading JSON:', error));
     }
