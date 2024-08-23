@@ -778,6 +778,9 @@ footer {
     .header-left {
         padding-top: 2rem;
     }
+    .HireMe {
+        margin-left: 0;
+    }
 
     /* --- about --- */
     .about-container {
@@ -787,6 +790,9 @@ footer {
         grid-template-columns: 1fr 1fr;
         gap: 4%;
         padding-bottom: 2rem;
+    }
+    #toggle-button {
+        margin-bottom: .7em;
     }
 
     /* --- skills --- */
