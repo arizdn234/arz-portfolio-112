@@ -57,7 +57,31 @@ menuButton.addEventListener('click',()=>{
     menuBar.classList.toggle('menu-none')
 });
 
-// language loader
+// Transition handler
+function applyTransition(element, effect, callback, delay = 0) {
+    element.classList.add(effect.out);
+    setTimeout(() => {
+        callback();
+        element.classList.remove(effect.out);
+        element.classList.add(effect.in);
+
+        setTimeout(() => {
+            element.classList.remove(effect.in);
+        }, 500);
+    }, 500 + delay);
+}
+
+
+// effect list
+const effects = {
+    fade: { in: "fade-in", out: "fade-out" },
+    slide: { in: "slide-in", out: "slide-out" },
+    slideX: { out: 'slide-out-left', in: 'slide-in-right' },
+    slideY: { out: 'slide-out-up', in: 'slide-in-down' },
+    zoom: { in: "zoom-in", out: "zoom-out" }
+};
+
+// Language loader
 document.addEventListener("DOMContentLoaded", () => {
     const languageSelector = document.getElementById("language-selector");
     
@@ -70,11 +94,11 @@ document.addEventListener("DOMContentLoaded", () => {
         fetch(`locales/${lang}.json`)
             .then(response => response.json())
             .then(data => {
-                updateNavbar(data.navbar);
-                updateHeader(data.header);
-                updateAboutSection(data.about);
-                updateSkillsSection(data.skills);
-                updatePortfolio(data.portfolio);
+                updateNavbar(data.navbar)
+                updateHeader(data.header)
+                updateAboutSection(data.about)
+                applyTransition(document.querySelector("#Skills"), effects.fade, () => updateSkillsSection(data.skills));
+                applyTransition(document.querySelector("#Portfolio"), effects.fade, () => updatePortfolio(data.portfolio));
             })
             .catch(error => console.error('Error loading JSON:', error));
     }
@@ -83,40 +107,74 @@ document.addEventListener("DOMContentLoaded", () => {
     function updateNavbar(navbar) {
         const navLinks = document.querySelectorAll("nav .nav-links li a");
         navLinks.forEach((link, index) => {
-            link.innerText = navbar.links[index].text;
+            applyTransition(link, effects.slideX, () => {
+                link.innerText = navbar.links[index].text;
+            }, index * 100);
         });
 
-        const languageOptions = document.querySelectorAll("nav #language-selector option");
-        languageOptions.forEach((option, index) => {
-            option.innerText = navbar.languageSelector.options[index].text;
-        });
+        const languageSelector = document.querySelector("nav #language-selector");
+        applyTransition(languageSelector, effects.zoom, () => {
+            const languageOptions = languageSelector.querySelectorAll("option");
+            
+            languageOptions.forEach((option, index) => {
+                option.innerText = navbar.languageSelector.options[index].text;
+            });
+        }, 600);
+
     }
 
     // Update the Header
     function updateHeader(header) {
-        document.querySelector(".header-left h1").innerText = header.greeting;
-        document.querySelector(".header-left p").innerText = header.description;
+        applyTransition(document.querySelector(".header-left h1"), effects.slideY, () => {
+            document.querySelector(".header-left h1").innerText = header.greeting;
+        }, 0);
+
+        applyTransition(document.querySelector(".header-left p"), effects.fade, () => {
+            document.querySelector(".header-left p").innerText = header.description;
+        }, 100);
         
-        const headerButtons = document.querySelectorAll(".header-left a");
-        headerButtons[0].innerText = header.buttons[0].text;
-        headerButtons[1].innerText = header.buttons[1].text;
+        applyTransition(document.querySelectorAll(".header-left a")[0], effects.slideX, () => {
+            document.querySelectorAll(".header-left a")[0].innerText = header.buttons[0].text;
+        }, 250);
+    
+        applyTransition(document.querySelectorAll(".header-left a")[1], effects.slideX, () => {
+            document.querySelectorAll(".header-left a")[1].innerText = header.buttons[1].text;
+        }, 300);
     }
 
     // Update the About Section
     function updateAboutSection(about) {
-        document.querySelector("#About h2").innerText = about.title;
-        document.querySelector(".about-container h3").innerText = about.subtitle;
-
+        applyTransition(document.querySelector("#About h2"), effects.fade, () => {
+            document.querySelector("#About h2").innerText = about.title;
+        });
+    
         const aboutCards = document.querySelectorAll(".about-card");
         aboutCards.forEach((card, index) => {
-            card.querySelector("span i").className = about.cards[index].icon;
-            card.querySelector("h5").innerText = about.cards[index].title;
-            card.querySelector("small").innerText = about.cards[index].description;
+            applyTransition(card.querySelector("span i"), effects.fade, () => {
+                card.querySelector("span i").className = about.cards[index].icon;
+            }, index * 100);
+    
+            applyTransition(card.querySelector("h5"), effects.fade, () => {
+                card.querySelector("h5").innerText = about.cards[index].title;
+            }, index * 100 + 100);
+    
+            applyTransition(card.querySelector("small"), effects.fade, () => {
+                card.querySelector("small").innerText = about.cards[index].description;
+            }, index * 100 + 200);
         });
+        
+        applyTransition(document.querySelector(".about-container h3 ~ *"), effects.fade, () => {
+            initializeToggleButton(about.paragraphs, about.paragraphs.slice(0, 2), about.expandButton);
+        }, aboutCards.length * 100 + 300);
 
-        initializeToggleButton(about.paragraphs, about.paragraphs.slice(0, 2), about.expandButton);
-        document.querySelector(".about-container a:nth-of-type(1)").innerText = about.ctaButton.text;
-    }
+        applyTransition(document.querySelector(".about-container h3"), effects.fade, () => {
+            document.querySelector(".about-container h3").innerText = about.subtitle;
+        }, aboutCards.length * 100 + 300);
+
+        applyTransition(document.querySelector(".about-container a:nth-of-type(1)"), effects.zoom, () => {
+            document.querySelector(".about-container a:nth-of-type(1)").innerText = about.ctaButton.text;
+        }, aboutCards.length * 100 + 300);
+    }    
 
     // Initialize Toggle Button for the About Section
     function initializeToggleButton(paragraphs, visibleParagraphs, expandButton) {
