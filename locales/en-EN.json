@@ -70,7 +70,7 @@
       "My experience with modern technology tools, including Docker for containerization, GitHub for version control and collaboration, and Postman for API testing, equips me with the ability to build, deploy, and maintain applications in a way that is both efficient and aligned with industry standards.",
       "In summary, my diverse skill set and experience allow me to create effective and innovative solutions tailored to meet the specific needs of any business. I am passionate about technology and constantly seeking to improve my skills to stay ahead in this ever-evolving field."
     ],
-    "expandButton": { "expandTrue": "Hide", "expandFalse": "See More"},
+    "expandButton": { "expandTrue": "See More", "expandFalse": "Hide"},
     "ctaButton": { "text": "Hire Me", "href": "#Contact", "class": "btn btn-white" }
   },
   "skills": {

@@ -70,7 +70,7 @@
       "Pengalaman saya dengan alat teknologi modern, termasuk Docker untuk containerization, GitHub untuk pengendalian versi dan kolaborasi, dan Postman untuk pengujian API, membekali saya dengan kemampuan untuk membangun, mengirim, dan memelihara aplikasi dengan cara yang efisien dan sesuai dengan standar industri.",
       "Secara keseluruhan, keahlian dan pengalaman saya yang beragam memungkinkan saya untuk menciptakan solusi yang efektif dan inovatif yang disesuaikan untuk memenuhi kebutuhan spesifik dari setiap bisnis. Saya bersemangat tentang teknologi dan terus mencari cara untuk meningkatkan keterampilan saya agar tetap unggul dalam bidang yang terus berkembang ini."
     ],
-    "expandButton": { "expandTrue": "Sembunyikan", "expandFalse": "Lihat Selengkapnya" },
+    "expandButton": { "expandTrue": "Lihat Selengkapnya", "expandFalse": "Sembunyikan" },
     "ctaButton": { "text": "Pekerjakan Saya", "href": "#Contact", "class": "btn btn-white" }
   },
   "skills": {
@@ -96,12 +96,44 @@
     },
     "right": {
       "subtitle": "Apa yang Bisa Saya Lakukan?",
-      "progressBars": [
-        { "icon": "fab fa-html5", "title": "HTML", "percentage": "90%" },
-        { "icon": "fab fa-css3", "title": "CSS", "percentage": "80%" },
-        { "icon": "fab fa-js", "title": "JavaScript", "percentage": "50%" },
-        { "icon": "fab fa-bootstrap", "title": "Bootstrap", "percentage": "65%" },
-        { "icon": "fab fa-figma", "title": "Figma", "percentage": "75%" }
+      "skillBtn": [
+        { "icon": "fas fa-database", "title": "&nbsp;PostgreSQL" },
+        { "icon": "fas fa-database", "title": "&nbsp;MySQL" },
+        { "icon": "fas fa-database", "title": "&nbsp;SQLite" },
+        { "icon": "fas fa-database", "title": "&nbsp;MongoDB" },
+
+        { "icon": "fas fa-code", "title": "&nbsp;Sequelize.js (Node.js)" },
+        { "icon": "fas fa-code", "title": "&nbsp;Prisma ORM (Node.js)" },
+        { "icon": "fas fa-code", "title": "&nbsp;GORM (Go)" },
+        { "icon": "fas fa-code", "title": "&nbsp;Eloquent (Laravel)" },
+        { "icon": "fas fa-code", "title": "&nbsp;SQLAlchemy (Flask/Django)" },
+
+        { "icon": "fas fa-laptop-code", "title": "&nbsp;Python" },
+        { "icon": "fas fa-laptop-code", "title": "&nbsp;JavaScript" },
+        { "icon": "fas fa-laptop-code", "title": "&nbsp;Go (Golang)" },
+        { "icon": "fas fa-laptop-code", "title": "&nbsp;PHP" },
+        { "icon": "fas fa-database", "title": "&nbsp;SQL" },
+
+        { "icon": "fas fa-tools", "title": "&nbsp;Docker" },
+        { "icon": "fas fa-database", "title": "&nbsp;Navicat" },
+        { "icon": "fas fa-database", "title": "&nbsp;DBeaver" },
+        { "icon": "fas fa-database", "title": "&nbsp;pgAdmin" },
+        { "icon": "fas fa-cloud", "title": "&nbsp;Mongo Atlas" },
+        { "icon": "fas fa-vial", "title": "&nbsp;Postman" },
+        { "icon": "fab fa-github", "title": "&nbsp;GitHub" },
+
+        { "icon": "fas fa-globe", "title": "&nbsp;Django (Python)" },
+        { "icon": "fas fa-globe", "title": "&nbsp;Laravel (PHP)" },
+        { "icon": "fas fa-globe", "title": "&nbsp;Flask (Python)" },
+        { "icon": "fas fa-globe", "title": "&nbsp;FastAPI (Python)" },
+        { "icon": "fas fa-globe", "title": "&nbsp;Express.js (Node.js)" },
+        { "icon": "fas fa-globe", "title": "&nbsp;Gin Gonic (Go)" },
+        { "icon": "fas fa-globe", "title": "&nbsp;Gofiber (Go)" },
+        { "icon": "fab fa-bootstrap", "title": "&nbsp;Bootstrap (CSS)" },
+        { "icon": "fas fa-paint-brush", "title": "&nbsp;Materialize CSS (CSS)" },
+        { "icon": "fas fa-paint-brush", "title": "&nbsp;TailwindCSS (CSS)" },
+        { "icon": "fas fa-code", "title": "&nbsp;Alpine.js (JavaScript)" },
+        { "icon": "fas fa-code", "title": "&nbsp;Vite.js (JavaScript)" }
       ]
     }
   },
