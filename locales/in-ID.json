@@ -139,51 +139,92 @@
   },
   "portfolio": {
     "title": "Proyek Terbaru",
-    "description": "Selama pengalaman saya belajar dan pemrograman, saya berhasil menyelesaikan sejumlah proyek yang relevan dan signifikan.",
+    "description": "Selama pengalaman saya dalam belajar dan pemrograman, saya telah berhasil menyelesaikan sejumlah proyek yang relevan dan signifikan.",
     "tabs": [
       { "name": "Semua", "class": "tab-active" },
+      { "name": "Bintang" },
       { "name": "Tugas" },
       { "name": "ProyekAkhir" }
     ],
     "projects": [
       {
-        "name": "ProyekAkhir",
+        "name": "API",
         "title": "Proyek Akhir 1",
         "image": "images/FP1.svg",
-        "description": "Permainan dengan nama \"Save Me Please\" di mana pengguna bertugas untuk menebak setiap jawaban dari soal yang telah disediakan.",
+        "description": "Sebuah game bernama 'Save Me Please' di mana pengguna harus menebak jawaban yang benar dari pertanyaan yang diberikan.",
         "links": [
-          { "text": "Langsung", "href": "https://wdp-12.github.io/finalproject1-kelompok6/", "class": "btn btn-sm" },
-          { "text": "Github", "href": "https://github.com/wdp-12/finalproject1-kelompok6", "class": "btn btn-sm btn-white" }
+          { "text": "Live", "href": "https://wdp-12.github.io/API1-kelompok6/", "class": "btn btn-sm" },
+          { "text": "Github", "href": "https://github.com/wdp-12/API1-kelompok6", "class": "btn btn-sm btn-white" }
         ]
       },
       {
-        "name": "ProyekAkhir",
+        "name": "API",
         "title": "Proyek Akhir 2",
         "image": "images/FP2.svg",
-        "description": "Sebuah landing page yang dibuat dengan menggunakan Figma. Kami diminta untuk membuat setiap baris kode dari landing page ini.",
+        "description": "Sebuah halaman landing yang dibuat menggunakan Figma. Kami ditugaskan untuk menulis setiap baris kode untuk halaman landing ini.",
         "links": [
-          { "text": "Langsung", "href": "https://finalproject2-kelompok6.vercel.app/", "class": "btn btn-sm" },
-          { "text": "Github", "href": "https://github.com/wdp-12/Finalproject2-kelompok6", "class": "btn btn-sm btn-white" }
+          { "text": "Live", "href": "https://API2-kelompok6.vercel.app/", "class": "btn btn-sm" },
+          { "text": "Github", "href": "https://github.com/wdp-12/API2-kelompok6", "class": "btn btn-sm btn-white" }
         ]
       },
       {
-        "name": "ProyekAkhir",
+        "name": "API",
         "title": "Proyek Akhir 3",
         "image": "images/FP3.svg",
-        "description": "Pembuatan website \"To the Moon\" yang mengimplementasikan efek parallax di dalamnya.",
+        "description": "Pembuatan website 'To the Moon' yang mengimplementasikan efek parallax.",
         "links": [
-          { "text": "Langsung", "href": "https://wdp-12.github.io/Finalproject3-kelompok1/", "class": "btn btn-sm" },
-          { "text": "Github", "href": "https://github.com/wdp-12/Finalproject3-kelompok1", "class": "btn btn-sm btn-white" }
+          { "text": "Live", "href": "https://wdp-12.github.io/API3-kelompok1/", "class": "btn btn-sm" },
+          { "text": "Github", "href": "https://github.com/wdp-12/API3-kelompok1", "class": "btn btn-sm btn-white" }
         ]
       },
       {
-        "name": "Tugas",
-        "title": "Minggu 1",
-        "image": "images/week1.svg",
-        "description": "Pembuatan Halaman Web Portofolio dalam minggu pertama pelatihan.",
+        "name": "API",
+        "title": "Proyek Akhir 4",
+        "image": "images/FP4.svg",
+        "description": "Pembuatan situs portofolio yang berisi profil dan informasi proyek yang diselesaikan selama 3 bulan di Hacktiv8.",
         "links": [
-          { "text": "Langsung", "href": "https://arizdn234.github.io/week1/", "class": "btn btn-sm" },
-          { "text": "Github", "href": "https://github.com/arizdn234/week1", "class": "btn btn-sm btn-white" }
+          { "text": "Live", "href": "https://jenitaberliana.github.io/API4/", "class": "btn btn-sm" },
+          { "text": "Github", "href": "https://github.com/jenitaberliana/API4", "class": "btn btn-sm btn-white" }
+        ]
+      },
+      {
+        "name": "App",
+        "title": "Aplikasi 1",
+        "image": "images/assignment1.svg",
+        "description": "Pembuatan situs web bernama 'Shopedia,' sebuah platform e-commerce.",
+        "links": [
+          { "text": "Live", "href": "https://jenitaberliana.github.io/App-1/", "class": "btn btn-sm" },
+          { "text": "Github", "href": "https://github.com/jenitaberliana/App-1", "class": "btn btn-sm btn-white" }
+        ]
+      },
+      {
+        "name": "App",
+        "title": "Aplikasi 2",
+        "image": "images/assignment2.svg",
+        "description": "Membuat kanban untuk memudahkan pencatatan tugas harian atau 'to-do list.'",
+        "links": [
+          { "text": "Live", "href": "https://jenitaberliana.github.io/App-2/", "class": "btn btn-sm" },
+          { "text": "Github", "href": "https://github.com/jenitaberliana/App-2", "class": "btn btn-sm btn-white" }
+        ]
+      },
+      {
+        "name": "App",
+        "title": "Aplikasi 3",
+        "image": "images/assignment3.svg",
+        "description": "Aplikasi CRUD menggunakan fetch bernama 'Update Product' untuk e-commerce.",
+        "links": [
+          { "text": "Live", "href": "https://github.com/jenitaberliana/App-3", "class": "btn btn-sm" },
+          { "text": "Github", "href": "https://github.com/jenitaberliana/App-3", "class": "btn btn-sm btn-white" }
+        ]
+      },
+      {
+        "name": "App",
+        "title": "Profil Web",
+        "image": "images/webprofile.svg",
+        "description": "Pembuatan profil web yang berisi informasi pribadi dan portofolio.",
+        "links": [
+          { "text": "Live", "href": "https://jenitaberliana.github.io/web-profile/", "class": "btn btn-sm" },
+          { "text": "Github", "href": "https://github.com/jenitaberliana/web-profile", "class": "btn btn-sm btn-white" }
         ]
       }
     ]

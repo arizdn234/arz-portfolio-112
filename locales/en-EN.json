@@ -138,56 +138,97 @@
     }
   },
   "portfolio": {
-    "title": "Recent Project",
-    "description": "During my experience learning and programming, I managed to complete a number of relevant and significant projects.",
+    "title": "Recent Projects",
+    "description": "During my experience learning and programming, I have managed to complete a number of relevant and significant projects.",
     "tabs": [
       { "name": "All", "class": "tab-active" },
+      { "name": "Star" },
       { "name": "Assignment" },
       { "name": "FinalProject" }
     ],
     "projects": [
       {
-        "name": "FinalProject",
+        "name": "API",
         "title": "Final Project 1",
         "image": "images/FP1.svg",
-        "description": "Game dengan nama \"Save Me Please\" dimana user bertugas untuk menebak setiap jawaban dari soal yang telah disediakan.",
+        "description": "A game called 'Save Me Please' where the user has to guess the correct answers to the provided questions.",
         "links": [
-          { "text": "Live", "href": "https://wdp-12.github.io/finalproject1-kelompok6/", "class": "btn btn-sm" },
-          { "text": "Github", "href": "https://github.com/wdp-12/finalproject1-kelompok6", "class": "btn btn-sm btn-white" }
+          { "text": "Live", "href": "https://wdp-12.github.io/API1-kelompok6/", "class": "btn btn-sm" },
+          { "text": "Github", "href": "https://github.com/wdp-12/API1-kelompok6", "class": "btn btn-sm btn-white" }
         ]
       },
       {
-        "name": "FinalProject",
+        "name": "API",
         "title": "Final Project 2",
         "image": "images/FP2.svg",
-        "description": "Sebuah landing page yang dibuat dengan menggunakan Figma. Kami diminta untuk membuat setiap baris kode dari landing page ini.",
+        "description": "A landing page created using Figma. We were tasked with writing every line of code for this landing page.",
         "links": [
-          { "text": "Live", "href": "https://finalproject2-kelompok6.vercel.app/", "class": "btn btn-sm" },
-          { "text": "Github", "href": "https://github.com/wdp-12/Finalproject2-kelompok6", "class": "btn btn-sm btn-white" }
+          { "text": "Live", "href": "https://API2-kelompok6.vercel.app/", "class": "btn btn-sm" },
+          { "text": "Github", "href": "https://github.com/wdp-12/API2-kelompok6", "class": "btn btn-sm btn-white" }
         ]
       },
       {
-        "name": "FinalProject",
+        "name": "API",
         "title": "Final Project 3",
         "image": "images/FP3.svg",
-        "description": "Pembuatan website \"To the Moon\" yang mengimplementasikan efek parallax di dalamnya.",
+        "description": "The creation of the 'To the Moon' website, which implements a parallax effect.",
         "links": [
-          { "text": "Live", "href": "https://wdp-12.github.io/Finalproject3-kelompok1/", "class": "btn btn-sm" },
-          { "text": "Github", "href": "https://github.com/wdp-12/Finalproject3-kelompok1", "class": "btn btn-sm btn-white" }
+          { "text": "Live", "href": "https://wdp-12.github.io/API3-kelompok1/", "class": "btn btn-sm" },
+          { "text": "Github", "href": "https://github.com/wdp-12/API3-kelompok1", "class": "btn btn-sm btn-white" }
         ]
       },
       {
-        "name": "Assignment",
-        "title": "Week 1",
-        "image": "images/week1.svg",
-        "description": "Pembuatan Halaman Web Portofolio dalam minggu pertama pelatihan.",
+        "name": "API",
+        "title": "Final Project 4",
+        "image": "images/FP4.svg",
+        "description": "Creation of a portfolio website containing profile and project information completed over 3 months at Hacktiv8.",
         "links": [
-          { "text": "Live", "href": "https://arizdn234.github.io/week1/", "class": "btn btn-sm" },
-          { "text": "Github", "href": "https://github.com/arizdn234/week1", "class": "btn btn-sm btn-white" }
+          { "text": "Live", "href": "https://jenitaberliana.github.io/API4/", "class": "btn btn-sm" },
+          { "text": "Github", "href": "https://github.com/jenitaberliana/API4", "class": "btn btn-sm btn-white" }
+        ]
+      },
+      {
+        "name": "App",
+        "title": "App 1",
+        "image": "images/assignment1.svg",
+        "description": "Creation of a website named 'Shopedia,' an e-commerce platform.",
+        "links": [
+          { "text": "Live", "href": "https://jenitaberliana.github.io/App-1/", "class": "btn btn-sm" },
+          { "text": "Github", "href": "https://github.com/jenitaberliana/App-1", "class": "btn btn-sm btn-white" }
+        ]
+      },
+      {
+        "name": "App",
+        "title": "App 2",
+        "image": "images/assignment2.svg",
+        "description": "Created a kanban to facilitate recording daily tasks or a 'to-do list.'",
+        "links": [
+          { "text": "Live", "href": "https://jenitaberliana.github.io/App-2/", "class": "btn btn-sm" },
+          { "text": "Github", "href": "https://github.com/jenitaberliana/App-2", "class": "btn btn-sm btn-white" }
+        ]
+      },
+      {
+        "name": "App",
+        "title": "App 3",
+        "image": "images/assignment3.svg",
+        "description": "A CRUD application using fetch called 'Update Product' for e-commerce.",
+        "links": [
+          { "text": "Live", "href": "https://github.com/jenitaberliana/App-3", "class": "btn btn-sm" },
+          { "text": "Github", "href": "https://github.com/jenitaberliana/App-3", "class": "btn btn-sm btn-white" }
+        ]
+      },
+      {
+        "name": "App",
+        "title": "Web Profile",
+        "image": "images/webprofile.svg",
+        "description": "Creation of a web profile containing personal information and a portfolio.",
+        "links": [
+          { "text": "Live", "href": "https://jenitaberliana.github.io/web-profile/", "class": "btn btn-sm" },
+          { "text": "Github", "href": "https://github.com/jenitaberliana/web-profile", "class": "btn btn-sm btn-white" }
         ]
       }
     ]
-  },
+  }, 
   "contact": {
     "title": "Contact Me",
     "description": "Please contact me to offer a job and discuss about software development.",
