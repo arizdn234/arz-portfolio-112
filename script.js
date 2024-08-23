@@ -60,114 +60,124 @@ menuButton.addEventListener('click',()=>{
 // language loader
 document.addEventListener("DOMContentLoaded", () => {
     const languageSelector = document.getElementById("language-selector");
-    const aboutTextContainer = document.querySelector(".about-text");
-    const toggleButton = document.getElementById("toggle-button");
-
-    let isExpanded = false;
     
+    let isExpanded = false;
+    const toggleButton = document.getElementById("toggle-button");
+    const aboutTextContainer = document.querySelector(".about-text-container .about-text");
+
+    // Load and update content based on the selected language
     function loadContent(lang) {
         fetch(`locales/${lang}.json`)
             .then(response => response.json())
             .then(data => {
-                // Navbar
-                // document.querySelector("nav .logo").innerText = data.navbar.logo;
-                document.querySelector("nav .nav-links li:nth-child(1) a").innerText = data.navbar.links[0].text;
-                document.querySelector("nav .nav-links li:nth-child(2) a").innerText = data.navbar.links[1].text;
-                document.querySelector("nav .nav-links li:nth-child(3) a").innerText = data.navbar.links[2].text;
-                document.querySelector("nav .nav-links li:nth-child(4) a").innerText = data.navbar.links[3].text;
-                document.querySelector("nav .nav-links li:nth-child(5) a").innerText = data.navbar.links[4].text;
-                document.querySelector("nav #language-selector option:nth-child(1)").innerText = data.navbar.languageSelector.options[0].text;
-                document.querySelector("nav #language-selector option:nth-child(2)").innerText = data.navbar.languageSelector.options[1].text;
-                
-                // Header
-                document.querySelector(".header-left h1").innerText = data.header.greeting;
-                document.querySelector(".header-left p").innerText = data.header.description;
-                
-                document.querySelector(".header-left a:nth-of-type(1)").innerText = data.header.buttons[0].text;
-                document.querySelector(".header-left a:nth-of-type(2)").innerText = data.header.buttons[1].text;
-
-                // About Section
-                document.querySelector("#About h2").innerText = data.about.title;
-                
-                // Cards
-                const aboutCards = document.querySelectorAll(".about-card");
-                for (let i = 0; i < aboutCards.length; i++) {
-                    aboutCards[i].querySelector("span i").className = data.about.cards[i].icon;
-                    aboutCards[i].querySelector("h5").innerText = data.about.cards[i].title;
-                    aboutCards[i].querySelector("small").innerText = data.about.cards[i].description;
-                }
-                
-                // About Section
-                document.querySelector(".about-container h3").innerText = data.about.subtitle;
-                
-                // Clear existing paragraphs
-                aboutTextContainer.innerHTML = '';
-
-                const paragraphs = data.about.paragraphs;
-                const visibleParagraphs = paragraphs.slice(0, 2);
-
-                // Add visible paragraphs
-                visibleParagraphs.forEach(paragraph => {
-                    const p = document.createElement('p');
-                    p.innerText = paragraph;
-                    aboutTextContainer.appendChild(p);
-                });
-
-                // Toggle Button Logic
-                toggleButton.innerText = data.about.expandButton.expandFalse;
-                toggleButton.addEventListener("click", () => {
-                    aboutTextContainer.innerHTML = '';
-                    if (isExpanded) {
-                        visibleParagraphs.forEach(paragraph => {
-                            const p = document.createElement('p');
-                            p.innerText = paragraph;
-                            aboutTextContainer.appendChild(p);
-                        });
-                        toggleButton.innerText = data.about.expandButton.expandFalse;
-                    } else {
-                        paragraphs.forEach(paragraph => {
-                            const p = document.createElement('p');
-                            p.innerText = paragraph;
-                            aboutTextContainer.appendChild(p);
-                        });
-                        toggleButton.innerText = data.about.expandButton.expandTrue;
-                    }
-                    isExpanded = !isExpanded;
-                });
-
-                document.querySelector(".about-container a:nth-of-type(1)").innerText = data.about.ctaButton.text;
-                
-                // Skills
-                document.querySelector("#Skills h2").innerText = data.skills.title;
-                document.querySelector("#Skills .skills-container .skills-right h3").innerText = data.skills.right.subtitle;
-                // skillsCards
-                const skillsCards = document.querySelectorAll(".skills-left .skill-card");
-                skillsCards.forEach((skillsCard, index) => {
-                    skillsCard.querySelector("span i").className = data.skills.left.cards[index].icon;
-                    skillsCard.querySelector("h5").innerText = data.skills.left.cards[index].title;
-                    skillsCard.querySelector("small").innerText = data.skills.left.cards[index].description;
-                });
-                // skillsBtn
-                const skillsRight = document.querySelector(".skills-right .skill-btn-container");
-                data.skills.right.skillBtn.forEach(skill => {
-                    // console.log(skill);
-                    const skillElement = document.createElement("h5");
-                    skillElement.className = "btn btn-white skill-btn";
-
-                    const iconElement = document.createElement("i");
-                    iconElement.className = skill.icon;
-
-                    skillElement.appendChild(iconElement);
-                    skillElement.innerHTML += skill.title;
-
-                    skillsRight.appendChild(skillElement);
-                });
-                
-
+                updateNavbar(data.navbar);
+                updateHeader(data.header);
+                updateAboutSection(data.about);
+                updateSkillsSection(data.skills);
+                updatePortfolio(data.portfolio);
             })
             .catch(error => console.error('Error loading JSON:', error));
     }
 
+    // Update the Navbar
+    function updateNavbar(navbar) {
+        const navLinks = document.querySelectorAll("nav .nav-links li a");
+        navLinks.forEach((link, index) => {
+            link.innerText = navbar.links[index].text;
+        });
+
+        const languageOptions = document.querySelectorAll("nav #language-selector option");
+        languageOptions.forEach((option, index) => {
+            option.innerText = navbar.languageSelector.options[index].text;
+        });
+    }
+
+    // Update the Header
+    function updateHeader(header) {
+        document.querySelector(".header-left h1").innerText = header.greeting;
+        document.querySelector(".header-left p").innerText = header.description;
+        
+        const headerButtons = document.querySelectorAll(".header-left a");
+        headerButtons[0].innerText = header.buttons[0].text;
+        headerButtons[1].innerText = header.buttons[1].text;
+    }
+
+    // Update the About Section
+    function updateAboutSection(about) {
+        document.querySelector("#About h2").innerText = about.title;
+        document.querySelector(".about-container h3").innerText = about.subtitle;
+
+        const aboutCards = document.querySelectorAll(".about-card");
+        aboutCards.forEach((card, index) => {
+            card.querySelector("span i").className = about.cards[index].icon;
+            card.querySelector("h5").innerText = about.cards[index].title;
+            card.querySelector("small").innerText = about.cards[index].description;
+        });
+
+        initializeToggleButton(about.paragraphs, about.paragraphs.slice(0, 2), about.expandButton);
+        document.querySelector(".about-container a:nth-of-type(1)").innerText = about.ctaButton.text;
+    }
+
+    // Initialize Toggle Button for the About Section
+    function initializeToggleButton(paragraphs, visibleParagraphs, expandButton) {
+        isExpanded = false;
+        renderAboutText(paragraphs, visibleParagraphs, expandButton);
+
+        toggleButton.onclick = () => toggleAboutText(paragraphs, visibleParagraphs, expandButton);
+    }
+
+    function renderAboutText(paragraphs, visibleParagraphs, expandButton) {
+        aboutTextContainer.innerHTML = '';
+        const paragraphsToShow = isExpanded ? paragraphs : visibleParagraphs;
+        
+        paragraphsToShow.forEach(paragraph => {
+            const p = document.createElement('p');
+            p.innerText = paragraph;
+            aboutTextContainer.appendChild(p);
+        });
+
+        toggleButton.innerText = isExpanded 
+            ? expandButton.expandFalse 
+            : expandButton.expandTrue;
+    }
+
+    function toggleAboutText(paragraphs, visibleParagraphs, expandButton) {
+        isExpanded = !isExpanded;
+        renderAboutText(paragraphs, visibleParagraphs, expandButton);
+    }
+
+    // Update the Skills Section
+    function updateSkillsSection(skills) {
+        document.querySelector("#Skills h2").innerText = skills.title;
+        document.querySelector("#Skills .skills-container .skills-right h3").innerText = skills.right.subtitle;
+
+        const skillsCards = document.querySelectorAll(".skills-left .skill-card");
+        skillsCards.forEach((card, index) => {
+            card.querySelector("span i").className = skills.left.cards[index].icon;
+            card.querySelector("h5").innerText = skills.left.cards[index].title;
+            card.querySelector("small").innerText = skills.left.cards[index].description;
+        });
+
+        const skillsRight = document.querySelector(".skills-right .skill-btn-container");
+        skillsRight.innerHTML = "";
+        skills.right.skillBtn.forEach(skill => {
+            const skillElement = document.createElement("h5");
+            skillElement.className = "btn btn-white skill-btn";
+            const iconElement = document.createElement("i");
+            iconElement.className = skill.icon;
+            skillElement.appendChild(iconElement);
+            skillElement.innerHTML += skill.title;
+            skillsRight.appendChild(skillElement);
+        });
+    }
+
+    // Update the Portfolio Section
+    function updatePortfolio(portfolio) {
+        document.querySelector("#Portfolio h2").innerText = portfolio.title;
+        document.querySelector("#Portfolio p").innerText = portfolio.description;
+    }
+
+    // Initialize the language selector
     languageSelector.addEventListener("change", (e) => {
         const selectedLang = e.target.value;
         loadContent(selectedLang);
