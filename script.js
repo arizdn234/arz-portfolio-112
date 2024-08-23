@@ -38,6 +38,11 @@ window.addEventListener('scroll',()=>{
     nav.classList.toggle('nav-scroll', window.scrollY > 0);
 });
 
+// Randomizer
+function randomizer(min, max) {
+    return Math.floor(Math.random() * (max - min)) + min;
+}
+
 // typed text js
 // document.addEventListener('DOMContentLoaded', function() {
 //     let typed = new Typed('.typed-text', {
@@ -97,8 +102,9 @@ document.addEventListener("DOMContentLoaded", () => {
                 updateNavbar(data.navbar)
                 updateHeader(data.header)
                 updateAboutSection(data.about)
-                applyTransition(document.querySelector("#Skills"), effects.fade, () => updateSkillsSection(data.skills));
+                updateSkillsSection(data.skills)
                 applyTransition(document.querySelector("#Portfolio"), effects.fade, () => updatePortfolio(data.portfolio));
+                applyTransition(document.querySelector("#Contact"), effects.fade, () => updateContactSection(data.contact));
             })
             .catch(error => console.error('Error loading JSON:', error));
     }
@@ -204,36 +210,162 @@ document.addEventListener("DOMContentLoaded", () => {
         renderAboutText(paragraphs, visibleParagraphs, expandButton);
     }
 
-    // Update the Skills Section
+    // Update the Skills Section with Transitions
     function updateSkillsSection(skills) {
-        document.querySelector("#Skills h2").innerText = skills.title;
-        document.querySelector("#Skills .skills-container .skills-right h3").innerText = skills.right.subtitle;
+        applyTransition(document.querySelector("#Skills h2"), effects.fade, () => {
+            document.querySelector("#Skills h2").innerText = skills.title;
+        });
+
+        applyTransition(document.querySelector("#Skills .skills-container .skills-right h3"), effects.fade, () => {
+            document.querySelector("#Skills .skills-container .skills-right h3").innerText = skills.right.subtitle;
+        }, 100);
 
         const skillsCards = document.querySelectorAll(".skills-left .skill-card");
         skillsCards.forEach((card, index) => {
-            card.querySelector("span i").className = skills.left.cards[index].icon;
-            card.querySelector("h5").innerText = skills.left.cards[index].title;
-            card.querySelector("small").innerText = skills.left.cards[index].description;
+            applyTransition(card.querySelector("span i"), effects.fade, () => {
+                card.querySelector("span i").className = skills.left.cards[index].icon;
+            }, index * 100);
+
+            applyTransition(card.querySelector("h5"), effects.fade, () => {
+                card.querySelector("h5").innerText = skills.left.cards[index].title;
+            }, index * 100 + 100);
+
+            applyTransition(card.querySelector("small"), effects.fade, () => {
+                card.querySelector("small").innerText = skills.left.cards[index].description;
+            }, index * 100 + 200);
         });
 
         const skillsRight = document.querySelector(".skills-right .skill-btn-container");
         skillsRight.innerHTML = "";
-        skills.right.skillBtn.forEach(skill => {
+
+        skills.right.skillBtn.forEach((skill, index) => {
             const skillElement = document.createElement("h5");
             skillElement.className = "btn btn-white skill-btn";
+            
             const iconElement = document.createElement("i");
             iconElement.className = skill.icon;
             skillElement.appendChild(iconElement);
+            
             skillElement.innerHTML += skill.title;
             skillsRight.appendChild(skillElement);
+
+            applyTransition(skillElement, effects.fade, () => {}, randomizer(0, 1000));
         });
     }
 
     // Update the Portfolio Section
     function updatePortfolio(portfolio) {
-        document.querySelector("#Portfolio h2").innerText = portfolio.title;
-        document.querySelector("#Portfolio p").innerText = portfolio.description;
-    }
+        const portfolioSection = document.querySelector("#Portfolio");
+        
+        // Update title
+        applyTransition(portfolioSection.querySelector("h2"), effects.fade, () => {
+            portfolioSection.querySelector("h2").innerText = portfolio.title;
+        });
+        
+        // Update description
+        applyTransition(portfolioSection.querySelector("p"), effects.fade, () => {
+            portfolioSection.querySelector("p").innerText = portfolio.description;
+        }, 100);
+        
+        // Update tabs
+        const tabsContainer = portfolioSection.querySelector(".portfolio-tabs");
+        tabsContainer.innerHTML = "";
+        
+        portfolio.tabs.forEach((tab, index) => {
+            const tabElement = document.createElement("div");
+            tabElement.className = `tab btn btn-sm btn-white ${tab.class || ""}`;
+            tabElement.dataset.name = tab.name;
+            tabElement.innerText = tab.name;
+            applyTransition(tabElement, effects.slideY, () => {
+                tabsContainer.appendChild(tabElement);
+            }, index * 100);
+        });
+        
+        // Update projects
+        const projectsContainer = portfolioSection.querySelector(".portfolio-projects");
+        projectsContainer.innerHTML = ""; // Clear existing projects
+        
+        portfolio.projects.forEach((project, index) => {
+            const projectCard = document.createElement("div");
+            projectCard.className = `project card`;
+            projectCard.dataset.name = project.name;
+            
+            // Project image
+            const imgElement = document.createElement("img");
+            imgElement.src = project.image;
+            imgElement.alt = project.title;
+            projectCard.appendChild(imgElement);
+            
+            // Project title
+            const titleElement = document.createElement("h4");
+            titleElement.innerText = project.title;
+            projectCard.appendChild(titleElement);
+            
+            // Project description
+            const descElement = document.createElement("p");
+            descElement.innerText = project.description;
+            projectCard.appendChild(descElement);
+            
+            // Project action buttons
+            const actionContainer = document.createElement("div");
+            actionContainer.className = "project-action";
+            project.links.forEach(link => {
+                const linkElement = document.createElement("a");
+                linkElement.href = link.href;
+                linkElement.className = link.class;
+                linkElement.innerText = link.text;
+                actionContainer.appendChild(linkElement);
+            });
+            projectCard.appendChild(actionContainer);
+            
+            applyTransition(projectCard, effects.fade, () => {
+                projectsContainer.appendChild(projectCard);
+            }, index * 200);
+        });
+    }    
+    
+    // Update the Contact Section
+    function updateContactSection(contact) {
+        document.querySelector("#Contact h2").innerText = contact.title;
+        document.querySelector("#Contact p").innerText = contact.description;
+    
+        const form = document.querySelector("#Contact form");
+        form.innerHTML = '';
+    
+        // Create input elements
+        contact.form.inputs.forEach(inputData => {
+            const inputElement = document.createElement('input');
+            inputElement.type = inputData.type;
+            inputElement.placeholder = inputData.placeholder;
+            inputElement.name = inputData.name;
+            if (inputData.required) {
+                inputElement.required = true;
+            }
+            applyTransition(inputElement, effects.fade, () => {
+                form.appendChild(inputElement);
+            });
+        });
+    
+        // Create textarea element
+        const textareaElement = document.createElement('textarea');
+        textareaElement.placeholder = contact.form.textarea.placeholder;
+        textareaElement.name = contact.form.textarea.name;
+        if (contact.form.textarea.required) {
+            textareaElement.required = true;
+        }
+        applyTransition(textareaElement, effects.fade, () => {
+            form.appendChild(textareaElement);
+        });
+    
+        // Create submit button
+        const submitButton = document.createElement('button');
+        submitButton.type = 'submit';
+        submitButton.className = contact.form.submitButton.class;
+        submitButton.innerText = contact.form.submitButton.text;
+        applyTransition(submitButton, effects.fade, () => {
+            form.appendChild(submitButton);
+        });
+    }    
 
     // Initialize the language selector
     languageSelector.addEventListener("change", (e) => {
