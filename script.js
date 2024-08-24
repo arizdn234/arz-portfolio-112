@@ -54,12 +54,42 @@ function randomizer(min, max) {
 //     });
 // });
 
-// menu bar
-let menuBar = document.querySelector('.menu-bar');
-let menuButton = document.querySelector('.menu-button');
+// menu (mobile view)
+const menuButton = document.querySelector('.menu-button');
+const menuBar = document.querySelector('.menu-bar');
+const menuIcon = menuButton.querySelector('i');
 
-menuButton.addEventListener('click',()=>{
-    menuBar.classList.toggle('menu-none')
+menuButton.addEventListener('click', function() {
+    menuBar.classList.toggle('menu-none');
+    menuButton.classList.toggle('menu-btn-none');
+    
+    if (menuBar.classList.contains('menu-none')) {
+        menuIcon.classList.remove('fa-chevron-down');
+        menuIcon.classList.add('fa-chevron-up');
+    } else {
+        menuIcon.classList.remove('fa-chevron-up');
+        menuIcon.classList.add('fa-chevron-down');
+    }
+});
+
+// theme
+const themeToggleButton = document.querySelector('.theme-toggle-button');
+const bodyElement = document.body;
+const themeIcon = themeToggleButton.querySelector('i');
+
+themeToggleButton.addEventListener('click', function() {
+    bodyElement.classList.toggle('dark-theme');
+    bodyElement.classList.toggle('light-theme');
+
+    if (bodyElement.classList.contains('dark-theme')) {
+        themeIcon.classList.remove('fa-sun');
+        themeIcon.classList.add('fa-moon');
+    } else {
+        themeIcon.classList.remove('fa-moon');
+        themeIcon.classList.add('fa-sun');
+    }
+
+    themeToggleButton.prepend(themeIcon);
 });
 
 // Transition handler
@@ -238,7 +268,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const skillsRight = document.querySelector(".skills-right .skill-btn-container");
         skillsRight.innerHTML = "";
 
-        skills.right.skillBtn.forEach((skill, index) => {
+        skills.right.skillBtn.forEach((skill) => {
             const skillElement = document.createElement("h5");
             skillElement.className = "btn btn-white skill-btn";
             
@@ -249,7 +279,7 @@ document.addEventListener("DOMContentLoaded", () => {
             skillElement.innerHTML += skill.title;
             skillsRight.appendChild(skillElement);
 
-            applyTransition(skillElement, effects.fade, () => {}, randomizer(0, 1000));
+            // applyTransition(skillElement, effects.fade, () => {}, randomizer(0, 1000));
         });
     }
 
