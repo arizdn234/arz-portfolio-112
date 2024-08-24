@@ -619,15 +619,30 @@ footer {
         top: 5em;
         left: 0;
     }
+    .theme-toggle-button {
+        display: inline-block;
+        background: transparent;
+        color: var(--background);
+        font-size: 1.3rem;
+        transition: var(--transition);
+        margin-left: .7em;
+        width: 24px;
+        text-align: center; 
+    }
     .menu-button {
         display: inline-block;
         background: transparent;
         color: var(--background);
-        font-size: 1.6rem;
+        font-size: 1.3rem;
         transition: var(--transition);
-    }
-    .menu-button:hover {
-        transform: scale(1.2);
+        position: fixed;
+        bottom: 2.2em;
+        right: 0;
+        background-color: var(--primary);
+        padding: .2em .4em;
+        border-top: 2px solid var(--light);
+        border-left: 2px solid var(--light);
+        border-top-left-radius: 20px;
     }
 
     /* --- menu bar --- */
@@ -636,15 +651,20 @@ footer {
         position: fixed;
         bottom: 0;
         width: 100%;
-        height: 5rem;
+        height: 5.3rem;
         align-items: center;
         justify-content: center;
-        background: var(--gradient);
+        background: var(--primary);
         z-index: 2;
+        transition: var(--transition);
+        border-top: 2px solid var(--light);
+    }
+    .menu-btn-none {
+        bottom: -1%;
         transition: var(--transition);
     }
     .menu-none {
-        bottom: -100%;
+        bottom: -8%;
         transition: var(--transition);
     }
     .menubar-container {
@@ -658,6 +678,9 @@ footer {
         font-size: 1.6rem;
         color: var(--background);
         transition: var(--transition);
+    }
+    .menu-bar a[href="#"] i {
+        font-size: 1.6em;
     }
     .menubar-container a:hover {
         transform: scale(1.2);
