@@ -14,11 +14,13 @@
 :root {
     /* Light Theme */
     --primary: #008080;
+    --teal: rgba(0,73,71,1);
     --background: #ffffff;
     --background2: #f5f5f5;
     --black: #000000;
     --light: #313131;
     --light2: #e6e6e6;
+    --fixedlight: #e6e6e6;
     --gradient: linear-gradient(164deg, rgba(0,73,71,1) 0%, rgba(0,176,159,1) 100%, rgba(0,212,255,1) 100%);
     --gradient2: linear-gradient(164deg, rgb(39, 87, 85) 0%, rgb(86, 184, 124) 100%, rgb(0, 183, 255) 100%);
     
@@ -28,11 +30,13 @@
 .dark-theme {
     /* Dark Theme */
     --primary: #00b3b3;
+    --teal: rgba(0,73,71,1);
     --background: #1e1e1e;
     --background2: #2c2c2c;
     --black: #ffffff;
     --light: #e0e0e0;
     --light2: #454545;
+    --fixedlight: #e6e6e6;
     --gradient: linear-gradient(164deg, rgba(0,54,53,1) 0%, rgba(0,141,128,1) 100%, rgba(0,173,193,1) 100%);
     --gradient2: linear-gradient(164deg, rgb(29, 67, 65) 0%, rgb(66, 158, 97) 100%, rgb(0, 160, 200) 100%);
 }
@@ -178,38 +182,38 @@ nav {
 .nav-scroll {
     background: var(--gradient);
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.4);
-    color: var(--light);
+    color: var(--fixedlight);
 }
 .nav-scroll .logo {
-    color: var(--light);
+    color: var(--fixedlight);
 }
 .nav-scroll .nav-links a {
-    color: var(--light);
+    color: var(--fixedlight);
 }
 .nav-scroll .nav-links a:hover {
     color: var(--black);
 }
 .nav-scroll .language-select-wrapper select {
-    background-color: var(--light);
-    color: var(--light);
-    border: 1px solid var(--light);
+    background-color: var(--fixedlight);
+    color: var(--fixedlight);
+    border: 1px solid var(--fixedlight);
 }
 
 .nav-scroll .language-select-wrapper i {
-    color: var(--light);
+    color: var(--fixedlight);
 }
 
 .nav-scroll #language-selector {
-    color: var(--light);
-    border: 1px solid var(--light);
+    color: var(--fixedlight);
+    border: 1px solid var(--fixedlight);
 }
 
 .nav-scroll .language-select-wrapper::after {
-    color: var(--light);
+    color: var(--fixedlight);
 }
 
 .nav-scroll .theme-toggle-button {
-    color: var(--light);
+    color: var(--fixedlight);
     background-color: transparent;
 }
 
@@ -386,7 +390,7 @@ header {
 }
 .social-links a:hover {
     color: var(--primary);
-    transform: translateY(-.5rem);
+    transform: translateY(-.2rem);
 }
 .HireMe {
     margin-left: 15px;
@@ -618,7 +622,7 @@ footer {
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: var(--background);
+    color: var(--fixedlight);
 }
 .footer-container i {
     color: red;
@@ -642,7 +646,7 @@ footer {
         background: var(--gradient);
     }
     .logo {
-        color: var(--background);
+        color: var(--fixedlight);
     }
     .language-select-wrapper::after,
     .language-select-wrapper,
@@ -659,11 +663,12 @@ footer {
         display: block;
         top: 5em;
         left: 0;
+        color: var(--fixedlight);
     }
     .theme-toggle-button {
         display: inline-block;
         background: transparent;
-        color: var(--background);
+        color: var(--fixedlight);
         font-size: 1.3rem;
         transition: var(--transition);
         margin-left: .7em;
@@ -673,16 +678,16 @@ footer {
     .menu-button {
         display: inline-block;
         background: transparent;
-        color: var(--background);
+        color: var(--fixedlight);
         font-size: 1.3rem;
         transition: var(--transition);
         position: fixed;
         bottom: 2.2em;
         right: 0;
-        background-color: var(--primary);
+        background-color: var(--teal);
         padding: .2em .4em;
-        border-top: 2px solid var(--light);
-        border-left: 2px solid var(--light);
+        border-top: 2px solid var(--fixedlight);
+        border-left: 2px solid var(--fixedlight);
         border-top-left-radius: 20px;
     }
 
@@ -695,10 +700,10 @@ footer {
         height: 5.3rem;
         align-items: center;
         justify-content: center;
-        background: var(--primary);
+        background: var(--teal);
         z-index: 2;
         transition: var(--transition);
-        border-top: 2px solid var(--light);
+        border-top: 2px solid var(--fixedlight);
     }
     .menu-btn-none {
         bottom: -1%;
@@ -717,7 +722,7 @@ footer {
     }
     .menubar-container a {
         font-size: 1.6rem;
-        color: var(--background);
+        color: var(--fixedlight);
         transition: var(--transition);
     }
     .menu-bar a[href="#"] i {
@@ -798,6 +803,11 @@ footer {
     }
     .menu-button {
         font-size: 1.5rem;
+    }
+    .language-select-wrapper {
+        color: var(--fixedlight);
+        border: 1px solid var(--fixedlight);
+        border-radius: 5px;
     }
 
     /* --- menu bar --- */
