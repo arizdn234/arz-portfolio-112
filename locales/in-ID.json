@@ -148,7 +148,7 @@
     ],
     "projects": [
       {
-        "name": "API",
+        "name": "webapi",
         "title": "Proyek Akhir 1",
         "image": "images/FP1.svg",
         "description": "Sebuah game bernama 'Save Me Please' di mana pengguna harus menebak jawaban yang benar dari pertanyaan yang diberikan.",
@@ -158,7 +158,7 @@
         ]
       },
       {
-        "name": "API",
+        "name": "webapi",
         "title": "Proyek Akhir 2",
         "image": "images/FP2.svg",
         "description": "Sebuah halaman landing yang dibuat menggunakan Figma. Kami ditugaskan untuk menulis setiap baris kode untuk halaman landing ini.",
@@ -168,7 +168,7 @@
         ]
       },
       {
-        "name": "API",
+        "name": "other",
         "title": "Proyek Akhir 3",
         "image": "images/FP3.svg",
         "description": "Pembuatan website 'To the Moon' yang mengimplementasikan efek parallax.",
@@ -178,7 +178,7 @@
         ]
       },
       {
-        "name": "API",
+        "name": "star",
         "title": "Proyek Akhir 4",
         "image": "images/FP4.svg",
         "description": "Pembuatan situs portofolio yang berisi profil dan informasi proyek yang diselesaikan selama 3 bulan di Hacktiv8.",
@@ -188,7 +188,7 @@
         ]
       },
       {
-        "name": "App",
+        "name": "webapp",
         "title": "Aplikasi 1",
         "image": "images/assignment1.svg",
         "description": "Pembuatan situs web bernama 'Shopedia,' sebuah platform e-commerce.",
@@ -198,7 +198,7 @@
         ]
       },
       {
-        "name": "App",
+        "name": "webapp",
         "title": "Aplikasi 2",
         "image": "images/assignment2.svg",
         "description": "Membuat kanban untuk memudahkan pencatatan tugas harian atau 'to-do list.'",
@@ -208,7 +208,7 @@
         ]
       },
       {
-        "name": "App",
+        "name": "webapp",
         "title": "Aplikasi 3",
         "image": "images/assignment3.svg",
         "description": "Aplikasi CRUD menggunakan fetch bernama 'Update Product' untuk e-commerce.",
@@ -218,7 +218,7 @@
         ]
       },
       {
-        "name": "App",
+        "name": "star",
         "title": "Website Pribadi",
         "image": "images/web-profile-112.svg",
         "description": "Pembuatan profil web yang berisi informasi pribadi dan portofolio.",

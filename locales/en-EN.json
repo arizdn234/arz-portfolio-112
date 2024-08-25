@@ -148,7 +148,7 @@
     ],
     "projects": [
       {
-        "name": "API",
+        "name": "star",
         "title": "Final Project 1",
         "image": "images/FP1.svg",
         "description": "A game called 'Save Me Please' where the user has to guess the correct answers to the provided questions.",
@@ -158,7 +158,7 @@
         ]
       },
       {
-        "name": "API",
+        "name": "webapi",
         "title": "Final Project 2",
         "image": "images/FP2.svg",
         "description": "A landing page created using Figma. We were tasked with writing every line of code for this landing page.",
@@ -168,7 +168,7 @@
         ]
       },
       {
-        "name": "API",
+        "name": "webapi",
         "title": "Final Project 3",
         "image": "images/FP3.svg",
         "description": "The creation of the 'To the Moon' website, which implements a parallax effect.",
@@ -178,7 +178,7 @@
         ]
       },
       {
-        "name": "API",
+        "name": "other",
         "title": "Final Project 4",
         "image": "images/FP4.svg",
         "description": "Creation of a portfolio website containing profile and project information completed over 3 months at Hacktiv8.",
@@ -188,7 +188,7 @@
         ]
       },
       {
-        "name": "App",
+        "name": "star",
         "title": "App 1",
         "image": "images/assignment1.svg",
         "description": "Creation of a website named 'Shopedia,' an e-commerce platform.",
@@ -198,7 +198,7 @@
         ]
       },
       {
-        "name": "App",
+        "name": "webapi",
         "title": "App 2",
         "image": "images/assignment2.svg",
         "description": "Created a kanban to facilitate recording daily tasks or a 'to-do list.'",
@@ -208,7 +208,7 @@
         ]
       },
       {
-        "name": "App",
+        "name": "other",
         "title": "App 3",
         "image": "images/assignment3.svg",
         "description": "A CRUD application using fetch called 'Update Product' for e-commerce.",

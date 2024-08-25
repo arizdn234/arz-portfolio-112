@@ -1,45 +1,3 @@
-window.addEventListener('load', () => {
-    let allTab = document.querySelectorAll('.tab');
-    let allproject = document.querySelectorAll('.project');
-
-    // Remove active class from all tabs
-    const removeActive = () => allTab.forEach(tab => {
-        tab.classList.remove('tab-active');
-    });
-
-    // Add click event listeners to all tabs
-    allTab.forEach(tab => {
-        tab.addEventListener('click', event => {
-            removeActive();
-            tab.classList.add('tab-active');
-
-            let filterName = event.target.getAttribute('data-name');
-            allproject.forEach(project => {
-                let projectName = project.getAttribute('data-name');
-                if (projectName === filterName || filterName === 'star') {
-                    project.style.display = 'block';
-                    project.style.display = 'flex'; // Adjust based on your design
-                } else {
-                    project.style.display = 'none';
-                }
-            });
-        });
-    });
-
-    // Initial load: only display projects that match the default tab ('star')
-    let defaultTab = document.querySelector('.tab-active').getAttribute('data-name');
-    allproject.forEach(project => {
-        let projectName = project.getAttribute('data-name');
-        if (projectName === defaultTab || defaultTab === 'star') {
-            project.style.display = 'block';
-            project.style.display = 'flex'; // Adjust based on your design
-        } else {
-            project.style.display = 'none';
-        }
-    });
-});
-
-
 // nav scroll
 window.addEventListener('scroll',()=>{
     let nav = document.querySelector('nav');
@@ -314,45 +272,15 @@ document.addEventListener("DOMContentLoaded", () => {
             portfolioSection.querySelector("p").innerText = portfolio.description;
         }, 100);
         
-        // Update tabs
-        const tabsContainer = portfolioSection.querySelector(".portfolio-tabs");
-        tabsContainer.innerHTML = "";
-        
-        portfolio.tabs.forEach((tab, index) => {
-            const tabElement = document.createElement("div");
-            tabElement.className = `tab btn btn-sm btn-white ${tab.class || ""}`;
-            tabElement.dataset.name = tab.name;
-            tabElement.innerText = tab.text;
-            
-            // Add event listener to each tab
-            tabElement.addEventListener('click', (event) => {
-                removeActive();
-                tabElement.classList.add('tab-active');
-                
-                let filterName = event.target.getAttribute('data-name');
-                allproject.forEach(project => {
-                    let projectName = project.getAttribute('data-name');
-                    if (projectName === filterName || filterName === 'star') {
-                        project.style.display = 'flex';
-                    } else {
-                        project.style.display = 'none';
-                    }
-                });
-            });
-            
-            applyTransition(tabElement, effects.slideY, () => {
-                tabsContainer.appendChild(tabElement);
-            }, index * 100);
-        });
-        
         // Update projects
         const projectsContainer = portfolioSection.querySelector(".portfolio-projects");
-        projectsContainer.innerHTML = ""; // Clear existing projects
+        projectsContainer.innerHTML = "";
         
         portfolio.projects.forEach((project, index) => {
             const projectCard = document.createElement("div");
             projectCard.className = `project card`;
             projectCard.dataset.name = project.name;
+            projectCard.style.display = 'none';
             
             // Project image
             const imgElement = document.createElement("img");
@@ -387,26 +315,59 @@ document.addEventListener("DOMContentLoaded", () => {
                 projectsContainer.appendChild(projectCard);
             }, index * 200);
         });
+        
+        setTimeout(() => {
+            const defaultTab = 'star';
+            const projects = document.querySelectorAll(".project");
     
-        // Reinitialize allTab and allproject after updating portfolio
-        let allTab = document.querySelectorAll('.tab');
-        let allproject = document.querySelectorAll('.project');
+            if (projects.length === 0) {
+                console.warn("No projects found.");
+            }
     
-        // Reattach event listeners
-        allTab.forEach(tab => {
-            tab.addEventListener('click', (event) => {
-                tab.classList.add('tab-active');
-                
+            projects.forEach(project => {
+                let projectName = project.getAttribute('data-name');
+                if (projectName === defaultTab) {
+                    project.style.display = 'block';
+                    project.style.display = 'flex';
+                } else {
+                    project.style.display = 'none';
+                }
+            });
+        }, 1500);
+    
+        // Update tabs
+        const tabsContainer = portfolioSection.querySelector(".portfolio-tabs");
+        tabsContainer.innerHTML = "";
+        
+        portfolio.tabs.forEach((tab, index) => {
+            const tabElement = document.createElement("div");
+            tabElement.className = `tab btn btn-sm btn-white ${tab.class || ""}`;
+            
+            tabElement.dataset.name = tab.name;
+            tabElement.innerText = tab.text;
+       
+            // Add event listener to each tab
+            tabElement.addEventListener('click', (event) => {
+                removeActive();
+                tabElement.classList.add('tab-active');
+
+                const projects = document.querySelectorAll(".project")
                 let filterName = event.target.getAttribute('data-name');
-                allproject.forEach(project => {
+                projects.forEach(project => {
                     let projectName = project.getAttribute('data-name');
-                    if (projectName === filterName || filterName === 'star') {
+                    if (projectName === filterName ) {
+                        project.style.display = 'block';
                         project.style.display = 'flex';
                     } else {
                         project.style.display = 'none';
                     }
-                });
+                })
+                
             });
+            
+            applyTransition(tabElement, effects.slideY, () => {
+                tabsContainer.appendChild(tabElement);
+            }, index * 100);
         });
     }    
     
