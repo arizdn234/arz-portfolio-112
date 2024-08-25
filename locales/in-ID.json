@@ -141,10 +141,10 @@
     "title": "Proyek Terbaru",
     "description": "Selama pengalaman saya dalam belajar dan pemrograman, saya telah berhasil menyelesaikan sejumlah proyek yang relevan dan signifikan.",
     "tabs": [
-      { "name": "Semua", "class": "tab-active" },
-      { "name": "Bintang" },
-      { "name": "Tugas" },
-      { "name": "ProyekAkhir" }
+      { "name": "star", "text": "Unggulan", "class": "tab-active"  },
+      { "name": "webapp", "text": "Aplikasi Web" },
+      { "name": "webapi", "text": "Web API" },
+      { "name": "other", "text": "Lainnya" }
     ],
     "projects": [
       {
@@ -219,12 +219,12 @@
       },
       {
         "name": "App",
-        "title": "Profil Web",
-        "image": "images/webprofile.svg",
+        "title": "Website Pribadi",
+        "image": "images/web-profile-112.svg",
         "description": "Pembuatan profil web yang berisi informasi pribadi dan portofolio.",
         "links": [
-          { "text": "Live", "href": "https://jenitaberliana.github.io/web-profile/", "class": "btn btn-sm" },
-          { "text": "Github", "href": "https://github.com/jenitaberliana/web-profile", "class": "btn btn-sm btn-white" }
+          { "text": "Live", "href": "https://arizdn234.github.io/arz-portfolio-112", "class": "btn btn-sm" },
+          { "text": "Github", "href": "https://github.com/arizdn234/arz-portfolio-112", "class": "btn btn-sm btn-white" }
         ]
       }
     ]

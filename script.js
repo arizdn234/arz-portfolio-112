@@ -1,35 +1,44 @@
-window.addEventListener('load',()=>{
+window.addEventListener('load', () => {
     let allTab = document.querySelectorAll('.tab');
     let allproject = document.querySelectorAll('.project');
 
-
-    // remove tab active
-    const removeActive =()=> allTab.forEach(tab=>{
+    // Remove active class from all tabs
+    const removeActive = () => allTab.forEach(tab => {
         tab.classList.remove('tab-active');
-    })
+    });
 
-    allTab.forEach(tab=>{
-        // add tab active
-        tab.addEventListener('click',(event)=>{
+    // Add click event listeners to all tabs
+    allTab.forEach(tab => {
+        tab.addEventListener('click', event => {
             removeActive();
             tab.classList.add('tab-active');
-        
-        
-            let filterName = event.target.getAttribute('data-name');
 
-            allproject.forEach(project=>{
+            let filterName = event.target.getAttribute('data-name');
+            allproject.forEach(project => {
                 let projectName = project.getAttribute('data-name');
-                if ((projectName == filterName) || filterName == 'All'){
+                if (projectName === filterName || filterName === 'star') {
                     project.style.display = 'block';
-                    project.style.display = 'flex'; 
-                    project.style.gap = '0.8rem';
+                    project.style.display = 'flex'; // Adjust based on your design
                 } else {
                     project.style.display = 'none';
                 }
             });
         });
     });
+
+    // Initial load: only display projects that match the default tab ('star')
+    let defaultTab = document.querySelector('.tab-active').getAttribute('data-name');
+    allproject.forEach(project => {
+        let projectName = project.getAttribute('data-name');
+        if (projectName === defaultTab || defaultTab === 'star') {
+            project.style.display = 'block';
+            project.style.display = 'flex'; // Adjust based on your design
+        } else {
+            project.style.display = 'none';
+        }
+    });
 });
+
 
 // nav scroll
 window.addEventListener('scroll',()=>{
@@ -114,6 +123,14 @@ const effects = {
     slideX: { out: 'slide-out-left', in: 'slide-in-right' },
     slideY: { out: 'slide-out-up', in: 'slide-in-down' },
     zoom: { in: "zoom-in", out: "zoom-out" }
+};
+
+// Define the removeActive function
+const removeActive = () => {
+    let allTab = document.querySelectorAll('.tab');
+    allTab.forEach(tab => {
+        tab.classList.remove('tab-active');
+    });
 };
 
 // Language loader
@@ -305,7 +322,24 @@ document.addEventListener("DOMContentLoaded", () => {
             const tabElement = document.createElement("div");
             tabElement.className = `tab btn btn-sm btn-white ${tab.class || ""}`;
             tabElement.dataset.name = tab.name;
-            tabElement.innerText = tab.name;
+            tabElement.innerText = tab.text;
+            
+            // Add event listener to each tab
+            tabElement.addEventListener('click', (event) => {
+                removeActive();
+                tabElement.classList.add('tab-active');
+                
+                let filterName = event.target.getAttribute('data-name');
+                allproject.forEach(project => {
+                    let projectName = project.getAttribute('data-name');
+                    if (projectName === filterName || filterName === 'star') {
+                        project.style.display = 'flex';
+                    } else {
+                        project.style.display = 'none';
+                    }
+                });
+            });
+            
             applyTransition(tabElement, effects.slideY, () => {
                 tabsContainer.appendChild(tabElement);
             }, index * 100);
@@ -343,6 +377,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 const linkElement = document.createElement("a");
                 linkElement.href = link.href;
                 linkElement.className = link.class;
+                linkElement.target = `_blank`;
                 linkElement.innerText = link.text;
                 actionContainer.appendChild(linkElement);
             });
@@ -351,6 +386,27 @@ document.addEventListener("DOMContentLoaded", () => {
             applyTransition(projectCard, effects.fade, () => {
                 projectsContainer.appendChild(projectCard);
             }, index * 200);
+        });
+    
+        // Reinitialize allTab and allproject after updating portfolio
+        let allTab = document.querySelectorAll('.tab');
+        let allproject = document.querySelectorAll('.project');
+    
+        // Reattach event listeners
+        allTab.forEach(tab => {
+            tab.addEventListener('click', (event) => {
+                tab.classList.add('tab-active');
+                
+                let filterName = event.target.getAttribute('data-name');
+                allproject.forEach(project => {
+                    let projectName = project.getAttribute('data-name');
+                    if (projectName === filterName || filterName === 'star') {
+                        project.style.display = 'flex';
+                    } else {
+                        project.style.display = 'none';
+                    }
+                });
+            });
         });
     }    
     
