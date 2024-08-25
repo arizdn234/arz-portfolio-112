@@ -12,6 +12,7 @@
 }
 
 :root {
+    /* Light Theme */
     --primary: #008080;
     --background: #ffffff;
     --background2: #f5f5f5;
@@ -20,19 +21,39 @@
     --light2: #e6e6e6;
     --gradient: linear-gradient(164deg, rgba(0,73,71,1) 0%, rgba(0,176,159,1) 100%, rgba(0,212,255,1) 100%);
     --gradient2: linear-gradient(164deg, rgb(39, 87, 85) 0%, rgb(86, 184, 124) 100%, rgb(0, 183, 255) 100%);
-
+    
     --transition: .4s ease;
+}
+
+.dark-theme {
+    /* Dark Theme */
+    --primary: #00b3b3;
+    --background: #1e1e1e;
+    --background2: #2c2c2c;
+    --black: #ffffff;
+    --light: #e0e0e0;
+    --light2: #454545;
+    --gradient: linear-gradient(164deg, rgba(0,54,53,1) 0%, rgba(0,141,128,1) 100%, rgba(0,173,193,1) 100%);
+    --gradient2: linear-gradient(164deg, rgb(29, 67, 65) 0%, rgb(66, 158, 97) 100%, rgb(0, 160, 200) 100%);
 }
 
 ::-moz-selection { /* Code for Firefox */
     color: var(--light2);
     background: var(--primary);
-  }
+}
   
-  ::selection {
+::selection {
     color: var(--light2);
     background: var(--primary);
-  }
+}
+
+body, .container, button {
+    transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+.theme-toggle-button {
+    transition: color 0.4s ease, background-color 0.4s ease;
+}
 
 body {
     background: var(--background);
@@ -93,7 +114,7 @@ img {
 .btn:hover {
     background: var(--gradient);
     border-color: var(--gradient);
-    transform: translateY(-.5rem);
+    transform: translateY(-.2rem);
     box-shadow: 0 0 1rem var(--primary);
 }
 .btn-white {
@@ -126,7 +147,7 @@ img {
 .card:hover {
     background: transparent;
     border-color: var(--background);
-    transform: translateY(-.5rem);
+    transform: translateY(-.2rem);
 }
 .card-primary {
     background: transparent;
@@ -157,30 +178,41 @@ nav {
 .nav-scroll {
     background: var(--gradient);
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.4);
-    color: var(--background);
+    color: var(--light);
 }
 .nav-scroll .logo {
-    color: var(--background);
+    color: var(--light);
 }
 .nav-scroll .nav-links a {
-    color: var(--background);
+    color: var(--light);
 }
 .nav-scroll .nav-links a:hover {
     color: var(--black);
 }
 .nav-scroll .language-select-wrapper select {
     background-color: var(--light);
-    color: var(--primary);
-    border: 1px solid var(--background);
+    color: var(--light);
+    border: 1px solid var(--light);
 }
 
 .nav-scroll .language-select-wrapper i {
-    color: var(--background);
+    color: var(--light);
+}
+
+.nav-scroll #language-selector {
+    color: var(--light);
+    border: 1px solid var(--light);
 }
 
 .nav-scroll .language-select-wrapper::after {
-    color: var(--background);
+    color: var(--light);
 }
+
+.nav-scroll .theme-toggle-button {
+    color: var(--light);
+    background-color: transparent;
+}
+
 .nav-container {
     display: flex;
     align-items: center;
@@ -191,6 +223,14 @@ nav {
 }
 .menu-button {
     display: none;
+}
+.theme-toggle-button {
+    background-color: transparent;
+    color: var(--primary);
+    font-size: 1.3rem;
+    width: 24px;
+    text-align: center; 
+    cursor: pointer;
 }
 .nav-links {
     display: flex;
@@ -230,7 +270,8 @@ nav {
     font-size: 1rem;
     outline: none;
     appearance: none;
-    background-color: var(--background);
+    background-color: transparent;
+    color: var(--primary);
     cursor: pointer;
     transition: var(--transition);
 }
