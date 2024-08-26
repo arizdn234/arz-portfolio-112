@@ -25,19 +25,33 @@ function randomizer(min, max) {
 const menuButton = document.querySelector('.menu-button');
 const menuBar = document.querySelector('.menu-bar');
 const menuIcon = menuButton.querySelector('i');
+const footerSection = document.querySelector('body footer');
 
 menuButton.addEventListener('click', function() {
     menuBar.classList.toggle('menu-none');
     menuButton.classList.toggle('menu-btn-none');
     
     if (menuBar.classList.contains('menu-none')) {
+        // footer if mobile view (onclick)
         menuIcon.classList.remove('fa-chevron-down');
         menuIcon.classList.add('fa-chevron-up');
+        footerSection.style.height = '5rem';
+        footerSection.style.paddingBottom = '0';
     } else {
         menuIcon.classList.remove('fa-chevron-up');
         menuIcon.classList.add('fa-chevron-down');
+        footerSection.style.height = '9rem';
+        footerSection.style.paddingBottom = '4rem';
     }
 });
+// footer if mobile view (onload)
+if (!menuBar.classList.contains('menu-none')) {
+    footerSection.style.height = '9rem';
+    footerSection.style.paddingBottom = '4rem';
+} else {
+    footerSection.style.height = '5rem';
+    footerSection.style.paddingBottom = '0';
+}
 
 // theme
 const themeToggleButton = document.querySelector('.theme-toggle-button');

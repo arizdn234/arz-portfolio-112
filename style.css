@@ -545,7 +545,7 @@ header {
     gap: 3rem;
 }
 .tab-active {
-    background: var(--gradient);
+    background: var(--primary);
     border-color: var(--background);
     color: var(--background);
 }
@@ -623,6 +623,7 @@ footer {
     justify-content: center;
     text-align: center;
     color: var(--fixedlight);
+    transition: var(--transition);
 }
 .footer-container i {
     color: red;
@@ -647,6 +648,7 @@ footer {
     }
     .logo {
         color: var(--fixedlight);
+        padding-right: .5em;
     }
     .language-select-wrapper::after,
     .language-select-wrapper,
@@ -725,9 +727,9 @@ footer {
         color: var(--fixedlight);
         transition: var(--transition);
     }
-    .menu-bar a[href="#"] i {
+    /* .menu-bar a[href="#"] i {
         font-size: 1.6em;
-    }
+    } */
     .menubar-container a:hover {
         transform: scale(1.2);
     }
