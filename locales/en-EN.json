@@ -149,76 +149,46 @@
     "projects": [
       {
         "name": "star",
-        "title": "Final Project 1",
-        "image": "images/FP1.svg",
-        "description": "A game called 'Save Me Please' where the user has to guess the correct answers to the provided questions.",
+        "title": "Personal Website",
+        "image": "images/web-profile-112.svg",
+        "description": "Creation of a Personal Website containing personal information and a portfolio.",
         "links": [
-          { "text": "Live", "href": "https://wdp-12.github.io/API1-kelompok6/", "class": "btn btn-sm" },
-          { "text": "Github", "href": "https://github.com/wdp-12/API1-kelompok6", "class": "btn btn-sm btn-white" }
-        ]
-      },
-      {
-        "name": "webapi",
-        "title": "Final Project 2",
-        "image": "images/FP2.svg",
-        "description": "A landing page created using Figma. We were tasked with writing every line of code for this landing page.",
-        "links": [
-          { "text": "Live", "href": "https://API2-kelompok6.vercel.app/", "class": "btn btn-sm" },
-          { "text": "Github", "href": "https://github.com/wdp-12/API2-kelompok6", "class": "btn btn-sm btn-white" }
-        ]
-      },
-      {
-        "name": "webapi",
-        "title": "Final Project 3",
-        "image": "images/FP3.svg",
-        "description": "The creation of the 'To the Moon' website, which implements a parallax effect.",
-        "links": [
-          { "text": "Live", "href": "https://wdp-12.github.io/API3-kelompok1/", "class": "btn btn-sm" },
-          { "text": "Github", "href": "https://github.com/wdp-12/API3-kelompok1", "class": "btn btn-sm btn-white" }
-        ]
-      },
-      {
-        "name": "other",
-        "title": "Final Project 4",
-        "image": "images/FP4.svg",
-        "description": "Creation of a portfolio website containing profile and project information completed over 3 months at Hacktiv8.",
-        "links": [
-          { "text": "Live", "href": "https://jenitaberliana.github.io/API4/", "class": "btn btn-sm" },
-          { "text": "Github", "href": "https://github.com/jenitaberliana/API4", "class": "btn btn-sm btn-white" }
-        ]
-      },
-      {
-        "name": "star",
-        "title": "App 1",
-        "image": "images/assignment1.svg",
-        "description": "Creation of a website named 'Shopedia,' an e-commerce platform.",
-        "links": [
-          { "text": "Live", "href": "https://jenitaberliana.github.io/App-1/", "class": "btn btn-sm" },
-          { "text": "Github", "href": "https://github.com/jenitaberliana/App-1", "class": "btn btn-sm btn-white" }
-        ]
-      },
-      {
-        "name": "webapi",
-        "title": "App 2",
-        "image": "images/assignment2.svg",
-        "description": "Created a kanban to facilitate recording daily tasks or a 'to-do list.'",
-        "links": [
-          { "text": "Live", "href": "https://jenitaberliana.github.io/App-2/", "class": "btn btn-sm" },
-          { "text": "Github", "href": "https://github.com/jenitaberliana/App-2", "class": "btn btn-sm btn-white" }
-        ]
-      },
-      {
-        "name": "other",
-        "title": "App 3",
-        "image": "images/assignment3.svg",
-        "description": "A CRUD application using fetch called 'Update Product' for e-commerce.",
-        "links": [
-          { "text": "Live", "href": "https://github.com/jenitaberliana/App-3", "class": "btn btn-sm" },
-          { "text": "Github", "href": "https://github.com/jenitaberliana/App-3", "class": "btn btn-sm btn-white" }
+          { "text": "Live", "href": "https://arizdn234.github.io/arz-portfolio-112", "class": "btn btn-sm" },
+          { "text": "Github", "href": "https://github.com/arizdn234/arz-portfolio-112", "class": "btn btn-sm btn-white" }
         ]
       },
       {
         "name": "webapp",
+        "title": "Personal Website",
+        "image": "images/web-profile-112.svg",
+        "description": "Creation of a Personal Website containing personal information and a portfolio.",
+        "links": [
+          { "text": "Live", "href": "https://arizdn234.github.io/arz-portfolio-112", "class": "btn btn-sm" },
+          { "text": "Github", "href": "https://github.com/arizdn234/arz-portfolio-112", "class": "btn btn-sm btn-white" }
+        ]
+      },
+      {
+        "name": "webapi",
+        "title": "Personal Website",
+        "image": "images/web-profile-112.svg",
+        "description": "Creation of a Personal Website containing personal information and a portfolio.",
+        "links": [
+          { "text": "Live", "href": "https://arizdn234.github.io/arz-portfolio-112", "class": "btn btn-sm" },
+          { "text": "Github", "href": "https://github.com/arizdn234/arz-portfolio-112", "class": "btn btn-sm btn-white" }
+        ]
+      },
+      {
+        "name": "webapi",
+        "title": "Login System (Golang)",
+        "image": "images/web-api-default.svg",
+        "description": "CRUD Users with Login System (Local Auth) with Gin framework. Includes features such as login, registration, logout, and CRUD operations for user data.",
+        "links": [
+          { "text": "Live", "href": "https://github.com/arizdn234/crud-users-and-login-system-with-gin", "class": "btn btn-sm" },
+          { "text": "Github", "href": "https://github.com/arizdn234/crud-users-and-login-system-with-gin", "class": "btn btn-sm btn-white" }
+        ]
+      },
+      {
+        "name": "other",
         "title": "Personal Website",
         "image": "images/web-profile-112.svg",
         "description": "Creation of a Personal Website containing personal information and a portfolio.",

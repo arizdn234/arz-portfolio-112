@@ -148,77 +148,47 @@
     ],
     "projects": [
       {
-        "name": "webapi",
-        "title": "Proyek Akhir 1",
-        "image": "images/FP1.svg",
-        "description": "Sebuah game bernama 'Save Me Please' di mana pengguna harus menebak jawaban yang benar dari pertanyaan yang diberikan.",
+        "name": "star",
+        "title": "Website Pribadi",
+        "image": "images/web-profile-112.svg",
+        "description": "Pembuatan profil web yang berisi informasi pribadi dan portofolio.",
         "links": [
-          { "text": "Live", "href": "https://wdp-12.github.io/API1-kelompok6/", "class": "btn btn-sm" },
-          { "text": "Github", "href": "https://github.com/wdp-12/API1-kelompok6", "class": "btn btn-sm btn-white" }
+          { "text": "Live", "href": "https://arizdn234.github.io/arz-portfolio-112", "class": "btn btn-sm" },
+          { "text": "Github", "href": "https://github.com/arizdn234/arz-portfolio-112", "class": "btn btn-sm btn-white" }
+        ]
+      },
+      {
+        "name": "webapp",
+        "title": "Website Pribadi",
+        "image": "images/web-profile-112.svg",
+        "description": "Pembuatan profil web yang berisi informasi pribadi dan portofolio.",
+        "links": [
+          { "text": "Live", "href": "https://arizdn234.github.io/arz-portfolio-112", "class": "btn btn-sm" },
+          { "text": "Github", "href": "https://github.com/arizdn234/arz-portfolio-112", "class": "btn btn-sm btn-white" }
         ]
       },
       {
         "name": "webapi",
-        "title": "Proyek Akhir 2",
-        "image": "images/FP2.svg",
-        "description": "Sebuah halaman landing yang dibuat menggunakan Figma. Kami ditugaskan untuk menulis setiap baris kode untuk halaman landing ini.",
+        "title": "Website Pribadi",
+        "image": "images/web-profile-112.svg",
+        "description": "Pembuatan profil web yang berisi informasi pribadi dan portofolio.",
         "links": [
-          { "text": "Live", "href": "https://API2-kelompok6.vercel.app/", "class": "btn btn-sm" },
-          { "text": "Github", "href": "https://github.com/wdp-12/API2-kelompok6", "class": "btn btn-sm btn-white" }
+          { "text": "Live", "href": "https://arizdn234.github.io/arz-portfolio-112", "class": "btn btn-sm" },
+          { "text": "Github", "href": "https://github.com/arizdn234/arz-portfolio-112", "class": "btn btn-sm btn-white" }
+        ]
+      },
+      {
+        "name": "webapi",
+        "title": "Sistem Login (Golang)",
+        "image": "images/web-api-default.svg",
+        "description": "CRUD Pengguna dengan Sistem Login (Autentikasi Lokal) menggunakan framework Gin. Termasuk fitur seperti login, registrasi, logout, dan operasi CRUD untuk data pengguna.",
+        "links": [
+          { "text": "Live", "href": "https://github.com/arizdn234/crud-users-and-login-system-with-gin", "class": "btn btn-sm" },
+          { "text": "Github", "href": "https://github.com/arizdn234/crud-users-and-login-system-with-gin", "class": "btn btn-sm btn-white" }
         ]
       },
       {
         "name": "other",
-        "title": "Proyek Akhir 3",
-        "image": "images/FP3.svg",
-        "description": "Pembuatan website 'To the Moon' yang mengimplementasikan efek parallax.",
-        "links": [
-          { "text": "Live", "href": "https://wdp-12.github.io/API3-kelompok1/", "class": "btn btn-sm" },
-          { "text": "Github", "href": "https://github.com/wdp-12/API3-kelompok1", "class": "btn btn-sm btn-white" }
-        ]
-      },
-      {
-        "name": "star",
-        "title": "Proyek Akhir 4",
-        "image": "images/FP4.svg",
-        "description": "Pembuatan situs portofolio yang berisi profil dan informasi proyek yang diselesaikan selama 3 bulan di Hacktiv8.",
-        "links": [
-          { "text": "Live", "href": "https://jenitaberliana.github.io/API4/", "class": "btn btn-sm" },
-          { "text": "Github", "href": "https://github.com/jenitaberliana/API4", "class": "btn btn-sm btn-white" }
-        ]
-      },
-      {
-        "name": "webapp",
-        "title": "Aplikasi 1",
-        "image": "images/assignment1.svg",
-        "description": "Pembuatan situs web bernama 'Shopedia,' sebuah platform e-commerce.",
-        "links": [
-          { "text": "Live", "href": "https://jenitaberliana.github.io/App-1/", "class": "btn btn-sm" },
-          { "text": "Github", "href": "https://github.com/jenitaberliana/App-1", "class": "btn btn-sm btn-white" }
-        ]
-      },
-      {
-        "name": "webapp",
-        "title": "Aplikasi 2",
-        "image": "images/assignment2.svg",
-        "description": "Membuat kanban untuk memudahkan pencatatan tugas harian atau 'to-do list.'",
-        "links": [
-          { "text": "Live", "href": "https://jenitaberliana.github.io/App-2/", "class": "btn btn-sm" },
-          { "text": "Github", "href": "https://github.com/jenitaberliana/App-2", "class": "btn btn-sm btn-white" }
-        ]
-      },
-      {
-        "name": "webapp",
-        "title": "Aplikasi 3",
-        "image": "images/assignment3.svg",
-        "description": "Aplikasi CRUD menggunakan fetch bernama 'Update Product' untuk e-commerce.",
-        "links": [
-          { "text": "Live", "href": "https://github.com/jenitaberliana/App-3", "class": "btn btn-sm" },
-          { "text": "Github", "href": "https://github.com/jenitaberliana/App-3", "class": "btn btn-sm btn-white" }
-        ]
-      },
-      {
-        "name": "star",
         "title": "Website Pribadi",
         "image": "images/web-profile-112.svg",
         "description": "Pembuatan profil web yang berisi informasi pribadi dan portofolio.",
