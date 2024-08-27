@@ -21,6 +21,19 @@ function randomizer(min, max) {
 //     });
 // });
 
+// EmailJS
+window.onload = function() {
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+        emailjs.sendForm('service_qm57f88', 'template_gwbjgkx', this)
+            .then(() => {
+                alert('Email sent successfully!');
+            }, (error) => {
+                alert('Failed to send email, please try again.');
+            });
+    });
+}
+
 // menu (mobile view)
 const menuButton = document.querySelector('.menu-button');
 const menuBar = document.querySelector('.menu-bar');

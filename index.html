@@ -11,6 +11,16 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- EmailJS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init({
+              publicKey: "hhPOHztWqzS2weRGo",
+            });
+        })();
+    </script>
 </head>
 <body>
     <!-- navbar -->
@@ -194,7 +204,7 @@
                 <a target="_blank" href="https://www.instagram.com/z.id21" class="btn btn-white"><i class="fab fa-instagram"></i></a>
             </div>
             <div class="contact-right">
-                <form action="/submit" method="post">
+                <form id="contact-form">
                     <input id="name" name="name" autocomplete="name" type="text" required placeholder="Your Name">
                     <input id="email" name="email" autocomplete="email" type="email" required placeholder="Your Email">
                     <input id="numberphone" name="numberphone" autocomplete="tel" type="tel" required placeholder="Your Number">
