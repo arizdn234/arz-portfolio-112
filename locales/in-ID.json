@@ -139,7 +139,7 @@
   },
   "portfolio": {
     "title": "Proyek Terbaru",
-    "description": "Selama pengalaman saya dalam belajar dan pemrograman, saya telah berhasil menyelesaikan sejumlah proyek yang relevan dan signifikan.",
+    "description": "Selama pengalaman saya belajar di dunia akademis dan pemrograman, saya telah berhasil menyelesaikan sejumlah proyek yang relevan dan signifikan.",
     "tabs": [
       { "name": "star", "text": "Unggulan", "class": "tab-active"  },
       { "name": "webapp", "text": "Aplikasi Web" },
@@ -149,9 +149,34 @@
     "projects": [
       {
         "name": "star",
-        "title": "Website Pribadi",
+        "title": "",
+        "image": "",
+        "description": "",
+        "technologies": [],
+        "features": [],
+        "contribution": "",
+        "links": [
+          { "text": "Live", "href": "", "class": "btn btn-sm" },
+          { "text": "Github", "href": "", "class": "btn btn-sm btn-white" }
+        ]
+      },
+      {
+        "name": "webapp",
+        "title": "Situs Web Pribadi",
         "image": "images/web-profile-112.svg",
-        "description": "Pembuatan profil web yang berisi informasi pribadi dan portofolio.",
+        "description": "Mengembangkan situs web pribadi yang canggih untuk menampilkan latar belakang profesional, keterampilan, dan proyek portofolio dalam tampilan yang menarik secara visual dan mudah digunakan.",
+        "technologies": ["HTML", "CSS", "JavaScript"],
+        "features": [
+          "Desain Responsif Sepenuhnya yang memastikan pengalaman mulus di semua perangkat",
+          "Bagian Portofolio Interaktif dengan penyaringan proyek dinamis",
+          "Formulir Kontak terintegrasi dengan EmailJS untuk komunikasi langsung",
+          "Aplikasi Halaman Tunggal (SPA) untuk navigasi yang lancar dan cepat",
+          "Pengguliran Halus yang Diberi Animasi dan Penyorotan Bagian",
+          "Lazy Loading untuk waktu muat halaman yang lebih cepat",
+          "Tombol Pengalih Tema Gelap dan Terang untuk pengalaman pengguna yang lebih baik",
+          "Dukungan Multi-bahasa [Indonesia, Inggris]"
+        ],
+        "contribution": "Memimpin desain dan pengembangan situs web pribadi dari awal hingga akhir, menekankan desain yang bersih dan modern dipadukan dengan pengalaman pengguna yang intuitif. Memanfaatkan teknologi web inti seperti HTML, CSS, dan JavaScript untuk membangun situs yang sepenuhnya responsif dan interaktif. Menambahkan fitur lanjutan seperti pengalih tema antara mode gelap dan terang, serta dukungan multi-bahasa untuk menjangkau audiens yang lebih luas. Mengintegrasikan EmailJS untuk komunikasi real-time dan mengoptimalkan kinerja dengan lazy loading. Menerapkan dan memelihara situs menggunakan GitHub Pages, memastikan ketersediaan terus-menerus dan kemudahan pembaruan.",
         "links": [
           { "text": "Live", "href": "https://arizdn234.github.io/arz-portfolio-112", "class": "btn btn-sm" },
           { "text": "Github", "href": "https://github.com/arizdn234/arz-portfolio-112", "class": "btn btn-sm btn-white" }
@@ -159,42 +184,142 @@
       },
       {
         "name": "webapp",
-        "title": "Website Pribadi",
-        "image": "images/web-profile-112.svg",
-        "description": "Pembuatan profil web yang berisi informasi pribadi dan portofolio.",
+        "title": "Snake Game",
+        "image": "",
+        "description": "Sebuah permainan ular di mana pemain mengendalikan ular untuk memakan umpan, menghindari bom, dan mencapai skor tertinggi.",
+        "technologies": ["HTML", "CSS", "JavaScript", "Local Storage"],
+        "features": [
+          "3 Tingkat Kesulitan: Mudah, Sedang, Sulit",
+          "Leaderboard untuk 5 Pemain Terbaik",
+          "Berbagai Item dengan Efek Spesifik",
+          "Fitur Pause, Play, dan Replay",
+          "Efek Suara dan Musik",
+          "Data pemain disimpan di local storage"
+        ],
+        "contribution": "Mengembangkan logika permainan, mendesain antarmuka pengguna, dan mengimplementasikan leaderboard serta penyimpanan data pemain.",
         "links": [
-          { "text": "Live", "href": "https://arizdn234.github.io/arz-portfolio-112", "class": "btn btn-sm" },
-          { "text": "Github", "href": "https://github.com/arizdn234/arz-portfolio-112", "class": "btn btn-sm btn-white" }
+          { "text": "Live", "href": "https://wdp-12.github.io/Finalproject1_Kelompok1/", "class": "btn btn-sm" },
+          { "text": "Github", "href": "https://github.com/arizdn234/webgame-snake-game", "class": "btn btn-sm btn-white" }
+        ]
+      },
+      {
+        "name": "webapp",
+        "title": "Sistem Autentikasi (Django)",
+        "image": "",
+        "description": "Aplikasi sederhana menggunakan Django untuk mengelola otentikasi pengguna, termasuk registrasi, login, dan otentikasi melalui akun Google, Facebook, dan Github.",
+        "technologies": ["Django", "Python", "OAuth", "Google API", "Facebook API", "Github API"],
+        "features": [
+          "Registrasi Pengguna",
+          "Login Pengguna",
+          "Login/Registrasi dengan Akun Google",
+          "Login/Registrasi dengan Akun Facebook",
+          "Login/Registrasi dengan Akun Github"
+        ],
+        "contribution": "Mengimplementasikan sistem otentikasi berbasis Django, termasuk integrasi OAuth untuk Google, Facebook, dan Github.",
+        "links": [
+          { "text": "Live", "href": "", "class": "btn btn-sm" },
+          { "text": "Github", "href": "https://github.com/arizdn234/user-auth-python", "class": "btn btn-sm btn-white" }
+        ]
+      },
+      {
+        "name": "webapp",
+        "title": "Otentikasi Pengguna dengan Akun Google (Node.js)",
+        "image": "",
+        "description": "Proyek ini mendemonstrasikan otentikasi pengguna menggunakan akun Google dengan Node.js, Express, dan Passport.",
+        "technologies": ["Node.js", "Express", "Passport", "Google OAuth", "EJS", "Express Session"],
+        "features": [
+          "Otentikasi Pengguna menggunakan Akun Google",
+          "Pengelolaan Sesi dengan Express Session",
+          "Penggunaan Passport untuk Otentikasi OAuth",
+          "Tampilan Dinamis menggunakan EJS",
+          "Implementasi Google OAuth untuk Login"
+        ],
+        "contribution": "Mengembangkan fitur otentikasi berbasis Google OAuth, termasuk integrasi dengan Passport dan pengelolaan sesi dengan Express Session.",
+        "links": [
+          { "text": "Live", "href": "", "class": "btn btn-sm" },
+          { "text": "Github", "href": "https://github.com/arizdn234/user-auth-with-google-account-js", "class": "btn btn-sm btn-white" }
+        ]
+      },
+      {
+        "name": "webapp",
+        "title": "",
+        "image": "",
+        "description": "",
+        "technologies": [],
+        "features": [],
+        "contribution": "",
+        "links": [
+          { "text": "Live", "href": "", "class": "btn btn-sm" },
+          { "text": "Github", "href": "", "class": "btn btn-sm btn-white" }
         ]
       },
       {
         "name": "webapi",
-        "title": "Website Pribadi",
-        "image": "images/web-profile-112.svg",
-        "description": "Pembuatan profil web yang berisi informasi pribadi dan portofolio.",
-        "links": [
-          { "text": "Live", "href": "https://arizdn234.github.io/arz-portfolio-112", "class": "btn btn-sm" },
-          { "text": "Github", "href": "https://github.com/arizdn234/arz-portfolio-112", "class": "btn btn-sm btn-white" }
-        ]
-      },
-      {
-        "name": "webapi",
-        "title": "Sistem Login (Golang)",
+        "title": "Sistem Autentikasi (Golang, Gin)",
         "image": "images/web-api-default.svg",
-        "description": "CRUD Pengguna dengan Sistem Login (Autentikasi Lokal) menggunakan framework Gin. Termasuk fitur seperti login, registrasi, logout, dan operasi CRUD untuk data pengguna.",
+        "description": "Sistem autentikasi pengguna yang dibangun dengan framework Gin di Golang, mendukung otorisasi berbasis JWT dan operasi CRUD untuk data pengguna menggunakan SQLite dan GORM.",
+        "technologies": ["Golang", "Gin Framework", "GORM", "SQLite", "JWT", "Ginkgo", "Gomega"],
+        "features": [
+          "Autentikasi dan Otorisasi Berbasis JWT",
+          "Hashing Kata Sandi untuk Penyimpanan Data yang Aman",
+          "Basis Data SQLite dengan GORM ORM",
+          "Operasi CRUD Komprehensif untuk Manajemen Pengguna",
+          "Pengujian Unit dengan Ginkgo dan Gomega",
+          "Struktur Proyek Modular dengan Pemisahan Tanggung Jawab yang Jelas",
+          "Endpoint API RESTful dengan Kontrol Akses yang Aman",
+          "Manajemen Sesi Pengguna dengan Token JWT Berbasis Cookie"
+        ],
+        "contribution": "Merancang dan mengimplementasikan sistem autentikasi dan manajemen pengguna yang tangguh di Golang menggunakan kerangka kerja Gin. Kontribusi utama mencakup pengembangan autentikasi berbasis JWT untuk kontrol akses yang aman, integrasi SQLite dengan GORM untuk manajemen basis data yang efektif, dan pengaturan kerangka pengujian yang komprehensif (Ginkgo dan Gomega) untuk memastikan keandalan kode. Menyusun proyek agar mengikuti praktik terbaik dengan komponen modular, memastikan kemudahan perawatan dan skalabilitas.",
         "links": [
           { "text": "Live", "href": "https://github.com/arizdn234/crud-users-and-login-system-with-gin", "class": "btn btn-sm" },
           { "text": "Github", "href": "https://github.com/arizdn234/crud-users-and-login-system-with-gin", "class": "btn btn-sm btn-white" }
         ]
       },
       {
-        "name": "other",
-        "title": "Website Pribadi",
-        "image": "images/web-profile-112.svg",
-        "description": "Pembuatan profil web yang berisi informasi pribadi dan portofolio.",
+        "name": "webapi",
+        "title": "Sistem Autentikasi (Golang)",
+        "image": "images/web-api-default.svg",
+        "description": "Sistem manajemen pengguna yang komprehensif mencakup login, pendaftaran, logout, dan operasi CRUD untuk data pengguna, menggunakan JWT untuk akses yang aman.",
+        "technologies": ["Golang", "Gin Framework", "GORM", "SQLite", "JWT", "Ginkgo", "Gomega"],
+        "features": [
+          "Autentikasi dan Otorisasi Berbasis JWT",
+          "Hashing Kata Sandi untuk Penyimpanan Data yang Aman",
+          "Database SQLite dengan GORM ORM",
+          "Operasi CRUD untuk Data Pengguna",
+          "Pengujian Komprehensif dengan Ginkgo dan Gomega",
+          "Pengaturan Server dengan Routing dan Middleware",
+          "Manajemen Migrasi Database"
+        ],
+        "contribution": "Mengembangkan sistem manajemen pengguna yang skalabel dan aman dengan autentikasi berbasis JWT, operasi CRUD yang komprehensif, dan memastikan kualitas kode melalui kerangka kerja pengujian.",
         "links": [
-          { "text": "Live", "href": "https://arizdn234.github.io/arz-portfolio-112", "class": "btn btn-sm" },
-          { "text": "Github", "href": "https://github.com/arizdn234/arz-portfolio-112", "class": "btn btn-sm btn-white" }
+          { "text": "Live", "href": "https://github.com/arizdn234/crud-users-with-login-system", "class": "btn btn-sm" },
+          { "text": "Github", "href": "https://github.com/arizdn234/crud-users-with-login-system", "class": "btn btn-sm btn-white" }
+        ]
+      },
+      {
+        "name": "webapi",
+        "title": "",
+        "image": "",
+        "description": "",
+        "technologies": [],
+        "features": [],
+        "contribution": "",
+        "links": [
+          { "text": "Live", "href": "", "class": "btn btn-sm" },
+          { "text": "Github", "href": "", "class": "btn btn-sm btn-white" }
+        ]
+      },
+      {
+        "name": "other",
+        "title": "",
+        "image": "",
+        "description": "",
+        "technologies": [],
+        "features": [],
+        "contribution": "",
+        "links": [
+          { "text": "Live", "href": "", "class": "btn btn-sm" },
+          { "text": "Github", "href": "", "class": "btn btn-sm btn-white" }
         ]
       }
     ]

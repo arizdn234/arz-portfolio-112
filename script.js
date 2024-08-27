@@ -315,18 +315,19 @@ document.addEventListener("DOMContentLoaded", () => {
             
             // Project image
             const imgElement = document.createElement("img");
-            imgElement.src = project.image;
-            imgElement.alt = project.title;
+            imgElement.src = project.image?.trim() === "" ? 'images/no-image.svg' : project.image;
+            imgElement.alt = project.title?.trim() === "" ? 'Untitled' : project.title;
+            imgElement.title = project.title?.trim() === "" ? 'Untitled' : project.title;
             projectCard.appendChild(imgElement);
             
             // Project title
             const titleElement = document.createElement("h4");
-            titleElement.innerText = project.title;
+            titleElement.innerText = project.title?.trim() === "" ? 'Untitled' : project.title;
             projectCard.appendChild(titleElement);
             
             // Project description
             const descElement = document.createElement("p");
-            descElement.innerText = project.description;
+            descElement.innerText = project.description?.trim() === "" ? 'N/A' : project.description;
             projectCard.appendChild(descElement);
             
             // Project action buttons
@@ -334,7 +335,7 @@ document.addEventListener("DOMContentLoaded", () => {
             actionContainer.className = "project-action";
             project.links.forEach(link => {
                 const linkElement = document.createElement("a");
-                linkElement.href = link.href;
+                linkElement.href = link.href?.trim() === "" ? '#' : link.href;
                 linkElement.className = link.class;
                 linkElement.target = `_blank`;
                 linkElement.innerText = link.text;

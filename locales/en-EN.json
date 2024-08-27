@@ -139,7 +139,7 @@
   },
   "portfolio": {
     "title": "Recent Projects",
-    "description": "During my experience learning and programming, I have managed to complete a number of relevant and significant projects.",
+    "description": "During my experience learning in the world of academia and programming, I have managed to complete a number of relevant and significant projects.",
     "tabs": [
       { "name": "star", "text": "Star", "class": "tab-active"  },
       { "name": "webapp", "text": "Web Application" },
@@ -149,9 +149,34 @@
     "projects": [
       {
         "name": "star",
+        "title": "",
+        "image": "",
+        "description": "",
+        "technologies": [],
+        "features": [],
+        "contribution": "",
+        "links": [
+          { "text": "Live", "href": "", "class": "btn btn-sm" },
+          { "text": "Github", "href": "", "class": "btn btn-sm btn-white" }
+        ]
+      },
+      {
+        "name": "webapp",
         "title": "Personal Website",
         "image": "images/web-profile-112.svg",
-        "description": "Creation of a Personal Website containing personal information and a portfolio.",
+        "description": "Developed a sophisticated personal website to showcase professional background, skills, and portfolio projects in a visually appealing and user-friendly manner.",
+        "technologies": ["HTML", "CSS", "JavaScript"],
+        "features": [
+          "Fully Responsive Design ensuring seamless experience across all devices",
+          "Interactive Portfolio Section with dynamic project filtering",
+          "Contact Form integrated with EmailJS for direct communication",
+          "Single Page Application (SPA) for smooth and fast navigation",
+          "Animated Smooth Scrolling and Section Highlighting",
+          "Lazy Loading for faster page load times",
+          "Dark and Light Theme Toggle for enhanced user experience",
+          "Multi-language Support [Indonesian, English]"
+        ],
+        "contribution": "Led the end-to-end design and development of a personal website, emphasizing a clean, modern design paired with an intuitive user experience. Leveraged core web technologies like HTML, CSS, and JavaScript to build a fully responsive and interactive site. Added advanced features such as theme toggling between dark and light modes, and multi-language support to cater to a broader audience. Integrated EmailJS for real-time communication and optimized performance with lazy loading. Deployed and maintained the site using GitHub Pages, ensuring continuous availability and ease of updates.",
         "links": [
           { "text": "Live", "href": "https://arizdn234.github.io/arz-portfolio-112", "class": "btn btn-sm" },
           { "text": "Github", "href": "https://github.com/arizdn234/arz-portfolio-112", "class": "btn btn-sm btn-white" }
@@ -159,42 +184,142 @@
       },
       {
         "name": "webapp",
-        "title": "Personal Website",
-        "image": "images/web-profile-112.svg",
-        "description": "Creation of a Personal Website containing personal information and a portfolio.",
+        "title": "Snake Game",
+        "image": "",
+        "description": "A snake game where players control a snake to eat items, avoid bombs, and achieve the highest score.",
+        "technologies": ["HTML", "CSS", "JavaScript", "Local Storage"],
+        "features": [
+          "3 Difficulty Levels: Easy, Medium, Hard",
+          "Leaderboard for Top 5 Players",
+          "Various Items with Specific Effects",
+          "Pause, Play, and Replay Features",
+          "Sound Effects and Music",
+          "Player data stored in local storage"
+        ],
+        "contribution": "Developed game logic, designed the user interface, and implemented the leaderboard and player data storage.",
         "links": [
-          { "text": "Live", "href": "https://arizdn234.github.io/arz-portfolio-112", "class": "btn btn-sm" },
-          { "text": "Github", "href": "https://github.com/arizdn234/arz-portfolio-112", "class": "btn btn-sm btn-white" }
+          { "text": "Live", "href": "https://wdp-12.github.io/Finalproject1_Kelompok1/", "class": "btn btn-sm" },
+          { "text": "Github", "href": "https://github.com/arizdn234/webgame-snake-game", "class": "btn btn-sm btn-white" }
+        ]
+      },
+      {
+        "name": "webapp",
+        "title": "Django User Authentication Project",
+        "image": "",
+        "description": "A simple application using Django for managing user authentication, including registration, login, and authentication via Google, Facebook, and Github accounts.",
+        "technologies": ["Django", "Python", "OAuth", "Google API", "Facebook API", "Github API"],
+        "features": [
+          "User Registration",
+          "User Login",
+          "Login/Registration with Google Account",
+          "Login/Registration with Facebook Account",
+          "Login/Registration with Github Account"
+        ],
+        "contribution": "Implemented a Django-based authentication system, including OAuth integration for Google, Facebook, and Github.",
+        "links": [
+          { "text": "Live", "href": "", "class": "btn btn-sm" },
+          { "text": "Github", "href": "https://github.com/arizdn234/user-auth-python", "class": "btn btn-sm btn-white" }
+        ]
+      },
+      {
+        "name": "webapp",
+        "title": "User Authentication with Google Account (Node.js)",
+        "image": "",
+        "description": "This project demonstrates user authentication using a Google account with Node.js, Express, and Passport.",
+        "technologies": ["Node.js", "Express", "Passport", "Google OAuth", "EJS", "Express Session"],
+        "features": [
+          "User Authentication using Google Account",
+          "Session Management with Express Session",
+          "OAuth Authentication with Passport",
+          "Dynamic Views using EJS",
+          "Google OAuth Implementation for Login"
+        ],
+        "contribution": "Developed Google OAuth-based authentication features, including integration with Passport and session management using Express Session.",
+        "links": [
+          { "text": "Live", "href": "", "class": "btn btn-sm" },
+          { "text": "Github", "href": "https://github.com/arizdn234/user-auth-with-google-account-js", "class": "btn btn-sm btn-white" }
+        ]
+      },
+      {
+        "name": "webapp",
+        "title": "",
+        "image": "",
+        "description": "",
+        "technologies": [],
+        "features": [],
+        "contribution": "",
+        "links": [
+          { "text": "Live", "href": "", "class": "btn btn-sm" },
+          { "text": "Github", "href": "", "class": "btn btn-sm btn-white" }
         ]
       },
       {
         "name": "webapi",
-        "title": "Personal Website",
-        "image": "images/web-profile-112.svg",
-        "description": "Creation of a Personal Website containing personal information and a portfolio.",
-        "links": [
-          { "text": "Live", "href": "https://arizdn234.github.io/arz-portfolio-112", "class": "btn btn-sm" },
-          { "text": "Github", "href": "https://github.com/arizdn234/arz-portfolio-112", "class": "btn btn-sm btn-white" }
-        ]
-      },
-      {
-        "name": "webapi",
-        "title": "Login System (Golang)",
+        "title": "Authentication System (Golang, Gin)",
         "image": "images/web-api-default.svg",
-        "description": "CRUD Users with Login System (Local Auth) with Gin framework. Includes features such as login, registration, logout, and CRUD operations for user data.",
+        "description": "A user authentication system built with the Gin framework in Golang, featuring JWT-based authorization and CRUD operations for user data using SQLite and GORM.",
+        "technologies": ["Golang", "Gin Framework", "GORM", "SQLite", "JWT", "Ginkgo", "Gomega"],
+        "features": [
+          "JWT-based Authentication and Authorization",
+          "Password Hashing for Secure Data Storage",
+          "SQLite Database with GORM ORM",
+          "Comprehensive CRUD Operations for User Management",
+          "Unit Testing with Ginkgo and Gomega",
+          "Modular Project Structure with Clear Separation of Concerns",
+          "RESTful API Endpoints with Secure Access Controls",
+          "User Session Management with Cookie-based JWT Tokens"
+        ],
+        "contribution": "Designed and implemented a robust authentication and user management system in Golang using the Gin framework. Key contributions include developing JWT-based authentication for secure access control, integrating SQLite with GORM for effective database management, and setting up comprehensive testing frameworks (Ginkgo and Gomega) to ensure code reliability. Structured the project to follow best practices with modular components, ensuring maintainability and scalability.",
         "links": [
           { "text": "Live", "href": "https://github.com/arizdn234/crud-users-and-login-system-with-gin", "class": "btn btn-sm" },
           { "text": "Github", "href": "https://github.com/arizdn234/crud-users-and-login-system-with-gin", "class": "btn btn-sm btn-white" }
         ]
       },
       {
-        "name": "other",
-        "title": "Personal Website",
-        "image": "images/web-profile-112.svg",
-        "description": "Creation of a Personal Website containing personal information and a portfolio.",
+        "name": "webapi",
+        "title": "Authentication System (Golang)",
+        "image": "images/web-api-default.svg",
+        "description": "A comprehensive user management system that includes login, registration, logout, and CRUD operations for user data, using JWT for secure access.",
+        "technologies": ["Golang", "Gin Framework", "GORM", "SQLite", "JWT", "Ginkgo", "Gomega"],
+        "features": [
+          "JWT-based Authentication and Authorization",
+          "Password Hashing for Secure Data Storage",
+          "SQLite Database with GORM ORM",
+          "CRUD Operations for User Data",
+          "Comprehensive Testing with Ginkgo and Gomega",
+          "Server Setup with Routing and Middleware",
+          "Database Migration Management"
+        ],
+        "contribution": "Developed a scalable and secure user management system with JWT-based authentication, comprehensive CRUD operations, and ensured code quality through testing frameworks.",
         "links": [
-          { "text": "Live", "href": "https://arizdn234.github.io/arz-portfolio-112", "class": "btn btn-sm" },
-          { "text": "Github", "href": "https://github.com/arizdn234/arz-portfolio-112", "class": "btn btn-sm btn-white" }
+          { "text": "Live", "href": "https://github.com/arizdn234/crud-users-with-login-system", "class": "btn btn-sm" },
+          { "text": "Github", "href": "https://github.com/arizdn234/crud-users-with-login-system", "class": "btn btn-sm btn-white" }
+        ]
+      },
+      {
+        "name": "webapi",
+        "title": "",
+        "image": "",
+        "description": "",
+        "technologies": [],
+        "features": [],
+        "contribution": "",
+        "links": [
+          { "text": "Live", "href": "", "class": "btn btn-sm" },
+          { "text": "Github", "href": "", "class": "btn btn-sm btn-white" }
+        ]
+      },
+      {
+        "name": "other",
+        "title": "",
+        "image": "",
+        "description": "",
+        "technologies": [],
+        "features": [],
+        "contribution": "",
+        "links": [
+          { "text": "Live", "href": "", "class": "btn btn-sm" },
+          { "text": "Github", "href": "", "class": "btn btn-sm btn-white" }
         ]
       }
     ]
