@@ -2,43 +2,101 @@
   "title": "Portfolio",
   "navbar": {
     "links": [
-      { "text": "Beranda", "href": "#" },
-      { "text": "Tentang", "href": "#About" },
-      { "text": "Keahlian", "href": "#Skills" },
-      { "text": "Portofolio", "href": "#Portfolio" },
-      { "text": "Kontak", "href": "#Contact" }
+      {
+        "text": "Beranda",
+        "href": "#"
+      },
+      {
+        "text": "Tentang",
+        "href": "#About"
+      },
+      {
+        "text": "Keahlian",
+        "href": "#Skills"
+      },
+      {
+        "text": "Portofolio",
+        "href": "#Portfolio"
+      },
+      {
+        "text": "Kontak",
+        "href": "#Contact"
+      }
     ],
     "languageSelector": {
       "icon": "fa-solid fa-globe",
       "options": [
-        { "text": "Inggris", "value": "en-EN" },
-        { "text": "Indonesia", "value": "in-ID" }
+        {
+          "text": "Inggris",
+          "value": "en-EN"
+        },
+        {
+          "text": "Indonesia",
+          "value": "in-ID"
+        }
       ]
     },
-    "menuButton": { "icon": "fa fa-bars" }
+    "menuButton": {
+      "icon": "fa fa-bars"
+    }
   },
   "menuBar": {
     "links": [
-      { "icon": "fa fa-home", "href": "#" },
-      { "icon": "fa fa-user", "href": "#About" },
-      { "icon": "fa-solid fa-code", "href": "#Skills" },
-      { "icon": "fa-solid fa-file-code", "href": "#Portfolio" },
-      { "icon": "fa fa-message", "href": "#Contact" }
+      {
+        "icon": "fa fa-home",
+        "href": "#"
+      },
+      {
+        "icon": "fa fa-user",
+        "href": "#About"
+      },
+      {
+        "icon": "fa-solid fa-code",
+        "href": "#Skills"
+      },
+      {
+        "icon": "fa-solid fa-file-code",
+        "href": "#Portfolio"
+      },
+      {
+        "icon": "fa fa-message",
+        "href": "#Contact"
+      }
     ]
   },
   "header": {
     "greeting": "Hai. Saya Ari Zidan",
     "description": "Saya adalah seorang profesional teknologi dengan berbagai keahlian dalam pengembangan perangkat lunak, analisis data, dan manajemen basis data. Dengan keterampilan komunikasi yang kuat, tingkat tanggung jawab yang tinggi, dan kemampuan bekerja dalam tim, saya mampu mengatasi tantangan kompleks dengan pendekatan yang terstruktur dan analitis. Pengalaman saya dalam menggunakan berbagai bahasa pemrograman dan alat teknologi modern memungkinkan saya untuk menciptakan solusi yang efisien dan inovatif untuk memenuhi kebutuhan bisnis.",
     "buttons": [
-      { "text": "Curriculum Vitae", "href": "BE-01-EN.pdf", "class": "btn btn-white" },
-      { "text": "Pekerjakan Saya", "href": "mailto:zidanerizal17@gmail.com", "class": "HireMe btn btn-white" }
+      {
+        "text": "Curriculum Vitae",
+        "href": "BE-01-EN.pdf",
+        "class": "btn btn-white"
+      },
+      {
+        "text": "Pekerjakan Saya",
+        "href": "mailto:zidanerizal17@gmail.com",
+        "class": "HireMe btn btn-white"
+      }
     ],
     "image": "images/profile.jpeg",
     "socialLinks": [
-      { "icon": "fab fa-instagram", "href": "https://www.instagram.com/z.id21" },
-      { "icon": "fab fa-whatsapp", "href": "https://wa.me/6281529474830?text=Hai, bisakah kita bicara tentang..." },
-      { "icon": "fab fa-linkedin", "href": "https://www.linkedin.com/in/arizidan" },
-      { "icon": "fab fa-github", "href": "https://github.com/arizdn234" }
+      {
+        "icon": "fab fa-instagram",
+        "href": "https://www.instagram.com/z.id21"
+      },
+      {
+        "icon": "fab fa-whatsapp",
+        "href": "https://wa.me/6281529474830?text=Hai, bisakah kita bicara tentang..."
+      },
+      {
+        "icon": "fab fa-linkedin",
+        "href": "https://www.linkedin.com/in/arizidan"
+      },
+      {
+        "icon": "fab fa-github",
+        "href": "https://github.com/arizdn234"
+      }
     ]
   },
   "about": {
@@ -70,8 +128,15 @@
       "Pengalaman saya dengan alat teknologi modern, termasuk Docker untuk containerization, GitHub untuk pengendalian versi dan kolaborasi, dan Postman untuk pengujian API, membekali saya dengan kemampuan untuk membangun, mengirim, dan memelihara aplikasi dengan cara yang efisien dan sesuai dengan standar industri.",
       "Secara keseluruhan, keahlian dan pengalaman saya yang beragam memungkinkan saya untuk menciptakan solusi yang efektif dan inovatif yang disesuaikan untuk memenuhi kebutuhan spesifik dari setiap bisnis. Saya bersemangat tentang teknologi dan terus mencari cara untuk meningkatkan keterampilan saya agar tetap unggul dalam bidang yang terus berkembang ini."
     ],
-    "expandButton": { "expandTrue": "Lihat Selengkapnya", "expandFalse": "Sembunyikan" },
-    "ctaButton": { "text": "Pekerjakan Saya", "href": "#Contact", "class": "btn btn-white" }
+    "expandButton": {
+      "expandTrue": "Lihat Selengkapnya",
+      "expandFalse": "Sembunyikan"
+    },
+    "ctaButton": {
+      "text": "Pekerjakan Saya",
+      "href": "#Contact",
+      "class": "btn btn-white"
+    }
   },
   "skills": {
     "title": "Keahlian Saya",
@@ -97,43 +162,138 @@
     "right": {
       "subtitle": "Apa yang Bisa Saya Lakukan?",
       "skillBtn": [
-        { "icon": "fas fa-database", "title": "&nbsp;PostgreSQL" },
-        { "icon": "fas fa-database", "title": "&nbsp;MySQL" },
-        { "icon": "fas fa-database", "title": "&nbsp;SQLite" },
-        { "icon": "fas fa-database", "title": "&nbsp;MongoDB" },
-
-        { "icon": "fas fa-code", "title": "&nbsp;Sequelize.js (Node.js)" },
-        { "icon": "fas fa-code", "title": "&nbsp;Prisma ORM (Node.js)" },
-        { "icon": "fas fa-code", "title": "&nbsp;GORM (Go)" },
-        { "icon": "fas fa-code", "title": "&nbsp;Eloquent (Laravel)" },
-        { "icon": "fas fa-code", "title": "&nbsp;SQLAlchemy (Flask/Django)" },
-
-        { "icon": "fas fa-laptop-code", "title": "&nbsp;Python" },
-        { "icon": "fas fa-laptop-code", "title": "&nbsp;JavaScript" },
-        { "icon": "fas fa-laptop-code", "title": "&nbsp;Go (Golang)" },
-        { "icon": "fas fa-laptop-code", "title": "&nbsp;PHP" },
-        { "icon": "fas fa-database", "title": "&nbsp;SQL" },
-
-        { "icon": "fas fa-tools", "title": "&nbsp;Docker" },
-        { "icon": "fas fa-database", "title": "&nbsp;Navicat" },
-        { "icon": "fas fa-database", "title": "&nbsp;DBeaver" },
-        { "icon": "fas fa-database", "title": "&nbsp;pgAdmin" },
-        { "icon": "fas fa-cloud", "title": "&nbsp;Mongo Atlas" },
-        { "icon": "fas fa-vial", "title": "&nbsp;Postman" },
-        { "icon": "fab fa-github", "title": "&nbsp;GitHub" },
-
-        { "icon": "fas fa-globe", "title": "&nbsp;Django (Python)" },
-        { "icon": "fas fa-globe", "title": "&nbsp;Laravel (PHP)" },
-        { "icon": "fas fa-globe", "title": "&nbsp;Flask (Python)" },
-        { "icon": "fas fa-globe", "title": "&nbsp;FastAPI (Python)" },
-        { "icon": "fas fa-globe", "title": "&nbsp;Express.js (Node.js)" },
-        { "icon": "fas fa-globe", "title": "&nbsp;Gin Gonic (Go)" },
-        { "icon": "fas fa-globe", "title": "&nbsp;Gofiber (Go)" },
-        { "icon": "fab fa-bootstrap", "title": "&nbsp;Bootstrap (CSS)" },
-        { "icon": "fas fa-paint-brush", "title": "&nbsp;Materialize CSS (CSS)" },
-        { "icon": "fas fa-paint-brush", "title": "&nbsp;TailwindCSS (CSS)" },
-        { "icon": "fas fa-code", "title": "&nbsp;Alpine.js (JavaScript)" },
-        { "icon": "fas fa-code", "title": "&nbsp;Vite.js (JavaScript)" }
+        {
+          "icon": "fas fa-database",
+          "title": "&nbsp;PostgreSQL"
+        },
+        {
+          "icon": "fas fa-database",
+          "title": "&nbsp;MySQL"
+        },
+        {
+          "icon": "fas fa-database",
+          "title": "&nbsp;SQLite"
+        },
+        {
+          "icon": "fas fa-database",
+          "title": "&nbsp;MongoDB"
+        },
+        {
+          "icon": "fas fa-code",
+          "title": "&nbsp;Sequelize.js (Node.js)"
+        },
+        {
+          "icon": "fas fa-code",
+          "title": "&nbsp;Prisma ORM (Node.js)"
+        },
+        {
+          "icon": "fas fa-code",
+          "title": "&nbsp;GORM (Go)"
+        },
+        {
+          "icon": "fas fa-code",
+          "title": "&nbsp;Eloquent (Laravel)"
+        },
+        {
+          "icon": "fas fa-code",
+          "title": "&nbsp;SQLAlchemy (Flask/Django)"
+        },
+        {
+          "icon": "fas fa-laptop-code",
+          "title": "&nbsp;Python"
+        },
+        {
+          "icon": "fas fa-laptop-code",
+          "title": "&nbsp;JavaScript"
+        },
+        {
+          "icon": "fas fa-laptop-code",
+          "title": "&nbsp;Go (Golang)"
+        },
+        {
+          "icon": "fas fa-laptop-code",
+          "title": "&nbsp;PHP"
+        },
+        {
+          "icon": "fas fa-database",
+          "title": "&nbsp;SQL"
+        },
+        {
+          "icon": "fas fa-tools",
+          "title": "&nbsp;Docker"
+        },
+        {
+          "icon": "fas fa-database",
+          "title": "&nbsp;Navicat"
+        },
+        {
+          "icon": "fas fa-database",
+          "title": "&nbsp;DBeaver"
+        },
+        {
+          "icon": "fas fa-database",
+          "title": "&nbsp;pgAdmin"
+        },
+        {
+          "icon": "fas fa-cloud",
+          "title": "&nbsp;Mongo Atlas"
+        },
+        {
+          "icon": "fas fa-vial",
+          "title": "&nbsp;Postman"
+        },
+        {
+          "icon": "fab fa-github",
+          "title": "&nbsp;GitHub"
+        },
+        {
+          "icon": "fas fa-globe",
+          "title": "&nbsp;Django (Python)"
+        },
+        {
+          "icon": "fas fa-globe",
+          "title": "&nbsp;Laravel (PHP)"
+        },
+        {
+          "icon": "fas fa-globe",
+          "title": "&nbsp;Flask (Python)"
+        },
+        {
+          "icon": "fas fa-globe",
+          "title": "&nbsp;FastAPI (Python)"
+        },
+        {
+          "icon": "fas fa-globe",
+          "title": "&nbsp;Express.js (Node.js)"
+        },
+        {
+          "icon": "fas fa-globe",
+          "title": "&nbsp;Gin Gonic (Go)"
+        },
+        {
+          "icon": "fas fa-globe",
+          "title": "&nbsp;Gofiber (Go)"
+        },
+        {
+          "icon": "fab fa-bootstrap",
+          "title": "&nbsp;Bootstrap (CSS)"
+        },
+        {
+          "icon": "fas fa-paint-brush",
+          "title": "&nbsp;Materialize CSS (CSS)"
+        },
+        {
+          "icon": "fas fa-paint-brush",
+          "title": "&nbsp;TailwindCSS (CSS)"
+        },
+        {
+          "icon": "fas fa-code",
+          "title": "&nbsp;Alpine.js (JavaScript)"
+        },
+        {
+          "icon": "fas fa-code",
+          "title": "&nbsp;Vite.js (JavaScript)"
+        }
       ]
     }
   },
@@ -141,10 +301,23 @@
     "title": "Proyek Terbaru",
     "description": "Selama pengalaman saya belajar di dunia akademis dan pemrograman, saya telah berhasil menyelesaikan sejumlah proyek yang relevan dan signifikan.",
     "tabs": [
-      { "name": "star", "text": "Unggulan", "class": "tab-active"  },
-      { "name": "webapp", "text": "Aplikasi Web" },
-      { "name": "webapi", "text": "Web API" },
-      { "name": "other", "text": "Lainnya" }
+      {
+        "name": "star",
+        "text": "Unggulan",
+        "class": "tab-active"
+      },
+      {
+        "name": "webapp",
+        "text": "Aplikasi Web"
+      },
+      {
+        "name": "webapi",
+        "text": "Web API"
+      },
+      {
+        "name": "other",
+        "text": "Lainnya"
+      }
     ],
     "projects": [
       {
@@ -156,8 +329,16 @@
         "features": [],
         "contribution": "",
         "links": [
-          { "text": "Live", "href": "", "class": "btn btn-sm" },
-          { "text": "Github", "href": "", "class": "btn btn-sm btn-white" }
+          {
+            "text": "Live",
+            "href": "",
+            "class": "btn btn-sm"
+          },
+          {
+            "text": "Github",
+            "href": "",
+            "class": "btn btn-sm btn-white"
+          }
         ]
       },
       {
@@ -165,7 +346,11 @@
         "title": "Situs Web Pribadi",
         "image": "images/web-profile-112.svg",
         "description": "Mengembangkan situs web pribadi yang canggih untuk menampilkan latar belakang profesional, keterampilan, dan proyek portofolio dalam tampilan yang menarik secara visual dan mudah digunakan.",
-        "technologies": ["HTML", "CSS", "JavaScript"],
+        "technologies": [
+          "HTML",
+          "CSS",
+          "JavaScript"
+        ],
         "features": [
           "Desain Responsif Sepenuhnya yang memastikan pengalaman mulus di semua perangkat",
           "Bagian Portofolio Interaktif dengan penyaringan proyek dinamis",
@@ -178,8 +363,16 @@
         ],
         "contribution": "Memimpin desain dan pengembangan situs web pribadi dari awal hingga akhir, menekankan desain yang bersih dan modern dipadukan dengan pengalaman pengguna yang intuitif. Memanfaatkan teknologi web inti seperti HTML, CSS, dan JavaScript untuk membangun situs yang sepenuhnya responsif dan interaktif. Menambahkan fitur lanjutan seperti pengalih tema antara mode gelap dan terang, serta dukungan multi-bahasa untuk menjangkau audiens yang lebih luas. Mengintegrasikan EmailJS untuk komunikasi real-time dan mengoptimalkan kinerja dengan lazy loading. Menerapkan dan memelihara situs menggunakan GitHub Pages, memastikan ketersediaan terus-menerus dan kemudahan pembaruan.",
         "links": [
-          { "text": "Live", "href": "https://arizdn234.github.io/arz-portfolio-112", "class": "btn btn-sm" },
-          { "text": "Github", "href": "https://github.com/arizdn234/arz-portfolio-112", "class": "btn btn-sm btn-white" }
+          {
+            "text": "Live",
+            "href": "https://arizdn234.github.io/arz-portfolio-112",
+            "class": "btn btn-sm"
+          },
+          {
+            "text": "Github",
+            "href": "https://github.com/arizdn234/arz-portfolio-112",
+            "class": "btn btn-sm btn-white"
+          }
         ]
       },
       {
@@ -187,7 +380,12 @@
         "title": "Snake Game",
         "image": "",
         "description": "Sebuah permainan ular di mana pemain mengendalikan ular untuk memakan umpan, menghindari bom, dan mencapai skor tertinggi.",
-        "technologies": ["HTML", "CSS", "JavaScript", "Local Storage"],
+        "technologies": [
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "Local Storage"
+        ],
         "features": [
           "3 Tingkat Kesulitan: Mudah, Sedang, Sulit",
           "Leaderboard untuk 5 Pemain Terbaik",
@@ -198,8 +396,16 @@
         ],
         "contribution": "Mengembangkan logika permainan, mendesain antarmuka pengguna, dan mengimplementasikan leaderboard serta penyimpanan data pemain.",
         "links": [
-          { "text": "Live", "href": "https://wdp-12.github.io/Finalproject1_Kelompok1/", "class": "btn btn-sm" },
-          { "text": "Github", "href": "https://github.com/arizdn234/webgame-snake-game", "class": "btn btn-sm btn-white" }
+          {
+            "text": "Live",
+            "href": "https://wdp-12.github.io/Finalproject1_Kelompok1/",
+            "class": "btn btn-sm"
+          },
+          {
+            "text": "Github",
+            "href": "https://github.com/arizdn234/webgame-snake-game",
+            "class": "btn btn-sm btn-white"
+          }
         ]
       },
       {
@@ -207,7 +413,14 @@
         "title": "Sistem Autentikasi (Django)",
         "image": "",
         "description": "Aplikasi sederhana menggunakan Django untuk mengelola otentikasi pengguna, termasuk registrasi, login, dan otentikasi melalui akun Google, Facebook, dan Github.",
-        "technologies": ["Django", "Python", "OAuth", "Google API", "Facebook API", "Github API"],
+        "technologies": [
+          "Django",
+          "Python",
+          "OAuth",
+          "Google API",
+          "Facebook API",
+          "Github API"
+        ],
         "features": [
           "Registrasi Pengguna",
           "Login Pengguna",
@@ -217,8 +430,16 @@
         ],
         "contribution": "Mengimplementasikan sistem otentikasi berbasis Django, termasuk integrasi OAuth untuk Google, Facebook, dan Github.",
         "links": [
-          { "text": "Live", "href": "", "class": "btn btn-sm" },
-          { "text": "Github", "href": "https://github.com/arizdn234/user-auth-python", "class": "btn btn-sm btn-white" }
+          {
+            "text": "Live",
+            "href": "",
+            "class": "btn btn-sm"
+          },
+          {
+            "text": "Github",
+            "href": "https://github.com/arizdn234/user-auth-python",
+            "class": "btn btn-sm btn-white"
+          }
         ]
       },
       {
@@ -226,7 +447,14 @@
         "title": "Otentikasi Pengguna dengan Akun Google (Node.js)",
         "image": "",
         "description": "Proyek ini mendemonstrasikan otentikasi pengguna menggunakan akun Google dengan Node.js, Express, dan Passport.",
-        "technologies": ["Node.js", "Express", "Passport", "Google OAuth", "EJS", "Express Session"],
+        "technologies": [
+          "Node.js",
+          "Express",
+          "Passport",
+          "Google OAuth",
+          "EJS",
+          "Express Session"
+        ],
         "features": [
           "Otentikasi Pengguna menggunakan Akun Google",
           "Pengelolaan Sesi dengan Express Session",
@@ -236,8 +464,47 @@
         ],
         "contribution": "Mengembangkan fitur otentikasi berbasis Google OAuth, termasuk integrasi dengan Passport dan pengelolaan sesi dengan Express Session.",
         "links": [
-          { "text": "Live", "href": "", "class": "btn btn-sm" },
-          { "text": "Github", "href": "https://github.com/arizdn234/user-auth-with-google-account-js", "class": "btn btn-sm btn-white" }
+          {
+            "text": "Live",
+            "href": "",
+            "class": "btn btn-sm"
+          },
+          {
+            "text": "Github",
+            "href": "https://github.com/arizdn234/user-auth-with-google-account-js",
+            "class": "btn btn-sm btn-white"
+          }
+        ]
+      },
+      {
+        "name": "webapp",
+        "title": "Kanban App - Tema Modern",
+        "image": "",
+        "description": "Kanban App adalah aplikasi manajemen tugas berbasis web dengan tema modern. Aplikasi ini memungkinkan pengguna untuk membuat, mengedit, memindahkan, dan menghapus tugas pada papan Kanban dengan tiga kolom: Backlog, On Progress, dan Done.",
+        "technologies": [
+          "HTML",
+          "CSS",
+          "JavaScript"
+        ],
+        "features": [
+          "Buat Tugas Baru: Masukkan nama tugas dan klik tombol 'Buat' untuk menambahkannya ke kolom Backlog.",
+          "Edit Tugas: Klik dua kali pada nama tugas untuk mengeditnya.",
+          "Pindah Tugas: Gunakan tombol 'pindah' untuk memindahkan tugas antar kolom.",
+          "Hapus Tugas: Klik tombol 'hapus' untuk menghapus tugas dari papan.",
+          "Drag and Drop: Seret dan jatuhkan tugas antar kolom."
+        ],
+        "contribution": "Kontribusi sangat diterima! Silakan buka issue atau kirim pull request untuk memperbaiki bug atau menambah fitur baru.",
+        "links": [
+          {
+            "text": "Live",
+            "href": "https://arizdn234.github.io/Kanban-App/",
+            "class": "btn btn-sm"
+          },
+          {
+            "text": "Github",
+            "href": "https://github.com/arizdn234/Kanban-App/",
+            "class": "btn btn-sm btn-white"
+          }
         ]
       },
       {
@@ -249,8 +516,16 @@
         "features": [],
         "contribution": "",
         "links": [
-          { "text": "Live", "href": "", "class": "btn btn-sm" },
-          { "text": "Github", "href": "", "class": "btn btn-sm btn-white" }
+          {
+            "text": "Live",
+            "href": "",
+            "class": "btn btn-sm"
+          },
+          {
+            "text": "Github",
+            "href": "",
+            "class": "btn btn-sm btn-white"
+          }
         ]
       },
       {
@@ -258,7 +533,15 @@
         "title": "Sistem Autentikasi (Golang, Gin)",
         "image": "images/web-api-default.svg",
         "description": "Sistem autentikasi pengguna yang dibangun dengan framework Gin di Golang, mendukung otorisasi berbasis JWT dan operasi CRUD untuk data pengguna menggunakan SQLite dan GORM.",
-        "technologies": ["Golang", "Gin Framework", "GORM", "SQLite", "JWT", "Ginkgo", "Gomega"],
+        "technologies": [
+          "Golang",
+          "Gin Framework",
+          "GORM",
+          "SQLite",
+          "JWT",
+          "Ginkgo",
+          "Gomega"
+        ],
         "features": [
           "Autentikasi dan Otorisasi Berbasis JWT",
           "Hashing Kata Sandi untuk Penyimpanan Data yang Aman",
@@ -271,8 +554,16 @@
         ],
         "contribution": "Merancang dan mengimplementasikan sistem autentikasi dan manajemen pengguna yang tangguh di Golang menggunakan kerangka kerja Gin. Kontribusi utama mencakup pengembangan autentikasi berbasis JWT untuk kontrol akses yang aman, integrasi SQLite dengan GORM untuk manajemen basis data yang efektif, dan pengaturan kerangka pengujian yang komprehensif (Ginkgo dan Gomega) untuk memastikan keandalan kode. Menyusun proyek agar mengikuti praktik terbaik dengan komponen modular, memastikan kemudahan perawatan dan skalabilitas.",
         "links": [
-          { "text": "Live", "href": "https://github.com/arizdn234/crud-users-and-login-system-with-gin", "class": "btn btn-sm" },
-          { "text": "Github", "href": "https://github.com/arizdn234/crud-users-and-login-system-with-gin", "class": "btn btn-sm btn-white" }
+          {
+            "text": "Live",
+            "href": "https://github.com/arizdn234/crud-users-and-login-system-with-gin",
+            "class": "btn btn-sm"
+          },
+          {
+            "text": "Github",
+            "href": "https://github.com/arizdn234/crud-users-and-login-system-with-gin",
+            "class": "btn btn-sm btn-white"
+          }
         ]
       },
       {
@@ -280,7 +571,15 @@
         "title": "Sistem Autentikasi (Golang)",
         "image": "images/web-api-default.svg",
         "description": "Sistem manajemen pengguna yang komprehensif mencakup login, pendaftaran, logout, dan operasi CRUD untuk data pengguna, menggunakan JWT untuk akses yang aman.",
-        "technologies": ["Golang", "Gin Framework", "GORM", "SQLite", "JWT", "Ginkgo", "Gomega"],
+        "technologies": [
+          "Golang",
+          "Gin Framework",
+          "GORM",
+          "SQLite",
+          "JWT",
+          "Ginkgo",
+          "Gomega"
+        ],
         "features": [
           "Autentikasi dan Otorisasi Berbasis JWT",
           "Hashing Kata Sandi untuk Penyimpanan Data yang Aman",
@@ -292,8 +591,16 @@
         ],
         "contribution": "Mengembangkan sistem manajemen pengguna yang skalabel dan aman dengan autentikasi berbasis JWT, operasi CRUD yang komprehensif, dan memastikan kualitas kode melalui kerangka kerja pengujian.",
         "links": [
-          { "text": "Live", "href": "https://github.com/arizdn234/crud-users-with-login-system", "class": "btn btn-sm" },
-          { "text": "Github", "href": "https://github.com/arizdn234/crud-users-with-login-system", "class": "btn btn-sm btn-white" }
+          {
+            "text": "Live",
+            "href": "https://github.com/arizdn234/crud-users-with-login-system",
+            "class": "btn btn-sm"
+          },
+          {
+            "text": "Github",
+            "href": "https://github.com/arizdn234/crud-users-with-login-system",
+            "class": "btn btn-sm btn-white"
+          }
         ]
       },
       {
@@ -305,8 +612,16 @@
         "features": [],
         "contribution": "",
         "links": [
-          { "text": "Live", "href": "", "class": "btn btn-sm" },
-          { "text": "Github", "href": "", "class": "btn btn-sm btn-white" }
+          {
+            "text": "Live",
+            "href": "",
+            "class": "btn btn-sm"
+          },
+          {
+            "text": "Github",
+            "href": "",
+            "class": "btn btn-sm btn-white"
+          }
         ]
       },
       {
@@ -318,8 +633,16 @@
         "features": [],
         "contribution": "",
         "links": [
-          { "text": "Live", "href": "", "class": "btn btn-sm" },
-          { "text": "Github", "href": "", "class": "btn btn-sm btn-white" }
+          {
+            "text": "Live",
+            "href": "",
+            "class": "btn btn-sm"
+          },
+          {
+            "text": "Github",
+            "href": "",
+            "class": "btn btn-sm btn-white"
+          }
         ]
       }
     ]
@@ -329,12 +652,34 @@
     "description": "Silakan hubungi saya untuk menawarkan pekerjaan dan berdiskusi tentang pengembangan perangkat lunak.",
     "form": {
       "inputs": [
-        { "type": "text", "placeholder": "Nama Anda", "name": "Name", "required": true },
-        { "type": "email", "placeholder": "Email Anda", "name": "Email", "required": true },
-        { "type": "text", "placeholder": "Subjek", "name": "Subject", "required": true }
+        {
+          "type": "text",
+          "placeholder": "Nama Anda",
+          "name": "Name",
+          "required": true
+        },
+        {
+          "type": "email",
+          "placeholder": "Email Anda",
+          "name": "Email",
+          "required": true
+        },
+        {
+          "type": "text",
+          "placeholder": "Subjek",
+          "name": "Subject",
+          "required": true
+        }
       ],
-      "textarea": { "placeholder": "Pesan", "name": "Message", "required": true },
-      "submitButton": { "text": "Kirim", "class": "btn btn-white" }
+      "textarea": {
+        "placeholder": "Pesan",
+        "name": "Message",
+        "required": true
+      },
+      "submitButton": {
+        "text": "Kirim",
+        "class": "btn btn-white"
+      }
     }
   }
 }
