@@ -45,12 +45,16 @@ menuButton.addEventListener('click', function() {
     }
 });
 // footer if mobile view (onload)
-if (!menuBar.classList.contains('menu-none')) {
-    footerSection.style.height = '9rem';
-    footerSection.style.paddingBottom = '4rem';
-} else {
-    footerSection.style.height = '5rem';
-    footerSection.style.paddingBottom = '0';
+// Check if in mobile view (screen width <= 600px)
+if (window.innerWidth <= 600) {
+    // Check if the menu bar does not contain the 'menu-none' class
+    if (!menuBar.classList.contains('menu-none')) {
+        footerSection.style.height = '9rem';
+        footerSection.style.paddingBottom = '4rem';
+    } else {
+        footerSection.style.height = '5rem';
+        footerSection.style.paddingBottom = '0';
+    }
 }
 
 // theme
