@@ -377,39 +377,6 @@
       },
       {
         "name": "webapp",
-        "title": "Snake Game",
-        "image": "",
-        "description": "A snake game where players control a snake to eat items, avoid bombs, and achieve the highest score.",
-        "technologies": [
-          "HTML",
-          "CSS",
-          "JavaScript",
-          "Local Storage"
-        ],
-        "features": [
-          "3 Difficulty Levels: Easy, Medium, Hard",
-          "Leaderboard for Top 5 Players",
-          "Various Items with Specific Effects",
-          "Pause, Play, and Replay Features",
-          "Sound Effects and Music",
-          "Player data stored in local storage"
-        ],
-        "contribution": "Developed game logic, designed the user interface, and implemented the leaderboard and player data storage.",
-        "links": [
-          {
-            "text": "Live",
-            "href": "https://wdp-12.github.io/Finalproject1_Kelompok1/",
-            "class": "btn btn-sm"
-          },
-          {
-            "text": "Github",
-            "href": "https://github.com/arizdn234/webgame-snake-game",
-            "class": "btn btn-sm btn-white"
-          }
-        ]
-      },
-      {
-        "name": "webapp",
         "title": "Django User Authentication Project",
         "image": "",
         "description": "A simple application using Django for managing user authentication, including registration, login, and authentication via Google, Facebook, and Github accounts.",
@@ -493,7 +460,7 @@
           "Delete Task: Click the 'delete' button to remove a task from the board.",
           "Drag and Drop: Drag and drop tasks between columns."
         ],
-        "contribution": "Contributions are welcome! Please open an issue or submit a pull request to fix bugs or add new features.",
+        "contribution": "Added important features like drag and drop to move tasks between columns. Fixed several bugs in the previous version. Optimize code to improve application performance. Improved the user interface to be more responsive and intuitive.",
         "links": [
           {
             "text": "Live",
@@ -503,6 +470,67 @@
           {
             "text": "Github",
             "href": "https://github.com/arizdn234/Kanban-App/",
+            "class": "btn btn-sm btn-white"
+          }
+        ]
+      },
+      {
+        "name": "webapp",
+        "title": "Music Fetch (Express, Multer)",
+        "image": "",
+        "description": "Music Fetch is a Nodejs web application for managing music data with CRUD operations using Expressjs and Multer for file handling. This application provides a simple interface for efficient music data manipulation.",
+        "technologies": [
+          "Node.js",
+          "Express.js",
+          "Multer",
+          "JSON"
+        ],
+        "features": [
+          "CRUD operations for music data in JSON",
+          "File uploads with Multer",
+          "Intuitive user interface",
+          "Efficient data and request processing"
+        ],
+        "contribution": "Developed Music Fetch using Node.js and Express.js for music data management and file uploads with Multer. Focused on creating an efficient application architecture and a user-friendly interface.",
+        "links": [
+          {
+            "text": "Live",
+            "href": "",
+            "class": "btn btn-sm"
+          },
+          {
+            "text": "Github",
+            "href": "https://github.com/arizdn234/Music-fetch",
+            "class": "btn btn-sm btn-white"
+          }
+        ]
+      },
+      {
+        "name": "webapp",
+        "title": "Modern Business Landing Page Project",
+        "image": "",
+        "description": "This project aims to replicate and enhance the quality of a landing page designed visually in Figma. By utilizing modern web technologies such as HTML, CSS, and JavaScript, we are developing a landing page that not only reflects the set design but also adds touches of additional functionality and aesthetics. The focus is on creating visually engaging elements, smooth interactions, and a pleasant user experience. The page is also designed to be responsive and optimized for various devices, with the implementation of smooth animations and transitions that enhance the overall visual experience.",
+        "technologies": [
+          "HTML",
+          "CSS",
+          "JavaScript"
+        ],
+        "features": [
+          "Section A: Header & Banner",
+          "Section B: Product Features 1 & Features",
+          "Section C: About & Pricing",
+          "Section D: Contact & Footer"
+        ],
+        "contribution": "Responsible for working on Header & Banner, Product Features 1 & Features, About & Pricing, and Contact & Footer. Additionally, handled transitions, animations, and smooth scroll on the landing page. We collaborated to improve the style, functionality, and features of the landing page, and integrated changes into the GitHub repository.",
+        "links": [
+          {
+            "text": "Live",
+            "href": "https://arizdn234.github.io/modern-business-landing-pages/",
+            "class": "btn btn-sm"
+          },
+          {
+            "text": "Github",
+            "href": "https://github.com/arizdn234/modern-business-landing-pages",
             "class": "btn btn-sm btn-white"
           }
         ]
@@ -620,6 +648,39 @@
           {
             "text": "Github",
             "href": "",
+            "class": "btn btn-sm btn-white"
+          }
+        ]
+      },
+      {
+        "name": "other",
+        "title": "Snake Game",
+        "image": "",
+        "description": "A snake game where players control a snake to eat items, avoid bombs, and achieve the highest score.",
+        "technologies": [
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "Local Storage"
+        ],
+        "features": [
+          "3 Difficulty Levels: Easy, Medium, Hard",
+          "Leaderboard for Top 5 Players",
+          "Various Items with Specific Effects",
+          "Pause, Play, and Replay Features",
+          "Sound Effects and Music",
+          "Player data stored in local storage"
+        ],
+        "contribution": "Developed game logic, designed the user interface, and implemented the leaderboard and player data storage.",
+        "links": [
+          {
+            "text": "Live",
+            "href": "https://wdp-12.github.io/Finalproject1_Kelompok1/",
+            "class": "btn btn-sm"
+          },
+          {
+            "text": "Github",
+            "href": "https://github.com/arizdn234/webgame-snake-game",
             "class": "btn btn-sm btn-white"
           }
         ]

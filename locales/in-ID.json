@@ -377,39 +377,6 @@
       },
       {
         "name": "webapp",
-        "title": "Snake Game",
-        "image": "",
-        "description": "Sebuah permainan ular di mana pemain mengendalikan ular untuk memakan umpan, menghindari bom, dan mencapai skor tertinggi.",
-        "technologies": [
-          "HTML",
-          "CSS",
-          "JavaScript",
-          "Local Storage"
-        ],
-        "features": [
-          "3 Tingkat Kesulitan: Mudah, Sedang, Sulit",
-          "Leaderboard untuk 5 Pemain Terbaik",
-          "Berbagai Item dengan Efek Spesifik",
-          "Fitur Pause, Play, dan Replay",
-          "Efek Suara dan Musik",
-          "Data pemain disimpan di local storage"
-        ],
-        "contribution": "Mengembangkan logika permainan, mendesain antarmuka pengguna, dan mengimplementasikan leaderboard serta penyimpanan data pemain.",
-        "links": [
-          {
-            "text": "Live",
-            "href": "https://wdp-12.github.io/Finalproject1_Kelompok1/",
-            "class": "btn btn-sm"
-          },
-          {
-            "text": "Github",
-            "href": "https://github.com/arizdn234/webgame-snake-game",
-            "class": "btn btn-sm btn-white"
-          }
-        ]
-      },
-      {
-        "name": "webapp",
         "title": "Sistem Autentikasi (Django)",
         "image": "",
         "description": "Aplikasi sederhana menggunakan Django untuk mengelola otentikasi pengguna, termasuk registrasi, login, dan otentikasi melalui akun Google, Facebook, dan Github.",
@@ -493,7 +460,7 @@
           "Hapus Tugas: Klik tombol 'hapus' untuk menghapus tugas dari papan.",
           "Drag and Drop: Seret dan jatuhkan tugas antar kolom."
         ],
-        "contribution": "Kontribusi sangat diterima! Silakan buka issue atau kirim pull request untuk memperbaiki bug atau menambah fitur baru.",
+        "contribution": "Menambahkan fitur-fitur penting seperti drag and drop untuk memindahkan tugas antar kolom. Memperbaiki beberapa bug yang ada pada versi sebelumnya. Mengoptimalkan kode untuk meningkatkan performa aplikasi. Memperbaiki antarmuka pengguna agar lebih responsif dan intuitif.",
         "links": [
           {
             "text": "Live",
@@ -503,6 +470,67 @@
           {
             "text": "Github",
             "href": "https://github.com/arizdn234/Kanban-App/",
+            "class": "btn btn-sm btn-white"
+          }
+        ]
+      },
+      {
+        "name": "webapp",
+        "title": "Music Fetch (Express, Multer)",
+        "image": "",
+        "description": "Music Fetch adalah aplikasi web Nodejs untuk mengelola data musik dengan operasi CRUD menggunakan Expressjs dan Multer untuk penanganan file. Aplikasi ini menawarkan antarmuka yang sederhana untuk manipulasi data musik yang efisien.",
+        "technologies": [
+          "Node.js",
+          "Express.js",
+          "Multer",
+          "JSON"
+        ],
+        "features": [
+          "CRUD untuk data musik dalam JSON",
+          "Pengunggahan file dengan Multer",
+          "Antarmuka pengguna intuitif",
+          "Efisiensi pengolahan data dan permintaan"
+        ],
+        "contribution": "Mengembangkan Music Fetch dengan Node.js dan Express.js untuk manajemen data musik dan pengunggahan file menggunakan Multer. Fokus pada arsitektur aplikasi yang efisien dan antarmuka pengguna yang mudah digunakan.",
+        "links": [
+          {
+            "text": "Live",
+            "href": "",
+            "class": "btn btn-sm"
+          },
+          {
+            "text": "Github",
+            "href": "https://github.com/arizdn234/Music-fetch",
+            "class": "btn btn-sm btn-white"
+          }
+        ]
+      },
+      {
+        "name": "webapp",
+        "title": "Modern Business Landing Page Project",
+        "image": "",
+        "description": "Proyek ini bertujuan untuk mereplikasi dan meningkatkan kualitas sebuah landing page yang telah dirancang secara visual di Figma. Dengan memanfaatkan teknologi web modern seperti HTML, CSS, dan JavaScript, mengembangkan landing page yang tidak hanya mencerminkan desain yang ditetapkan tetapi juga menambahkan sentuhan fungsionalitas dan estetika tambahan. Berfokus pada penciptaan elemen-elemen visual yang menarik, interaksi yang mulus, dan pengalaman pengguna yang menyenangkan. Juga memastikan bahwa halaman ini responsif dan dioptimalkan untuk berbagai perangkat, dengan implementasi animasi halus dan transisi yang meningkatkan pengalaman visual secara keseluruhan.",
+        "technologies": [
+          "HTML",
+          "CSS",
+          "JavaScript"
+        ],
+        "features": [
+          "Section A: Header & Banner",
+          "Section B: Product Features 1 & Features",
+          "Section C: About & Pricing",
+          "Section D: Contact & Footer"
+        ],
+        "contribution": "Bertanggung jawab untuk mengerjakan Header & Banner, Product Features 1 & Features, About & Pricing, Contact & Footer. Selain itu, mengerjakan transisi, animasi, dan smooth scroll pada landing page. Kami telah berkolaborasi dalam meningkatkan style, fungsionalitas, dan fitur landing page serta menggabungkan perubahan pada repositori GitHub.",
+        "links": [
+          {
+            "text": "Live",
+            "href": "https://arizdn234.github.io/modern-business-landing-pages/",
+            "class": "btn btn-sm"
+          },
+          {
+            "text": "Github",
+            "href": "https://github.com/arizdn234/modern-business-landing-pages",
             "class": "btn btn-sm btn-white"
           }
         ]
@@ -620,6 +648,39 @@
           {
             "text": "Github",
             "href": "",
+            "class": "btn btn-sm btn-white"
+          }
+        ]
+      },
+      {
+        "name": "other",
+        "title": "Snake Game",
+        "image": "",
+        "description": "Sebuah permainan ular di mana pemain mengendalikan ular untuk memakan umpan, menghindari bom, dan mencapai skor tertinggi.",
+        "technologies": [
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "Local Storage"
+        ],
+        "features": [
+          "3 Tingkat Kesulitan: Mudah, Sedang, Sulit",
+          "Leaderboard untuk 5 Pemain Terbaik",
+          "Berbagai Item dengan Efek Spesifik",
+          "Fitur Pause, Play, dan Replay",
+          "Efek Suara dan Musik",
+          "Data pemain disimpan di local storage"
+        ],
+        "contribution": "Mengembangkan logika permainan, mendesain antarmuka pengguna, dan mengimplementasikan leaderboard serta penyimpanan data pemain.",
+        "links": [
+          {
+            "text": "Live",
+            "href": "https://wdp-12.github.io/Finalproject1_Kelompok1/",
+            "class": "btn btn-sm"
+          },
+          {
+            "text": "Github",
+            "href": "https://github.com/arizdn234/webgame-snake-game",
             "class": "btn btn-sm btn-white"
           }
         ]

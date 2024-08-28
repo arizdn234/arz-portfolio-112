@@ -327,7 +327,7 @@ document.addEventListener("DOMContentLoaded", () => {
             
             // Project description
             const descElement = document.createElement("p");
-            descElement.innerText = project.description?.trim() === "" ? 'N/A' : project.description;
+            descElement.innerText = project.description?.trim() === "" ? 'N/A' : project.description.split('.')[0].trim()+".";
             projectCard.appendChild(descElement);
             
             // Project action buttons
