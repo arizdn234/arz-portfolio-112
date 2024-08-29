@@ -325,11 +325,6 @@ header {
     width: 94%;
     margin: .5rem 0 2rem;
 }
-/* .typed-text {
-    background: var(--gradient);
-    border-bottom: 4px solid var(--black);
-    color: var(--background);
-} */
 .header-right {
     position: relative;
     display: flex;

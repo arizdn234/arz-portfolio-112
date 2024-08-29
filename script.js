@@ -10,17 +10,6 @@ function randomizer(min, max) {
     return Math.floor(Math.random() * (max - min)) + min;
 }
 
-// typed text js
-// document.addEventListener('DOMContentLoaded', function() {
-//     let typed = new Typed('.typed-text', {
-//         strings: ['Front End', 'Web Design'],
-//         typeSpeed: 100,
-//         backSpeed: 50,
-//         backDelay: 1000,
-//         loop: true,
-//     });
-// });
-
 // EmailJS
 window.onload = function() {
     document.getElementById('contact-form').addEventListener('submit', function(event) {
@@ -70,7 +59,7 @@ if (window.innerWidth <= 600) {
     }
 }
 
-// theme
+// Theme
 // Retrieve saved theme from localStorage or set default to 'light-theme'
 const savedTheme = localStorage.getItem('preferredTheme') || 'light-theme';
 const themeToggleButton = document.querySelector('.theme-toggle-button');
@@ -107,24 +96,6 @@ function updateThemeIcon(theme) {
     }
     themeToggleButton.prepend(themeIcon);
 }
-// const themeToggleButton = document.querySelector('.theme-toggle-button');
-// const bodyElement = document.body;
-// const themeIcon = themeToggleButton.querySelector('i');
-
-// themeToggleButton.addEventListener('click', function() {
-//     bodyElement.classList.toggle('dark-theme');
-//     bodyElement.classList.toggle('light-theme');
-
-//     if (bodyElement.classList.contains('dark-theme')) {
-//         themeIcon.classList.remove('fa-sun');
-//         themeIcon.classList.add('fa-moon');
-//     } else {
-//         themeIcon.classList.remove('fa-moon');
-//         themeIcon.classList.add('fa-sun');
-//     }
-
-//     themeToggleButton.prepend(themeIcon);
-// });
 
 // Transition handler
 function applyTransition(element, effect, callback, delay = 0) {
