@@ -111,7 +111,6 @@ function applyTransition(element, effect, callback, delay = 0) {
     }, 500 + delay);
 }
 
-
 // effect list
 const effects = {
     fade: { in: "fade-in", out: "fade-out" },
@@ -366,10 +365,17 @@ document.addEventListener("DOMContentLoaded", () => {
             projects.forEach(project => {
                 let projectName = project.getAttribute('data-name');
                 if (projectName === defaultTab) {
-                    project.style.display = 'block';
-                    project.style.display = 'flex';
+                    project.classList.remove('fade-out');
+                    project.classList.add('fade-in');
+                    setTimeout(() => {
+                        project.style.display = 'flex';
+                    }, 400); 
                 } else {
-                    project.style.display = 'none';
+                    project.classList.remove('fade-in');
+                    project.classList.add('fade-out');
+                    setTimeout(() => {
+                        project.style.display = 'none';
+                    }, 400);
                 }
             });
         }, 1500);
@@ -394,11 +400,18 @@ document.addEventListener("DOMContentLoaded", () => {
                 let filterName = event.target.getAttribute('data-name');
                 projects.forEach(project => {
                     let projectName = project.getAttribute('data-name');
-                    if (projectName === filterName ) {
-                        project.style.display = 'block';
-                        project.style.display = 'flex';
+                    if (projectName === filterName) {
+                        project.classList.remove('fade-out');
+                        project.classList.add('fade-in');
+                        setTimeout(() => {
+                            project.style.display = 'flex';
+                        }, 400); 
                     } else {
-                        project.style.display = 'none';
+                        project.classList.remove('fade-in');
+                        project.classList.add('fade-out');
+                        setTimeout(() => {
+                            project.style.display = 'none';
+                        }, 400);
                     }
                 })
                 
@@ -408,6 +421,50 @@ document.addEventListener("DOMContentLoaded", () => {
                 tabsContainer.appendChild(tabElement);
             }, index * 100);
         });
+
+        // Assuming this is part of your existing code
+        // Update tabs
+// const tabsContainer = portfolioSection.querySelector(".portfolio-tabs");
+// tabsContainer.innerHTML = "";
+
+// portfolio.tabs.forEach((tab, index) => {
+//     const tabElement = document.createElement("div");
+//     tabElement.className = `tab btn btn-sm btn-white ${tab.class || ""}`;
+//     tabElement.dataset.name = tab.name;
+//     tabElement.innerText = tab.text;
+
+//     // Add event listener to each tab
+//     tabElement.addEventListener('click', (event) => {
+//         removeActive();
+//         tabElement.classList.add('tab-active');
+
+//         const projects = document.querySelectorAll(".project");
+//         let filterName = event.target.getAttribute('data-name');
+//         projects.forEach(project => {
+//             let projectName = project.getAttribute('data-name');
+//             if (projectName === filterName) {
+//                 project.style.display = 'block';
+//                 setTimeout(() => {
+//                     project.classList.remove('zoom-out');
+//                     project.classList.add('zoom-in');
+//                     project.style.display = 'flex';
+//                 }, 10); 
+//             } else {
+//                 project.classList.remove('zoom-in');
+//                 project.classList.add('zoom-out');
+//                 setTimeout(() => {
+//                     project.style.display = 'none';
+//                 }, 300);
+//             }
+//         });
+
+//     });
+
+//     applyTransition(tabElement, effects.slideY, () => {
+//         tabsContainer.appendChild(tabElement);
+//     }, index * 100);
+// });
+
     }    
     
     // Update the Contact Section
