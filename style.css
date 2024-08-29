@@ -29,7 +29,7 @@
 
 .dark-theme {
     /* Dark Theme */
-    --primary: #00b3b3;
+    --primary: #0c927c;
     --teal: rgba(0,73,71,1);
     --background: #1e1e1e;
     --background2: #2c2c2c;
@@ -62,6 +62,19 @@ body, .container, button {
 body {
     background: var(--background);
     color: var(--light);
+}
+
+body::-webkit-scrollbar {
+    width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: var(--background2);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--primary);
+    border-radius: 6px;
 }
 
 h1 { font-size: 60px; }
