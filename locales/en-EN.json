@@ -79,7 +79,7 @@
         "class": "HireMe btn btn-white"
       }
     ],
-    "image": "images/profile.jpeg",
+    "image": "profile.jpeg",
     "socialLinks": [
       {
         "icon": "fab fa-instagram",
@@ -344,7 +344,7 @@
       {
         "name": "webapp",
         "title": "Personal Website",
-        "image": "images/web-profile-112.svg",
+        "image": "web-profile-112.svg",
         "description": "Developed a sophisticated personal website to showcase professional background, skills, and portfolio projects in a visually appealing and user-friendly manner.",
         "technologies": [
           "HTML",
@@ -378,7 +378,7 @@
       {
         "name": "webapp",
         "title": "Django User Authentication Project",
-        "image": "",
+        "image": "auth-django.svg",
         "description": "A simple application using Django for managing user authentication, including registration, login, and authentication via Google, Facebook, and Github accounts.",
         "technologies": [
           "Django",
@@ -412,7 +412,7 @@
       {
         "name": "webapp",
         "title": "User Authentication with Google Account (Node.js)",
-        "image": "",
+        "image": "auth-js.svg",
         "description": "This project demonstrates user authentication using a Google account with Node.js, Express, and Passport.",
         "technologies": [
           "Node.js",
@@ -446,7 +446,7 @@
       {
         "name": "webapp",
         "title": "Kanban App - Modern Theme",
-        "image": "",
+        "image": "kanban-app.svg",
         "description": "Kanban App is a web-based task management application with a modern theme. It allows users to create, edit, move, and delete tasks on a Kanban board with three columns: Backlog, On Progress, and Done.",
         "technologies": [
           "HTML",
@@ -477,7 +477,7 @@
       {
         "name": "webapp",
         "title": "Music Fetch (Express, Multer)",
-        "image": "",
+        "image": "music-fetch.svg",
         "description": "Music Fetch is a Nodejs web application for managing music data with CRUD operations using Expressjs and Multer for file handling. This application provides a simple interface for efficient music data manipulation.",
         "technologies": [
           "Node.js",
@@ -508,7 +508,7 @@
       {
         "name": "webapp",
         "title": "Modern Business Landing Page Project",
-        "image": "",
+        "image": "business-landing-page.svg",
         "description": "This project aims to replicate and enhance the quality of a landing page designed visually in Figma. By utilizing modern web technologies such as HTML, CSS, and JavaScript, we are developing a landing page that not only reflects the set design but also adds touches of additional functionality and aesthetics. The focus is on creating visually engaging elements, smooth interactions, and a pleasant user experience. The page is also designed to be responsive and optimized for various devices, with the implementation of smooth animations and transitions that enhance the overall visual experience.",
         "technologies": [
           "HTML",
@@ -559,7 +559,7 @@
       {
         "name": "webapi",
         "title": "Authentication System (Golang, Gin)",
-        "image": "images/web-api-default.svg",
+        "image": "web-api-default.svg",
         "description": "A user authentication system built with the Gin framework in Golang, featuring JWT-based authorization and CRUD operations for user data using SQLite and GORM.",
         "technologies": [
           "Golang",
@@ -597,7 +597,7 @@
       {
         "name": "webapi",
         "title": "Authentication System (Golang)",
-        "image": "images/web-api-default.svg",
+        "image": "web-api-default.svg",
         "description": "A comprehensive user management system that includes login, registration, logout, and CRUD operations for user data, using JWT for secure access.",
         "technologies": [
           "Golang",
@@ -655,7 +655,7 @@
       {
         "name": "other",
         "title": "Snake Game",
-        "image": "",
+        "image": "snake-game.svg",
         "description": "A snake game where players control a snake to eat items, avoid bombs, and achieve the highest score.",
         "technologies": [
           "HTML",

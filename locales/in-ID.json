@@ -79,7 +79,7 @@
         "class": "HireMe btn btn-white"
       }
     ],
-    "image": "images/profile.jpeg",
+    "image": "profile.jpeg",
     "socialLinks": [
       {
         "icon": "fab fa-instagram",
@@ -344,7 +344,7 @@
       {
         "name": "webapp",
         "title": "Situs Web Pribadi",
-        "image": "images/web-profile-112.svg",
+        "image": "web-profile-112.svg",
         "description": "Mengembangkan situs web pribadi yang canggih untuk menampilkan latar belakang profesional, keterampilan, dan proyek portofolio dalam tampilan yang menarik secara visual dan mudah digunakan.",
         "technologies": [
           "HTML",
@@ -378,7 +378,7 @@
       {
         "name": "webapp",
         "title": "Sistem Autentikasi (Django)",
-        "image": "",
+        "image": "auth-django.svg",
         "description": "Aplikasi sederhana menggunakan Django untuk mengelola otentikasi pengguna, termasuk registrasi, login, dan otentikasi melalui akun Google, Facebook, dan Github.",
         "technologies": [
           "Django",
@@ -412,7 +412,7 @@
       {
         "name": "webapp",
         "title": "Otentikasi Pengguna dengan Akun Google (Node.js)",
-        "image": "",
+        "image": "auth-js.svg",
         "description": "Proyek ini mendemonstrasikan otentikasi pengguna menggunakan akun Google dengan Node.js, Express, dan Passport.",
         "technologies": [
           "Node.js",
@@ -446,7 +446,7 @@
       {
         "name": "webapp",
         "title": "Kanban App - Tema Modern",
-        "image": "",
+        "image": "kanban-app.svg",
         "description": "Kanban App adalah aplikasi manajemen tugas berbasis web dengan tema modern. Aplikasi ini memungkinkan pengguna untuk membuat, mengedit, memindahkan, dan menghapus tugas pada papan Kanban dengan tiga kolom: Backlog, On Progress, dan Done.",
         "technologies": [
           "HTML",
@@ -477,7 +477,7 @@
       {
         "name": "webapp",
         "title": "Music Fetch (Express, Multer)",
-        "image": "",
+        "image": "music-fetch.svg",
         "description": "Music Fetch adalah aplikasi web Nodejs untuk mengelola data musik dengan operasi CRUD menggunakan Expressjs dan Multer untuk penanganan file. Aplikasi ini menawarkan antarmuka yang sederhana untuk manipulasi data musik yang efisien.",
         "technologies": [
           "Node.js",
@@ -508,7 +508,7 @@
       {
         "name": "webapp",
         "title": "Modern Business Landing Page Project",
-        "image": "",
+        "image": "business-landing-page.svg",
         "description": "Proyek ini bertujuan untuk mereplikasi dan meningkatkan kualitas sebuah landing page yang telah dirancang secara visual di Figma. Dengan memanfaatkan teknologi web modern seperti HTML, CSS, dan JavaScript, mengembangkan landing page yang tidak hanya mencerminkan desain yang ditetapkan tetapi juga menambahkan sentuhan fungsionalitas dan estetika tambahan. Berfokus pada penciptaan elemen-elemen visual yang menarik, interaksi yang mulus, dan pengalaman pengguna yang menyenangkan. Juga memastikan bahwa halaman ini responsif dan dioptimalkan untuk berbagai perangkat, dengan implementasi animasi halus dan transisi yang meningkatkan pengalaman visual secara keseluruhan.",
         "technologies": [
           "HTML",
@@ -559,7 +559,7 @@
       {
         "name": "webapi",
         "title": "Sistem Autentikasi (Golang, Gin)",
-        "image": "images/web-api-default.svg",
+        "image": "web-api-default.svg",
         "description": "Sistem autentikasi pengguna yang dibangun dengan framework Gin di Golang, mendukung otorisasi berbasis JWT dan operasi CRUD untuk data pengguna menggunakan SQLite dan GORM.",
         "technologies": [
           "Golang",
@@ -597,7 +597,7 @@
       {
         "name": "webapi",
         "title": "Sistem Autentikasi (Golang)",
-        "image": "images/web-api-default.svg",
+        "image": "web-api-default.svg",
         "description": "Sistem manajemen pengguna yang komprehensif mencakup login, pendaftaran, logout, dan operasi CRUD untuk data pengguna, menggunakan JWT untuk akses yang aman.",
         "technologies": [
           "Golang",
@@ -655,7 +655,7 @@
       {
         "name": "other",
         "title": "Snake Game",
-        "image": "",
+        "image": "snake-game.svg",
         "description": "Sebuah permainan ular di mana pemain mengendalikan ular untuk memakan umpan, menghindari bom, dan mencapai skor tertinggi.",
         "technologies": [
           "HTML",
