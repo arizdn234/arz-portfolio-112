@@ -582,6 +582,9 @@ header {
     gap: 1rem;
     align-items: center;
 }
+.project-action a:first-child {
+    color: var(--fixedlight);
+}
 
 
 /* --- contact --- */
