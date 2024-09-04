@@ -633,6 +633,70 @@
       },
       {
         "name": "webapi",
+        "title": "Bookstore REST API",
+        "image": "web-api-default.svg",
+        "description": "API RESTful berbasis Nodejs yang kuat dan serbaguna yang dirancang untuk mengelola toko buku, menyediakan endpoint untuk manajemen akun pengguna, dan operasi CRUD untuk buku.",
+        "technologies": [
+          "Node.js",
+          "Express",
+          "PostgreSQL",
+          "Sequelize",
+          "bcryptjs",
+          "jsonwebtoken"
+        ],
+        "features": [
+          "Registrasi dan login akun pengguna",
+          "Mengambil daftar semua buku",
+          "Mengakses informasi detail tentang buku tertentu",
+          "Menambahkan buku baru ke inventaris",
+          "Memperbarui detail buku",
+          "Menghapus buku dari inventaris"
+        ],
+        "contribution": "Mengembangkan seluruh API dari awal, termasuk menyiapkan lingkungan Node.js, mengkonfigurasi database dengan Sequelize, membuat rute untuk autentikasi pengguna dan operasi buku, serta mengimplementasikan middleware untuk keamanan dan validasi.",
+        "links": [
+          {
+            "text": "Live",
+            "href": "https://github.com/arizdn234/bookstore-api",
+            "class": "btn btn-sm"
+          },
+          {
+            "text": "Github",
+            "href": "https://github.com/arizdn234/bookstore-api",
+            "class": "btn btn-sm btn-white"
+          }
+        ]
+      },
+      {
+        "name": "webapi",
+        "title": "API B2C E-Commerce (Node.js)",
+        "image": "web-api-default.svg",
+        "description": "API back-end untuk aplikasi e-commerce B2C yang dibangun menggunakan Nodejs, Prisma, Express, dan PostgreSQL. API ini menangani manajemen produk, otentikasi pengguna, manajemen keranjang belanja, pemrosesan pesanan, dan penanganan pembayaran.",
+        "technologies": ["Node.js", "Prisma", "Express", "PostgreSQL", "Autentikasi JWT"],
+        "features": [
+          "Registrasi dan Login Pengguna",
+          "Manajemen Produk (operasi CRUD)",
+          "Manajemen Pengguna untuk Admin",
+          "Manajemen Pesanan",
+          "Pemrosesan Pembayaran",
+          "Pencarian dan Filter Produk",
+          "Manajemen Keranjang Belanja"
+        ],
+        "contribution": "Mengembangkan dan mengintegrasikan endpoint API RESTful untuk berbagai fungsi e-commerce. Mengimplementasikan otentikasi pengguna, manajemen produk, penanganan pesanan, dan pemrosesan pembayaran. Menyiapkan skema database PostgreSQL dan Prisma ORM untuk pemodelan data.",
+        "links": [
+          {
+            "text": "Live",
+            "href": "https://ecommerce-api-gray.vercel.app/",
+            "class": "btn btn-sm"
+          },
+          {
+            "text": "Github",
+            "href": "https://github.com/arizdn234/ecommerce-api",
+            "class": "btn btn-sm btn-white"
+          }
+        ]
+      },
+      {
+        "name": "webapi",
         "title": "",
         "image": "",
         "description": "",

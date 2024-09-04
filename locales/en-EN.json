@@ -633,6 +633,70 @@
       },
       {
         "name": "webapi",
+        "title": "Bookstore REST API",
+        "image": "web-api-default.svg",
+        "description": "A robust and versatile Nodejs-based RESTful API designed to manage a bookstore, providing endpoints for user account management, and CRUD operations for books.",
+        "technologies": [
+          "Node.js",
+          "Express",
+          "PostgreSQL",
+          "Sequelize",
+          "bcryptjs",
+          "jsonwebtoken"
+        ],
+        "features": [
+          "User account registration and login",
+          "Retrieve a list of all books",
+          "Access detailed information about specific books",
+          "Add new books to the inventory",
+          "Update book details",
+          "Remove books from the inventory"
+        ],
+        "contribution": "Developed the entire API from scratch, including setting up the Node.js environment, configuring the database with Sequelize, creating routes for user authentication and book operations, and implementing middleware for security and validation.",
+        "links": [
+          {
+            "text": "Live",
+            "href": "https://github.com/arizdn234/bookstore-api",
+            "class": "btn btn-sm"
+          },
+          {
+            "text": "Github",
+            "href": "https://github.com/arizdn234/bookstore-api",
+            "class": "btn btn-sm btn-white"
+          }
+        ]
+      },  
+      {
+        "name": "webapi",
+        "title": "B2C E-Commerce API (Node.js)",
+        "image": "web-api-default.svg",
+        "description": "A back-end e-commerce API for a B2C application built using Nodejs, Prisma, Express, and PostgreSQL. This API handles product management, user authentication, shopping cart management, order processing, and payment handling.",
+        "technologies": ["Node.js", "Prisma", "Express", "PostgreSQL", "JWT Authentication"],
+        "features": [
+          "User Registration and Login",
+          "Product Management (CRUD operations)",
+          "User Management for Admins",
+          "Order Management",
+          "Payment Processing",
+          "Search and Filtering Products",
+          "Shopping Cart Management"
+        ],
+        "contribution": "Developed and integrated RESTful API endpoints for various e-commerce functionalities. Implemented user authentication, product management, order handling, and payment processing. Set up PostgreSQL database schema and Prisma ORM for data modeling.",
+        "links": [
+          {
+            "text": "Live",
+            "href": "https://ecommerce-api-gray.vercel.app/",
+            "class": "btn btn-sm"
+          },
+          {
+            "text": "Github",
+            "href": "https://github.com/arizdn234/ecommerce-api",
+            "class": "btn btn-sm btn-white"
+          }
+        ]
+      },          
+      {
+        "name": "webapi",
         "title": "",
         "image": "",
         "description": "",
