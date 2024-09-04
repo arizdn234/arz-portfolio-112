@@ -365,7 +365,6 @@ header {
 }
 .hero-image img {
     position: relative;
-    top: .5rem;
 }
 .round {
     width: 100%;
