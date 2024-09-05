@@ -212,6 +212,7 @@ nav {
     background-color: var(--fixedlight);
     color: var(--fixedlight);
     border: 1px solid var(--fixedlight);
+    appearance: none;
 }
 
 .nav-scroll .language-select-wrapper i {
@@ -296,6 +297,7 @@ nav {
     font-size: 1rem;
     outline: none;
     appearance: none;
+    text-align: center;
     background-color: transparent;
     color: var(--primary);
     cursor: pointer;
@@ -305,16 +307,6 @@ nav {
 #language-selector:hover {
     background-color: var(--primary);
     color: var(--background2);
-    transform: scale(.97);
-}
-
-.language-select-wrapper::after {
-    content: '\f0dd';
-    font-family: "Font Awesome 6 Free"; 
-    font-weight: 900;
-    font-size: 0.8rem;
-    margin-left: -20px;
-    pointer-events: none;
 }
 
 .menu-bar {

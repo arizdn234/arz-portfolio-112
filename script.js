@@ -1,13 +1,32 @@
 // nav scroll
-window.addEventListener('scroll',()=>{
-    let nav = document.querySelector('nav');
-
-    nav.classList.toggle('nav-scroll', window.scrollY > 0);
-});
+window.addEventListener('scroll', () => document.querySelector('nav').classList[window.scrollY > 0 ? 'add' : 'remove']('nav-scroll'));
 
 // Randomizer
 function randomizer(min, max) {
     return Math.floor(Math.random() * (max - min)) + min;
+}
+
+// effect list
+const effects = {
+    fade: { in: "fade-in", out: "fade-out" },
+    slide: { in: "slide-in", out: "slide-out" },
+    slideX: { out: 'slide-out-left', in: 'slide-in-right' },
+    slideY: { out: 'slide-out-up', in: 'slide-in-down' },
+    zoom: { in: "zoom-in", out: "zoom-out" }
+};
+
+// Transition handler
+function applyTransition(element, effect, callback, delay = 0) {
+    element.classList.add(effect.out);
+    setTimeout(() => {
+        callback();
+        element.classList.remove(effect.out);
+        element.classList.add(effect.in);
+
+        setTimeout(() => {
+            element.classList.remove(effect.in);
+        }, 500);
+    }, 500 + delay);
 }
 
 // EmailJS
@@ -59,7 +78,7 @@ if (window.innerWidth <= 600) {
     }
 }
 
-// Theme
+// Theme handling code
 // Retrieve saved theme from localStorage or set default to 'light-theme'
 const savedTheme = localStorage.getItem('preferredTheme') || 'light-theme';
 const themeToggleButton = document.querySelector('.theme-toggle-button');
@@ -75,50 +94,25 @@ themeToggleButton.addEventListener('click', function () {
     bodyElement.classList.toggle('dark-theme');
     bodyElement.classList.toggle('light-theme');
 
-    // Determine the current theme
     const currentTheme = bodyElement.classList.contains('dark-theme') ? 'dark-theme' : 'light-theme';
     
-    // Update icon based on the current theme
     updateThemeIcon(currentTheme);
 
-    // Save the current theme to localStorage
     localStorage.setItem('preferredTheme', currentTheme);
 });
 
 // Function to update the theme icon based on the current theme
 function updateThemeIcon(theme) {
-    if (theme === 'dark-theme') {
-        themeIcon.classList.remove('fa-sun');
-        themeIcon.classList.add('fa-moon');
-    } else {
-        themeIcon.classList.remove('fa-moon');
-        themeIcon.classList.add('fa-sun');
-    }
+    const newIconClass = theme === 'dark-theme' ? 'fa-moon' : 'fa-sun';
+    const oldIconClass = theme === 'dark-theme' ? 'fa-sun' : 'fa-moon';
+
+    applyTransition(themeIcon, effects.slideY, () => {
+        themeIcon.classList.remove(oldIconClass); 
+        themeIcon.classList.add(newIconClass);    
+    });
+
     themeToggleButton.prepend(themeIcon);
 }
-
-// Transition handler
-function applyTransition(element, effect, callback, delay = 0) {
-    element.classList.add(effect.out);
-    setTimeout(() => {
-        callback();
-        element.classList.remove(effect.out);
-        element.classList.add(effect.in);
-
-        setTimeout(() => {
-            element.classList.remove(effect.in);
-        }, 500);
-    }, 500 + delay);
-}
-
-// effect list
-const effects = {
-    fade: { in: "fade-in", out: "fade-out" },
-    slide: { in: "slide-in", out: "slide-out" },
-    slideX: { out: 'slide-out-left', in: 'slide-in-right' },
-    slideY: { out: 'slide-out-up', in: 'slide-in-down' },
-    zoom: { in: "zoom-in", out: "zoom-out" }
-};
 
 // Define the removeActive function
 const removeActive = () => {
@@ -161,7 +155,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
 
         const languageSelector = document.querySelector("nav #language-selector");
-        applyTransition(languageSelector, effects.zoom, () => {
+        applyTransition(languageSelector, effects.fade, () => {
             const languageOptions = languageSelector.querySelectorAll("option");
             
             languageOptions.forEach((option, index) => {
