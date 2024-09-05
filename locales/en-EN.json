@@ -322,6 +322,173 @@
     "projects": [
       {
         "name": "star",
+        "title": "Integrated E-Commerce Platform",
+        "image": "uni-sell-1.svg",
+        "description": "Our e-commerce platform is a comprehensive solution designed to facilitate both physical and digital product sales. It features a robust backend built with Laravel, a dynamic frontend developed with Vue.js, and specialized microservices handled by Express.js. The platform is containerized using Docker for consistent deployment and scalability. Key functionalities include product management, real-time inventory tracking, secure checkout, payment processing, and user reviews. This architecture ensures a scalable, maintainable, and user-friendly experience for managing and purchasing products online.",
+        "technologies": [
+          "Laravel (PHP Framework)",
+          "Vue.js (JavaScript Framework)",
+          "Express.js (Node.js Framework)",
+          "Docker (Containerization)",
+          "MySQL (Database)"
+        ],
+        "features": [
+          "Product Catalog: Comprehensive management of product listings and categories.",
+          "Shopping Cart and Checkout: Real-time cart updates, secure checkout, and multiple payment gateways.",
+          "Payment Integration: Supports Stripe, PayPal, and other payment processors.",
+          "Order and Inventory Management: Real-time order tracking and automatic inventory updates.",
+          "Review and Rating System: Allows user reviews and ratings with moderation features."
+        ],
+        "contribution": "I developed the integrated e-commerce platform, implementing Laravel for backend services, Vue.js for frontend, and Express.js for API microservices. I also managed Docker containerization for consistent deployment environments and integrated various technologies to ensure scalability and maintainability.",
+        "links": [
+          {
+            "text": "Live",
+            "href": "https://github.com/arizdn234/uni-sell",
+            "class": "btn btn-sm"
+          },
+          {
+            "text": "Github",
+            "href": "https://github.com/arizdn234/uni-sell",
+            "class": "btn btn-sm btn-white"
+          }
+        ]
+      },
+      {
+        "name": "star",
+        "title": "AI-Enhanced CSV Query Web Application",
+        "image": "",
+        "description": "This web application allows users to interact with CSV data using AI models. Users can log in, view the parsed CSV data, and ask questions answered by AI models, integrating Google’s Gemini and Hugging Face’s Tapas for data-driven responses.",
+        "technologies": [
+          "Go (Golang)",
+          "Gin Web Framework",
+          "Google Generative AI Go SDK",
+          "Hugging Face API for Tapas model",
+          "Google Tapas Model",
+          "Google Gemini Model"
+        ],
+        "features": [
+          "User Authentication and Verification: Secure login system with a verification step.",
+          "CSV Data Parsing and Display: Reads CSV files, parses them into a map format, and displays column data with example rows.",
+          "AI Model Integration: Uses Hugging Face’s Tapas model to answer natural language queries from CSV data and Google’s Gemini model to provide conversational recommendations.",
+          "Dynamic Interaction: Users can ask questions to AI for insights or recommendations based on CSV data."
+        ],
+        "contribution": "I developed the web application to read CSV data, implement AI models for answering questions and providing recommendations, and manage user interactions effectively using Go and related technologies.",
+        "links": [
+          {
+            "text": "Live",
+            "href": "https://github.com/arizdn234/AI-Enhanced-CSV-Query-Web-Application",
+            "class": "btn btn-sm"
+          },
+          {
+            "text": "Github",
+            "href": "https://github.com/arizdn234/AI-Enhanced-CSV-Query-Web-Application",
+            "class": "btn btn-sm btn-white"
+          }
+        ]
+      },
+      {
+        "name": "star",
+        "title": "Authentication System (Golang, Gin)",
+        "image": "web-api-default.svg",
+        "description": "A user authentication system built with the Gin framework in Golang, featuring JWT-based authorization and CRUD operations for user data using SQLite and GORM.",
+        "technologies": [
+          "Golang",
+          "Gin Framework",
+          "GORM",
+          "SQLite",
+          "JWT",
+          "Ginkgo",
+          "Gomega"
+        ],
+        "features": [
+          "JWT-based Authentication and Authorization",
+          "Password Hashing for Secure Data Storage",
+          "SQLite Database with GORM ORM",
+          "Comprehensive CRUD Operations for User Management",
+          "Unit Testing with Ginkgo and Gomega",
+          "Modular Project Structure with Clear Separation of Concerns",
+          "RESTful API Endpoints with Secure Access Controls",
+          "User Session Management with Cookie-based JWT Tokens"
+        ],
+        "contribution": "Designed and implemented a robust authentication and user management system in Golang using the Gin framework. Key contributions include developing JWT-based authentication for secure access control, integrating SQLite with GORM for effective database management, and setting up comprehensive testing frameworks (Ginkgo and Gomega) to ensure code reliability. Structured the project to follow best practices with modular components, ensuring maintainability and scalability.",
+        "links": [
+          {
+            "text": "Live",
+            "href": "https://github.com/arizdn234/crud-users-and-login-system-with-gin",
+            "class": "btn btn-sm"
+          },
+          {
+            "text": "Github",
+            "href": "https://github.com/arizdn234/crud-users-and-login-system-with-gin",
+            "class": "btn btn-sm btn-white"
+          }
+        ]
+      },
+      {
+        "name": "star",
+        "title": "Task Tracker Plus",
+        "image": "ttp.png",
+        "description": "Task Tracker Plus is a monolithic application built using Go (Golang) for managing study schedules. It provides REST APIs with full CRUD capabilities for managing users, tasks, and categories, and follows the MVC (Model-View-Controller) architecture.",
+        "technologies": [
+          "Go (Golang)",
+          "REST API",
+          "MVC Architecture"
+        ],
+        "features": [
+          "Backend Development (Server): Developed and implemented REST APIs to manage Users, Tasks, and Categories with full CRUD operations and user authentication.",
+          "Frontend Development (Client): Built user interfaces with MVC pattern including login, registration, dashboard, and management pages for tasks and categories."
+        ],
+        "contribution": "I contributed to the backend development by implementing REST APIs for managing users, tasks, and categories. I ensured secure user authentication and full CRUD functionality using the Go programming language and MVC architecture.",
+        "links": [
+          {
+            "text": "Live",
+            "href": "https://github.com/arizdn234/Final-Course-Project-TTP",
+            "class": "btn btn-sm"
+          },
+          {
+            "text": "Github",
+            "href": "https://github.com/arizdn234/Final-Course-Project-TTP",
+            "class": "btn btn-sm btn-white"
+          }
+        ]
+      },
+      {
+        "name": "star",
+        "title": "Bookstore REST API",
+        "image": "web-api-default.svg",
+        "description": "A robust and versatile Nodejs-based RESTful API designed to manage a bookstore, providing endpoints for user account management, and CRUD operations for books.",
+        "technologies": [
+          "Node.js",
+          "Express",
+          "PostgreSQL",
+          "Sequelize",
+          "bcryptjs",
+          "jsonwebtoken"
+        ],
+        "features": [
+          "User account registration and login",
+          "Retrieve a list of all books",
+          "Access detailed information about specific books",
+          "Add new books to the inventory",
+          "Update book details",
+          "Remove books from the inventory"
+        ],
+        "contribution": "Developed the entire API from scratch, including setting up the Node.js environment, configuring the database with Sequelize, creating routes for user authentication and book operations, and implementing middleware for security and validation.",
+        "links": [
+          {
+            "text": "Live",
+            "href": "https://github.com/arizdn234/bookstore-api",
+            "class": "btn btn-sm"
+          },
+          {
+            "text": "Github",
+            "href": "https://github.com/arizdn234/bookstore-api",
+            "class": "btn btn-sm btn-white"
+          }
+        ]
+      },
+      {
+        "name": "star",
         "title": "",
         "image": "",
         "description": "",
@@ -537,6 +704,100 @@
       },
       {
         "name": "webapp",
+        "title": "Task Tracker Plus",
+        "image": "ttp.png",
+        "description": "Task Tracker Plus is a monolithic application built using Go (Golang) for managing study schedules. It provides REST APIs with full CRUD capabilities for managing users, tasks, and categories, and follows the MVC (Model-View-Controller) architecture.",
+        "technologies": [
+          "Go (Golang)",
+          "REST API",
+          "MVC Architecture"
+        ],
+        "features": [
+          "Backend Development (Server): Developed and implemented REST APIs to manage Users, Tasks, and Categories with full CRUD operations and user authentication.",
+          "Frontend Development (Client): Built user interfaces with MVC pattern including login, registration, dashboard, and management pages for tasks and categories."
+        ],
+        "contribution": "I contributed to the backend development by implementing REST APIs for managing users, tasks, and categories. I ensured secure user authentication and full CRUD functionality using the Go programming language and MVC architecture.",
+        "links": [
+          {
+            "text": "Live",
+            "href": "https://github.com/arizdn234/Final-Course-Project-TTP",
+            "class": "btn btn-sm"
+          },
+          {
+            "text": "Github",
+            "href": "https://github.com/arizdn234/Final-Course-Project-TTP",
+            "class": "btn btn-sm btn-white"
+          }
+        ]
+      },
+      {
+        "name": "webapp",
+        "title": "AI-Enhanced CSV Query Web Application",
+        "image": "",
+        "description": "This web application allows users to interact with CSV data using AI models. Users can log in, view the parsed CSV data, and ask questions answered by AI models, integrating Google’s Gemini and Hugging Face’s Tapas for data-driven responses.",
+        "technologies": [
+          "Go (Golang)",
+          "Gin Web Framework",
+          "Google Generative AI Go SDK",
+          "Hugging Face API for Tapas model",
+          "Google Tapas Model",
+          "Google Gemini Model"
+        ],
+        "features": [
+          "User Authentication and Verification: Secure login system with a verification step.",
+          "CSV Data Parsing and Display: Reads CSV files, parses them into a map format, and displays column data with example rows.",
+          "AI Model Integration: Uses Hugging Face’s Tapas model to answer natural language queries from CSV data and Google’s Gemini model to provide conversational recommendations.",
+          "Dynamic Interaction: Users can ask questions to AI for insights or recommendations based on CSV data."
+        ],
+        "contribution": "I developed the web application to read CSV data, implement AI models for answering questions and providing recommendations, and manage user interactions effectively using Go and related technologies.",
+        "links": [
+          {
+            "text": "Live",
+            "href": "https://github.com/arizdn234/AI-Enhanced-CSV-Query-Web-Application",
+            "class": "btn btn-sm"
+          },
+          {
+            "text": "Github",
+            "href": "https://github.com/arizdn234/AI-Enhanced-CSV-Query-Web-Application",
+            "class": "btn btn-sm btn-white"
+          }
+        ]
+      },
+      {
+        "name": "webapp",
+        "title": "Integrated E-Commerce Platform",
+        "image": "uni-sell-1.svg",
+        "description": "Our e-commerce platform is a comprehensive solution designed to facilitate both physical and digital product sales. It features a robust backend built with Laravel, a dynamic frontend developed with Vue.js, and specialized microservices handled by Express.js. The platform is containerized using Docker for consistent deployment and scalability. Key functionalities include product management, real-time inventory tracking, secure checkout, payment processing, and user reviews. This architecture ensures a scalable, maintainable, and user-friendly experience for managing and purchasing products online.",
+        "technologies": [
+          "Laravel (PHP Framework)",
+          "Vue.js (JavaScript Framework)",
+          "Express.js (Node.js Framework)",
+          "Docker (Containerization)",
+          "MySQL (Database)"
+        ],
+        "features": [
+          "Product Catalog: Comprehensive management of product listings and categories.",
+          "Shopping Cart and Checkout: Real-time cart updates, secure checkout, and multiple payment gateways.",
+          "Payment Integration: Supports Stripe, PayPal, and other payment processors.",
+          "Order and Inventory Management: Real-time order tracking and automatic inventory updates.",
+          "Review and Rating System: Allows user reviews and ratings with moderation features."
+        ],
+        "contribution": "I developed the integrated e-commerce platform, implementing Laravel for backend services, Vue.js for frontend, and Express.js for API microservices. I also managed Docker containerization for consistent deployment environments and integrated various technologies to ensure scalability and maintainability.",
+        "links": [
+          {
+            "text": "Live",
+            "href": "https://github.com/arizdn234/uni-sell",
+            "class": "btn btn-sm"
+          },
+          {
+            "text": "Github",
+            "href": "https://github.com/arizdn234/uni-sell",
+            "class": "btn btn-sm btn-white"
+          }
+        ]
+      },      
+      {
+        "name": "webapp",
         "title": "",
         "image": "",
         "description": "",
@@ -694,6 +955,69 @@
             "class": "btn btn-sm btn-white"
           }
         ]
+      },
+      {
+        "name": "webapi",
+        "title": "Hotel Mawar Indah Availability API",
+        "image": "web-api-default.svg",
+        "description": "Hotel Mawar Indah Availability API is a backend service that provides information about hotel room availability. This API allows clients to check room availability, make reservations, cancel reservations, and get detailed room information.",
+        "technologies": [
+          "Go (Golang) v1.22",
+          "Gin Web Framework",
+          "GORM",
+          "PostgreSQL"
+        ],
+        "features": [
+          "Room Availability Check: Clients can check the availability of hotel rooms that are currently unbooked.",
+          "Room Reservation: Clients can make reservations for available hotel rooms.",
+          "Reservation Cancellation: Clients can cancel reservations that have been made.",
+          "Room Information: Clients can obtain detailed information about hotel rooms, such as facilities, prices, and more."
+        ],
+        "contribution": "I contributed by developing the core backend functionality for checking room availability, handling room reservations, and implementing the reservation cancellation logic using Go and Gin framework. Additionally, I integrated the GORM ORM for seamless interaction with the PostgreSQL database and ensured the API adheres to best practices for performance and security.",
+        "links": [
+          {
+            "text": "Live",
+            "href": "https://github.com/arizdn234/Hotel-Mawar-Indah-Availability-API",
+            "class": "btn btn-sm"
+          },
+          {
+            "text": "Github",
+            "href": "https://github.com/arizdn234/Hotel-Mawar-Indah-Availability-API",
+            "class": "btn btn-sm btn-white"
+          }
+        ]
+      },
+      {
+        "name": "webapi",
+        "title": "TransactHub",
+        "image": "web-api-default.svg",
+        "description": "TransactHub is a backend application built with Node.js and Express that handles user authentication, transactions, and item data management using MySQL and Sequelize ORM.",
+        "technologies": [
+          "Node.js",
+          "Express",
+          "MySQL",
+          "Sequelize"
+        ],
+        "features": [
+          "User Authentication: Handles user login, registration, and token-based authentication.",
+          "Dashboard Management: Provides data for user-specific dashboard views.",
+          "Item Management: Handles CRUD operations for items.",
+          "Transaction Handling: Manages transactions between users.",
+          "User Management: Handles user-related data operations."
+        ],
+        "contribution": "I contributed by developing backend functionalities, implementing RESTful API endpoints for user authentication, item management, transactions, and user-related operations using Node.js, Express, and Sequelize.",
+        "links": [
+          {
+            "text": "Live",
+            "href": "https://github.com/arizdn234/TransactHub",
+            "class": "btn btn-sm"
+          },
+          {
+            "text": "Github",
+            "href": "https://github.com/arizdn234/TransactHub",
+            "class": "btn btn-sm btn-white"
+          }
+        ]
       },          
       {
         "name": "webapi",
@@ -745,6 +1069,36 @@
           {
             "text": "Github",
             "href": "https://github.com/arizdn234/webgame-snake-game",
+            "class": "btn btn-sm btn-white"
+          }
+        ]
+      },
+      {
+        "name": "other",
+        "title": "Smart Home Energy Management System CLI",
+        "image": "",
+        "description": "Smart Home Energy Management System CLI is a command-line tool that allows users to interact with CSV data, ask questions, and get AI-driven recommendations using Google's TAPAS model and Mistral AI's Mixtral model via the Hugging Face API.",
+        "technologies": [
+          "Go (Golang)",
+          "Google TAPAS model",
+          "Mistral AI Mixtral model",
+          "Hugging Face API"
+        ],
+        "features": [
+          "CSV Parsing: Reads and processes data from a CSV file to provide insights.",
+          "AI-Powered Answers: Uses Google's TAPAS model to answer questions about tabular data.",
+          "AI Recommendations: Provides recommendations using Mistral AI's Mixtral model."
+        ],
+        "contribution": "I developed the CLI tool to read CSV data, implement AI models for answering questions and providing recommendations, and manage user interactions effectively using Go.",
+        "links": [
+          {
+            "text": "Live",
+            "href": "https://github.com/arizdn234/Smart-Home-Energy-Management-System-CLI",
+            "class": "btn btn-sm"
+          },
+          {
+            "text": "Github",
+            "href": "https://github.com/arizdn234/Smart-Home-Energy-Management-System-CLI",
             "class": "btn btn-sm btn-white"
           }
         ]

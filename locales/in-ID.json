@@ -537,6 +537,100 @@
       },
       {
         "name": "webapp",
+        "title": "Task Tracker Plus",
+        "image": "ttp.png",
+        "description": "Task Tracker Plus adalah aplikasi monolitik yang dibangun menggunakan Go (Golang) untuk mengelola jadwal belajar. Aplikasi ini menyediakan REST API dengan kemampuan CRUD penuh untuk mengelola pengguna, tugas, dan kategori, serta mengikuti arsitektur MVC (Model-View-Controller).",
+        "technologies": [
+          "Go (Golang)",
+          "REST API",
+          "Arsitektur MVC"
+        ],
+        "features": [
+          "Pengembangan Backend (Server): Mengembangkan dan mengimplementasikan REST API untuk mengelola Pengguna, Tugas, dan Kategori dengan operasi CRUD penuh dan autentikasi pengguna.",
+          "Pengembangan Frontend (Klien): Membangun antarmuka pengguna dengan pola MVC termasuk halaman login, pendaftaran, dashboard, dan halaman manajemen untuk tugas dan kategori."
+        ],
+        "contribution": "Saya berkontribusi dalam pengembangan backend dengan mengimplementasikan REST API untuk mengelola pengguna, tugas, dan kategori. Saya memastikan autentikasi pengguna yang aman dan fungsi CRUD penuh menggunakan bahasa pemrograman Go dan arsitektur MVC.",
+        "links": [
+          {
+            "text": "Live",
+            "href": "https://github.com/arizdn234/Final-Course-Project-TTP",
+            "class": "btn btn-sm"
+          },
+          {
+            "text": "Github",
+            "href": "https://github.com/arizdn234/Final-Course-Project-TTP",
+            "class": "btn btn-sm btn-white"
+          }
+        ]
+      },
+      {
+        "name": "webapp",
+        "title": "Aplikasi Web Query CSV yang Ditenagai AI",
+        "image": "",
+        "description": "Aplikasi web ini memungkinkan pengguna untuk berinteraksi dengan data CSV menggunakan model AI. Pengguna dapat masuk, melihat data CSV yang diparsing, dan mengajukan pertanyaan yang dijawab oleh model AI, mengintegrasikan Gemini dari Google dan Tapas dari Hugging Face untuk respons berbasis data.",
+        "technologies": [
+          "Go (Golang)",
+          "Gin Web Framework",
+          "Google Generative AI Go SDK",
+          "API Hugging Face untuk model Tapas",
+          "Model Tapas Google",
+          "Model Gemini Google"
+        ],
+        "features": [
+          "Autentikasi dan Verifikasi Pengguna: Sistem login yang aman dengan langkah verifikasi.",
+          "Parsing dan Tampilan Data CSV: Membaca file CSV, memparsingnya ke format peta, dan menampilkan data kolom dengan contoh baris.",
+          "Integrasi Model AI: Menggunakan model Tapas dari Hugging Face untuk menjawab pertanyaan bahasa alami dari data CSV dan model Gemini Google untuk memberikan rekomendasi berbasis percakapan.",
+          "Interaksi Dinamis: Pengguna dapat mengajukan pertanyaan kepada AI untuk mendapatkan wawasan atau rekomendasi berdasarkan data CSV."
+        ],
+        "contribution": "Saya mengembangkan aplikasi web untuk membaca data CSV, mengimplementasikan model AI untuk menjawab pertanyaan dan memberikan rekomendasi, serta mengelola interaksi pengguna secara efektif menggunakan Go dan teknologi terkait.",
+        "links": [
+          {
+            "text": "Live",
+            "href": "https://github.com/arizdn234/AI-Enhanced-CSV-Query-Web-Application",
+            "class": "btn btn-sm"
+          },
+          {
+            "text": "Github",
+            "href": "https://github.com/arizdn234/AI-Enhanced-CSV-Query-Web-Application",
+            "class": "btn btn-sm btn-white"
+          }
+        ]
+      },
+      {
+        "name": "webapp",
+        "title": "Platform E-Commerce Terintegrasi",
+        "image": "uni-sell-1.svg",
+        "description": "Platform e-commerce kami adalah solusi komprehensif yang dirancang untuk memfasilitasi penjualan produk fisik dan digital. Platform ini menampilkan backend yang kuat menggunakan Laravel, frontend dinamis yang dikembangkan dengan Vue.js, dan mikroservis khusus yang dikelola oleh Express.js. Platform ini dikontainerisasi menggunakan Docker untuk konsistensi dalam penyebaran dan skalabilitas. Fitur utamanya meliputi manajemen produk, pelacakan inventaris waktu nyata, checkout aman, pemrosesan pembayaran, dan ulasan pengguna. Arsitektur ini memastikan pengalaman yang skalabel, dapat dipelihara, dan ramah pengguna untuk mengelola dan membeli produk secara online.",
+        "technologies": [
+          "Laravel (Framework PHP)",
+          "Vue.js (Framework JavaScript)",
+          "Express.js (Framework Node.js)",
+          "Docker (Kontainerisasi)",
+          "MySQL (Basis Data)"
+        ],
+        "features": [
+          "Katalog Produk: Manajemen komprehensif daftar produk dan kategori.",
+          "Keranjang Belanja dan Checkout: Pembaruan keranjang waktu nyata, checkout aman, dan berbagai gateway pembayaran.",
+          "Integrasi Pembayaran: Mendukung Stripe, PayPal, dan pemroses pembayaran lainnya.",
+          "Manajemen Pesanan dan Inventaris: Pelacakan pesanan waktu nyata dan pembaruan inventaris otomatis.",
+          "Sistem Ulasan dan Rating: Memungkinkan ulasan dan rating pengguna dengan fitur moderasi."
+        ],
+        "contribution": "Saya mengembangkan platform e-commerce terintegrasi ini, menggunakan Laravel untuk layanan backend, Vue.js untuk frontend, dan Express.js untuk mikroservis API. Saya juga mengelola kontainerisasi Docker untuk lingkungan penyebaran yang konsisten dan mengintegrasikan berbagai teknologi untuk memastikan skalabilitas dan pemeliharaan.",
+        "links": [
+          {
+            "text": "Live",
+            "href": "https://github.com/arizdn234/uni-sell",
+            "class": "btn btn-sm"
+          },
+          {
+            "text": "Github",
+            "href": "https://github.com/arizdn234/uni-sell",
+            "class": "btn btn-sm btn-white"
+          }
+        ]
+      },      
+      {
+        "name": "webapp",
         "title": "",
         "image": "",
         "description": "",
@@ -697,6 +791,69 @@
       },
       {
         "name": "webapi",
+        "title": "API Ketersediaan Hotel Mawar Indah",
+        "image": "web-api-default.svg",
+        "description": "API Ketersediaan Hotel Mawar Indah adalah layanan backend yang menyediakan informasi tentang ketersediaan kamar hotel. API ini memungkinkan klien untuk memeriksa ketersediaan kamar, melakukan reservasi, membatalkan reservasi, dan mendapatkan informasi detail kamar.",
+        "technologies": [
+          "Go (Golang) v1.22",
+          "Gin Web Framework",
+          "GORM",
+          "PostgreSQL"
+        ],
+        "features": [
+          "Pemeriksaan Ketersediaan Kamar: Klien dapat memeriksa ketersediaan kamar hotel yang saat ini belum dipesan.",
+          "Reservasi Kamar: Klien dapat melakukan reservasi untuk kamar hotel yang tersedia.",
+          "Pembatalan Reservasi: Klien dapat membatalkan reservasi yang telah dibuat.",
+          "Informasi Kamar: Klien dapat memperoleh informasi detail tentang kamar hotel, seperti fasilitas, harga, dan lainnya."
+        ],
+        "contribution": "Saya berkontribusi dengan mengembangkan fungsionalitas backend utama untuk memeriksa ketersediaan kamar, menangani reservasi kamar, dan menerapkan logika pembatalan reservasi menggunakan Go dan framework Gin. Selain itu, saya mengintegrasikan GORM ORM untuk interaksi yang mulus dengan database PostgreSQL dan memastikan API mematuhi praktik terbaik untuk kinerja dan keamanan.",
+        "links": [
+          {
+            "text": "Live",
+            "href": "https://github.com/arizdn234/Hotel-Mawar-Indah-Availability-API",
+            "class": "btn btn-sm"
+          },
+          {
+            "text": "Github",
+            "href": "https://github.com/arizdn234/Hotel-Mawar-Indah-Availability-API",
+            "class": "btn btn-sm btn-white"
+          }
+        ]
+      },
+      {
+        "name": "webapi",
+        "title": "TransactHub",
+        "image": "web-api-default.svg",
+        "description": "TransactHub adalah aplikasi backend yang dibangun dengan Node.js dan Express untuk menangani autentikasi pengguna, transaksi, dan manajemen data item menggunakan MySQL dan Sequelize ORM.",
+        "technologies": [
+          "Node.js",
+          "Express",
+          "MySQL",
+          "Sequelize"
+        ],
+        "features": [
+          "Autentikasi Pengguna: Menangani login pengguna, pendaftaran, dan autentikasi berbasis token.",
+          "Manajemen Dashboard: Menyediakan data untuk tampilan dashboard khusus pengguna.",
+          "Manajemen Item: Menangani operasi CRUD untuk item.",
+          "Penanganan Transaksi: Mengelola transaksi antara pengguna.",
+          "Manajemen Pengguna: Menangani operasi data terkait pengguna."
+        ],
+        "contribution": "Saya berkontribusi dengan mengembangkan fungsionalitas backend, mengimplementasikan endpoint RESTful API untuk autentikasi pengguna, manajemen item, transaksi, dan operasi terkait pengguna menggunakan Node.js, Express, dan Sequelize.",
+        "links": [
+          {
+            "text": "Live",
+            "href": "https://github.com/arizdn234/TransactHub",
+            "class": "btn btn-sm"
+          },
+          {
+            "text": "Github",
+            "href": "https://github.com/arizdn234/TransactHub",
+            "class": "btn btn-sm btn-white"
+          }
+        ]
+      },
+      {
+        "name": "webapi",
         "title": "",
         "image": "",
         "description": "",
@@ -749,6 +906,36 @@
           }
         ]
       },
+      {
+        "name": "other",
+        "title": "Sistem Manajemen Energi Rumah Pintar CLI",
+        "image": "",
+        "description": "Sistem Manajemen Energi Rumah Pintar CLI adalah alat baris perintah yang memungkinkan pengguna untuk berinteraksi dengan data CSV, mengajukan pertanyaan, dan mendapatkan rekomendasi berbasis AI menggunakan model TAPAS dari Google dan model Mixtral AI dari Mistral melalui API Hugging Face.",
+        "technologies": [
+          "Go (Golang)",
+          "Model TAPAS Google",
+          "Model Mixtral AI Mistral",
+          "API Hugging Face"
+        ],
+        "features": [
+          "Parsing CSV: Membaca dan memproses data dari file CSV untuk memberikan wawasan.",
+          "Jawaban Bertenaga AI: Menggunakan model TAPAS dari Google untuk menjawab pertanyaan tentang data tabel.",
+          "Rekomendasi AI: Memberikan rekomendasi menggunakan model Mixtral AI dari Mistral."
+        ],
+        "contribution": "Saya mengembangkan alat CLI untuk membaca data CSV, mengimplementasikan model AI untuk menjawab pertanyaan dan memberikan rekomendasi, serta mengelola interaksi pengguna secara efektif menggunakan Go.",
+        "links": [
+          {
+            "text": "Live",
+            "href": "https://github.com/arizdn234/Smart-Home-Energy-Management-System-CLI",
+            "class": "btn btn-sm"
+          },
+          {
+            "text": "Github",
+            "href": "https://github.com/arizdn234/Smart-Home-Energy-Management-System-CLI",
+            "class": "btn btn-sm btn-white"
+          }
+        ]
+      },      
       {
         "name": "other",
         "title": "",
