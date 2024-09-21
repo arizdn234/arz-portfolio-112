@@ -22,7 +22,7 @@
     --light2: #e6e6e6;
     --fixedlight: #e6e6e6;
     --gradient: linear-gradient(144deg, rgba(64,223,219,1) 0%, rgba(207,51,169,1) 100%);
-    --gradient2: linear-gradient(144deg, rgba(207,51,169,1) 0%, rgba(64,223,219,1) 100%);
+    --gradient2: linear-gradient(168deg, rgb(55, 65, 214) 0%, rgb(231, 73, 126) 100%);
 
     --transition: .4s ease;
 }
@@ -38,7 +38,7 @@
     --light2: #454545;
     --fixedlight: #e6e6e6;
     --gradient: linear-gradient(144deg, rgba(64,223,219,1) 0%, rgba(207,51,169,1) 100%);
-    --gradient2: linear-gradient(144deg, rgba(207,51,169,1) 0%, rgba(64,223,219,1) 100%);
+    --gradient2: linear-gradient(168deg, rgb(55, 65, 214) 0%, rgb(231, 73, 126) 100%);
 
     --transition: .4s ease;
 }
@@ -131,7 +131,7 @@ img {
     transition: var(--transition);
 }
 .btn:hover {
-    background: var(--gradient);
+    background: var(--gradient2);
     border-color: var(--gradient);
     transform: translateY(-.2rem);
     box-shadow: 0 0 1rem var(--primary);
@@ -141,7 +141,7 @@ img {
     border-color: var(--black);
 }
 .btn-white:hover {
-    background: var(--gradient);
+    background: var(--gradient2);
     color: var(--background);
     border-color: var(--background);
     box-shadow: 0 0 1rem var(--primary);
@@ -575,7 +575,7 @@ form input:focus, textarea:focus{
 
 /* --- footer --- */
 footer {
-    background: var(--gradient);
+    background: var(--gradient2);
     height: 5rem;
     display: flex;
     align-items: center;
