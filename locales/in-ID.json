@@ -322,6 +322,169 @@
     "projects": [
       {
         "name": "star",
+        "title": "Integrated E-Commerce Platform",
+        "image": "uni-sell-1.svg",
+        "description": "Platform e-commerce kami adalah solusi komprehensif yang dirancang untuk memfasilitasi penjualan produk fisik dan digital. Platform ini dilengkapi dengan backend yang tangguh yang dibangun menggunakan Laravel, frontend dinamis yang dikembangkan dengan Vue.js, serta microservices khusus yang ditangani oleh Express.js. Platform ini dikontainerisasi menggunakan Docker untuk penyebaran yang konsisten dan skalabilitas. Fitur-fitur utama termasuk manajemen produk, pelacakan inventaris real-time, checkout yang aman, pemrosesan pembayaran, dan ulasan pengguna. Arsitektur ini memastikan pengalaman yang skalabel, dapat dikelola, dan ramah pengguna untuk mengelola serta membeli produk secara online.",
+        "technologies": [
+          "Laravel (Framework PHP)",
+          "Vue.js (Framework JavaScript)",
+          "Express.js (Framework Node.js)",
+          "Docker (Kontainerisasi)",
+          "MySQL (Basis Data)"
+        ],
+        "features": [
+          "Katalog Produk: Manajemen komprehensif untuk daftar produk dan kategori.",
+          "Keranjang Belanja dan Checkout: Pembaruan keranjang belanja secara real-time, checkout yang aman, dan dukungan berbagai gerbang pembayaran.",
+          "Integrasi Pembayaran: Mendukung Stripe, PayPal, dan prosesor pembayaran lainnya.",
+          "Manajemen Pesanan dan Inventaris: Pelacakan pesanan real-time dan pembaruan inventaris otomatis.",
+          "Sistem Ulasan dan Peringkat: Memungkinkan ulasan dan peringkat pengguna dengan fitur moderasi."
+        ],
+        "contribution": "Saya mengembangkan platform e-commerce terpadu, menerapkan Laravel untuk layanan backend, Vue.js untuk frontend, dan Express.js untuk layanan microservices API. Saya juga mengelola kontainerisasi Docker untuk lingkungan penyebaran yang konsisten dan mengintegrasikan berbagai teknologi untuk memastikan skalabilitas dan kemudahan pemeliharaan.",
+        "links": [
+          {
+            "text": "Live",
+            "href": "https://github.com/arizdn234/uni-sell",
+            "class": "btn btn-sm"
+          },
+          {
+            "text": "Github",
+            "href": "https://github.com/arizdn234/uni-sell",
+            "class": "btn btn-sm btn-white"
+          }
+        ]
+      },
+      {
+        "name": "star",
+        "title": "AI-Enhanced CSV Query Web Application",
+        "image": "",
+        "description": "Aplikasi web ini memungkinkan pengguna untuk berinteraksi dengan data CSV menggunakan model AI. Pengguna dapat masuk, melihat data CSV yang telah diurai, dan mengajukan pertanyaan yang dijawab oleh model AI, mengintegrasikan Google Gemini dan Tapas dari Hugging Face untuk respons berbasis data.",
+        "technologies": [
+          "Go (Golang)",
+          "Gin Web Framework",
+          "Google Generative AI Go SDK",
+          "API Hugging Face untuk model Tapas",
+          "Model Tapas Google",
+          "Model Gemini Google"
+        ],
+        "features": [
+          "Otentikasi dan Verifikasi Pengguna: Sistem login yang aman dengan langkah verifikasi.",
+          "Penguraian dan Tampilan Data CSV: Membaca file CSV, menguraikannya ke dalam format peta, dan menampilkan data kolom dengan contoh baris.",
+          "Integrasi Model AI: Menggunakan model Tapas dari Hugging Face untuk menjawab pertanyaan bahasa alami dari data CSV dan model Gemini Google untuk memberikan rekomendasi percakapan.",
+          "Interaksi Dinamis: Pengguna dapat mengajukan pertanyaan kepada AI untuk wawasan atau rekomendasi berdasarkan data CSV."
+        ],
+        "contribution": "Saya mengembangkan aplikasi web untuk membaca data CSV, menerapkan model AI untuk menjawab pertanyaan dan memberikan rekomendasi, serta mengelola interaksi pengguna dengan efektif menggunakan Go dan teknologi terkait.",
+        "links": [
+          {
+            "text": "Live",
+            "href": "https://github.com/arizdn234/AI-Enhanced-CSV-Query-Web-Application",
+            "class": "btn btn-sm"
+          },
+          {
+            "text": "Github",
+            "href": "https://github.com/arizdn234/AI-Enhanced-CSV-Query-Web-Application",
+            "class": "btn btn-sm btn-white"
+          }
+        ]
+      },
+      {
+        "name": "star",
+        "title": "Authentication System (Golang, Gin)",
+        "image": "web-api-default.svg",
+        "description": "Sistem otentikasi pengguna yang dibangun dengan framework Gin di Golang, menampilkan otorisasi berbasis JWT dan operasi CRUD untuk data pengguna menggunakan SQLite dan GORM.",
+        "technologies": [
+          "Golang",
+          "Framework Gin",
+          "GORM",
+          "SQLite",
+          "JWT",
+          "Ginkgo",
+          "Gomega"
+        ],
+        "features": [
+          "Otentikasi dan Otorisasi Berbasis JWT",
+          "Hashing Kata Sandi untuk Penyimpanan Data yang Aman",
+          "Basis Data SQLite dengan ORM GORM",
+          "Operasi CRUD Lengkap untuk Manajemen Pengguna",
+          "Pengujian Unit dengan Ginkgo dan Gomega",
+          "Struktur Proyek Modular dengan Pemisahan Tugas yang Jelas",
+          "Endpoint API RESTful dengan Kontrol Akses Aman",
+          "Manajemen Sesi Pengguna dengan Token JWT Berbasis Cookie"
+        ],
+        "contribution": "Merancang dan mengimplementasikan sistem otentikasi dan manajemen pengguna yang kuat di Golang menggunakan framework Gin. Kontribusi utama termasuk mengembangkan otentikasi berbasis JWT untuk kontrol akses yang aman, mengintegrasikan SQLite dengan GORM untuk manajemen basis data yang efektif, serta menyiapkan framework pengujian komprehensif (Ginkgo dan Gomega) untuk memastikan keandalan kode. Saya juga menyusun proyek agar mengikuti praktik terbaik dengan komponen modular untuk memastikan kemudahan pemeliharaan dan skalabilitas.",
+        "links": [
+          {
+            "text": "Live",
+            "href": "https://github.com/arizdn234/crud-users-and-login-system-with-gin",
+            "class": "btn btn-sm"
+          },
+          {
+            "text": "Github",
+            "href": "https://github.com/arizdn234/crud-users-and-login-system-with-gin",
+            "class": "btn btn-sm btn-white"
+          }
+        ]
+      },
+      {
+        "name": "star",
+        "title": "Task Tracker Plus",
+        "image": "ttp.png",
+        "description": "Task Tracker Plus adalah aplikasi monolitik yang dibangun menggunakan Go (Golang) untuk mengelola jadwal belajar. Aplikasi ini menyediakan API REST dengan kemampuan CRUD penuh untuk mengelola pengguna, tugas, dan kategori, serta mengikuti arsitektur MVC (Model-View-Controller).",
+        "technologies": ["Go (Golang)", "REST API", "Arsitektur MVC"],
+        "features": [
+          "Pengembangan Backend (Server): Mengembangkan dan mengimplementasikan API REST untuk mengelola Pengguna, Tugas, dan Kategori dengan operasi CRUD penuh serta otentikasi pengguna.",
+          "Pengembangan Frontend (Client): Membangun antarmuka pengguna dengan pola MVC termasuk login, pendaftaran, dasbor, dan halaman manajemen untuk tugas dan kategori."
+        ],
+        "contribution": "Saya berkontribusi pada pengembangan backend dengan mengimplementasikan API REST untuk mengelola pengguna, tugas, dan kategori. Saya memastikan otentikasi pengguna yang aman dan fungsionalitas CRUD penuh menggunakan bahasa pemrograman Go dan arsitektur MVC.",
+        "links": [
+          {
+            "text": "Live",
+            "href": "https://github.com/arizdn234/Final-Course-Project-TTP",
+            "class": "btn btn-sm"
+          },
+          {
+            "text": "Github",
+            "href": "https://github.com/arizdn234/Final-Course-Project-TTP",
+            "class": "btn btn-sm btn-white"
+          }
+        ]
+      },
+      {
+        "name": "star",
+        "title": "Bookstore REST API",
+        "image": "web-api-default.svg",
+        "description": "API RESTful berbasis Nodejs yang kuat dan serbaguna yang dirancang untuk mengelola toko buku, menyediakan endpoint untuk manajemen akun pengguna, serta operasi CRUD untuk buku.",
+        "technologies": [
+          "Node.js",
+          "Express",
+          "PostgreSQL",
+          "Sequelize",
+          "bcryptjs",
+          "jsonwebtoken"
+        ],
+        "features": [
+          "Registrasi dan login akun pengguna",
+          "Mengambil daftar semua buku",
+          "Mengakses informasi detail tentang buku tertentu",
+          "Menambah buku baru ke inventaris",
+          "Memperbarui detail buku",
+          "Menghapus buku dari inventaris"
+        ],
+        "contribution": "Mengembangkan seluruh API dari awal, termasuk menyiapkan lingkungan Node.js, mengonfigurasi basis data dengan Sequelize, membuat rute untuk otentikasi pengguna dan operasi buku, serta menerapkan middleware untuk keamanan dan validasi.",
+        "links": [
+          {
+            "text": "Live",
+            "href": "https://github.com/arizdn234/bookstore-api",
+            "class": "btn btn-sm"
+          },
+          {
+            "text": "Github",
+            "href": "https://github.com/arizdn234/bookstore-api",
+            "class": "btn btn-sm btn-white"
+          }
+        ]
+      },
+      {
+        "name": "star",
         "title": "",
         "image": "",
         "description": "",
@@ -346,11 +509,7 @@
         "title": "Situs Web Pribadi",
         "image": "web-profile-112.svg",
         "description": "Mengembangkan situs web pribadi yang canggih untuk menampilkan latar belakang profesional, keterampilan, dan proyek portofolio dalam tampilan yang menarik secara visual dan mudah digunakan.",
-        "technologies": [
-          "HTML",
-          "CSS",
-          "JavaScript"
-        ],
+        "technologies": ["HTML", "CSS", "JavaScript"],
         "features": [
           "Desain Responsif Sepenuhnya yang memastikan pengalaman mulus di semua perangkat",
           "Bagian Portofolio Interaktif dengan penyaringan proyek dinamis",
@@ -448,11 +607,7 @@
         "title": "Kanban App - Tema Modern",
         "image": "kanban-app.svg",
         "description": "Kanban App adalah aplikasi manajemen tugas berbasis web dengan tema modern. Aplikasi ini memungkinkan pengguna untuk membuat, mengedit, memindahkan, dan menghapus tugas pada papan Kanban dengan tiga kolom: Backlog, On Progress, dan Done.",
-        "technologies": [
-          "HTML",
-          "CSS",
-          "JavaScript"
-        ],
+        "technologies": ["HTML", "CSS", "JavaScript"],
         "features": [
           "Buat Tugas Baru: Masukkan nama tugas dan klik tombol 'Buat' untuk menambahkannya ke kolom Backlog.",
           "Edit Tugas: Klik dua kali pada nama tugas untuk mengeditnya.",
@@ -479,12 +634,7 @@
         "title": "Music Fetch (Express, Multer)",
         "image": "music-fetch.svg",
         "description": "Music Fetch adalah aplikasi web Nodejs untuk mengelola data musik dengan operasi CRUD menggunakan Expressjs dan Multer untuk penanganan file. Aplikasi ini menawarkan antarmuka yang sederhana untuk manipulasi data musik yang efisien.",
-        "technologies": [
-          "Node.js",
-          "Express.js",
-          "Multer",
-          "JSON"
-        ],
+        "technologies": ["Node.js", "Express.js", "Multer", "JSON"],
         "features": [
           "CRUD untuk data musik dalam JSON",
           "Pengunggahan file dengan Multer",
@@ -510,11 +660,7 @@
         "title": "Modern Business Landing Page Project",
         "image": "business-landing-page.svg",
         "description": "Proyek ini bertujuan untuk mereplikasi dan meningkatkan kualitas sebuah landing page yang telah dirancang secara visual di Figma. Dengan memanfaatkan teknologi web modern seperti HTML, CSS, dan JavaScript, mengembangkan landing page yang tidak hanya mencerminkan desain yang ditetapkan tetapi juga menambahkan sentuhan fungsionalitas dan estetika tambahan. Berfokus pada penciptaan elemen-elemen visual yang menarik, interaksi yang mulus, dan pengalaman pengguna yang menyenangkan. Juga memastikan bahwa halaman ini responsif dan dioptimalkan untuk berbagai perangkat, dengan implementasi animasi halus dan transisi yang meningkatkan pengalaman visual secara keseluruhan.",
-        "technologies": [
-          "HTML",
-          "CSS",
-          "JavaScript"
-        ],
+        "technologies": ["HTML", "CSS", "JavaScript"],
         "features": [
           "Section A: Header & Banner",
           "Section B: Product Features 1 & Features",
@@ -540,11 +686,7 @@
         "title": "Task Tracker Plus",
         "image": "ttp.png",
         "description": "Task Tracker Plus adalah aplikasi monolitik yang dibangun menggunakan Go (Golang) untuk mengelola jadwal belajar. Aplikasi ini menyediakan REST API dengan kemampuan CRUD penuh untuk mengelola pengguna, tugas, dan kategori, serta mengikuti arsitektur MVC (Model-View-Controller).",
-        "technologies": [
-          "Go (Golang)",
-          "REST API",
-          "Arsitektur MVC"
-        ],
+        "technologies": ["Go (Golang)", "REST API", "Arsitektur MVC"],
         "features": [
           "Pengembangan Backend (Server): Mengembangkan dan mengimplementasikan REST API untuk mengelola Pengguna, Tugas, dan Kategori dengan operasi CRUD penuh dan autentikasi pengguna.",
           "Pengembangan Frontend (Klien): Membangun antarmuka pengguna dengan pola MVC termasuk halaman login, pendaftaran, dashboard, dan halaman manajemen untuk tugas dan kategori."
@@ -628,7 +770,7 @@
             "class": "btn btn-sm btn-white"
           }
         ]
-      },      
+      },
       {
         "name": "webapp",
         "title": "",
@@ -765,7 +907,13 @@
         "title": "API B2C E-Commerce (Node.js)",
         "image": "web-api-default.svg",
         "description": "API back-end untuk aplikasi e-commerce B2C yang dibangun menggunakan Nodejs, Prisma, Express, dan PostgreSQL. API ini menangani manajemen produk, otentikasi pengguna, manajemen keranjang belanja, pemrosesan pesanan, dan penanganan pembayaran.",
-        "technologies": ["Node.js", "Prisma", "Express", "PostgreSQL", "Autentikasi JWT"],
+        "technologies": [
+          "Node.js",
+          "Prisma",
+          "Express",
+          "PostgreSQL",
+          "Autentikasi JWT"
+        ],
         "features": [
           "Registrasi dan Login Pengguna",
           "Manajemen Produk (operasi CRUD)",
@@ -825,12 +973,7 @@
         "title": "TransactHub",
         "image": "web-api-default.svg",
         "description": "TransactHub adalah aplikasi backend yang dibangun dengan Node.js dan Express untuk menangani autentikasi pengguna, transaksi, dan manajemen data item menggunakan MySQL dan Sequelize ORM.",
-        "technologies": [
-          "Node.js",
-          "Express",
-          "MySQL",
-          "Sequelize"
-        ],
+        "technologies": ["Node.js", "Express", "MySQL", "Sequelize"],
         "features": [
           "Autentikasi Pengguna: Menangani login pengguna, pendaftaran, dan autentikasi berbasis token.",
           "Manajemen Dashboard: Menyediakan data untuk tampilan dashboard khusus pengguna.",
@@ -878,12 +1021,7 @@
         "title": "Snake Game",
         "image": "snake-game.svg",
         "description": "Sebuah permainan ular di mana pemain mengendalikan ular untuk memakan umpan, menghindari bom, dan mencapai skor tertinggi.",
-        "technologies": [
-          "HTML",
-          "CSS",
-          "JavaScript",
-          "Local Storage"
-        ],
+        "technologies": ["HTML", "CSS", "JavaScript", "Local Storage"],
         "features": [
           "3 Tingkat Kesulitan: Mudah, Sedang, Sulit",
           "Leaderboard untuk 5 Pemain Terbaik",
@@ -896,7 +1034,7 @@
         "links": [
           {
             "text": "Live",
-            "href": "https://wdp-12.github.io/Finalproject1_Kelompok1/",
+            "href": "https://arizdn234.github.io/webgame-snake-game/",
             "class": "btn btn-sm"
           },
           {
@@ -935,7 +1073,7 @@
             "class": "btn btn-sm btn-white"
           }
         ]
-      },      
+      },
       {
         "name": "other",
         "title": "",
