@@ -356,7 +356,7 @@
       {
         "name": "star",
         "title": "AI-Enhanced CSV Query Web Application",
-        "image": "",
+        "image": "aitapas.svg",
         "description": "This web application allows users to interact with CSV data using AI models. Users can log in, view the parsed CSV data, and ask questions answered by AI models, integrating Google’s Gemini and Hugging Face’s Tapas for data-driven responses.",
         "technologies": [
           "Go (Golang)",
