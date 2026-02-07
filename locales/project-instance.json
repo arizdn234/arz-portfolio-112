@@ -1,10 +1,10 @@
 {
-  "name": "star",
-  "id": "aitapas",
+  "name": "webapp",
+  "id": "web-profile-112",
   "helper_text": "Tap the card for more details",
-  "title": "AI-Enhanced CSV Query Web App",
-  "image": "aitapas.svg",
-  "description": "AThis web application allows users to interact with CSV data using AI models. Users can log in, view the parsed CSV data, and ask questions answered by AI models, integrating Google’s Gemini and Hugging Face’s Tapas for data-driven responses.",
+  "title": "Advance Portfolio Website",
+  "image": "web-profile-112.svg",
+  "description": "Developed a sophisticated personal website to showcase professional background, skills, and portfolio projects in a visually appealing and user-friendly manner.",
   "project_type": "Learning",
   "role": "Individual Contributor (Learning Project)",
 
@@ -13,9 +13,9 @@
   "problem_statement": "Learning how to ...",
 
   "stack": {
-    "backend": ["Gin (Golang)"],
-    "frontend": ["Native HTML, JS", "TailwindCSS"],
-    "database": [],
+    "backend": [""],
+    "frontend": ["Native HTML, JS", "CSS"],
+    "database": [""],
     "containerization": ""
   },
 
@@ -27,10 +27,13 @@
   },
 
   "features": [
-    "User Authentication and Verification: Secure login system with a verification step.",
-          "CSV Data Parsing and Display: Reads CSV files, parses them into a map format, and displays column data with example rows.",
-          "AI Model Integration: Uses Hugging Face’s Tapas model to answer natural language queries from CSV data and Google’s Gemini model to provide conversational recommendations.",
-          "Dynamic Interaction: Users can ask questions to AI for insights or recommendations based on CSV data."
+    "Fully Responsive Design ensuring seamless experience across all devices",
+          "Interactive Portfolio Section with dynamic project filtering",
+          "Single Page Application (SPA) for smooth and fast navigation",
+          "Animated Smooth Scrolling and Section Highlighting",
+          "Lazy Loading for faster page load times",
+          "Dark and Light Theme Toggle for enhanced user experience",
+          "Multi-language Support [English.Indonesian, Javanese]"
   ],
 
   "contribution": {
@@ -65,14 +68,14 @@
 
   "links": [
     {
-      "text": "Live",
-      "href": "https://github.com/arizdn234/AI-Enhanced-CSV-Query-Web-Application",
-      "class": "btn btn-sm"
-    },
-    {
-      "text": "Github",
-      "href": "https://github.com/arizdn234/AI-Enhanced-CSV-Query-Web-Application",
-      "class": "btn btn-sm btn-white"
-    }
+            "text": "Live",
+            "href": "https://arizdn234.github.io/arz-portfolio-112",
+            "class": "btn btn-sm"
+          },
+          {
+            "text": "Github",
+            "href": "https://github.com/arizdn234/arz-portfolio-112",
+            "class": "btn btn-sm btn-white"
+          }
   ]
 }

@@ -993,22 +993,86 @@
       },
       {
         "name": "webapp",
-        "title": "Personal Website",
+        "id": "web-profile-112",
         "helper_text": "Tap the card for more details",
+        "title": "Advance Portfolio Website",
         "image": "web-profile-112.svg",
         "description": "Developed a sophisticated personal website to showcase professional background, skills, and portfolio projects in a visually appealing and user-friendly manner.",
-        "technologies": ["HTML", "CSS", "JavaScript"],
+        "project_type": "Learning",
+        "role": "Individual Contributor (Learning Project)",
+
+        "summary": "A learning project focused on building an advanced personal portfolio website using native web technologies, emphasizing clean UI, smooth interactions, and responsive design best practices.",
+
+        "problem_statement": "Learning how to design, structure, and implement a modern portfolio website from scratch without relying on external frameworks, while maintaining performance, accessibility, and scalability.",
+
+        "stack": {
+          "backend": [],
+          "frontend": ["Native HTML", "Vanilla JavaScript", "CSS"],
+          "database": [],
+          "containerization": []
+        },
+
+        "architecture": {
+          "style": "MVC",
+          "notes": [
+            "Logical separation between data (content configuration), UI components, and interaction logic",
+            "Client-side rendering handled entirely in the browser"
+          ]
+        },
+
         "features": [
           "Fully Responsive Design ensuring seamless experience across all devices",
           "Interactive Portfolio Section with dynamic project filtering",
-          "Contact Form integrated with EmailJS for direct communication",
           "Single Page Application (SPA) for smooth and fast navigation",
           "Animated Smooth Scrolling and Section Highlighting",
           "Lazy Loading for faster page load times",
           "Dark and Light Theme Toggle for enhanced user experience",
-          "Multi-language Support [Indonesian, English]"
+          "Multi-language Support [English, Indonesian, Javanese]"
         ],
-        "contribution": "Led the end-to-end design and development of a personal website, emphasizing a clean, modern design paired with an intuitive user experience. Leveraged core web technologies like HTML, CSS, and JavaScript to build a fully responsive and interactive site. Added advanced features such as theme toggling between dark and light modes, and multi-language support to cater to a broader audience. Integrated EmailJS for real-time communication and optimized performance with lazy loading. Deployed and maintained the site using GitHub Pages, ensuring continuous availability and ease of updates.",
+
+        "contribution": {
+          "scope": [
+            "Frontend",
+            "Architecture Design",
+            "UI/UX",
+            "Content Structuring"
+          ],
+          "details": [
+            "Designed overall website architecture and content structure",
+            "Implemented responsive layouts using pure CSS",
+            "Developed interactive features using vanilla JavaScript",
+            "Optimized performance with lazy loading and minimal dependencies",
+            "Configured multi-language support and theme toggling logic"
+          ]
+        },
+
+        "testing": {
+          "level": ["Manual Testing"],
+          "notes": "No automated testing implemented; testing performed manually across multiple screen sizes and browsers."
+        },
+
+        "tradeoffs": [
+          "No backend integration to keep the project lightweight and focused on frontend fundamentals",
+          "Limited scalability compared to framework-based solutions",
+          "Manual state management instead of using established libraries"
+        ],
+
+        "impact": [
+          "Improved understanding of core web technologies (HTML, CSS, JavaScript)",
+          "Gained experience in building SPA-like behavior without frameworks",
+          "Enhanced skills in UI/UX design, performance optimization, and clean code organization"
+        ],
+
+        "scale": {
+          "users": "Not defined",
+          "environment": "Local development & static hosting"
+        },
+
+        "deployment": {
+          "status": "Deployed (Static Hosting)",
+          "notes": "Deployed using GitHub Pages for demonstration purposes"
+        },
+
         "links": [
           {
             "text": "Live",
@@ -1024,26 +1088,87 @@
       },
       {
         "name": "webapp",
-        "title": "Django User Authentication Project",
+        "id": "auth-django-001",
         "helper_text": "Tap the card for more details",
+        "title": "Django User Authentication Project",
         "image": "auth-django.svg",
-        "description": "A simple application using Django for managing user authentication, including registration, login, and authentication via Google, Facebook, and Github accounts.",
-        "technologies": [
-          "Django",
-          "Python",
-          "OAuth",
-          "Google API",
-          "Facebook API",
-          "Github API"
-        ],
+        "description": "A learning project focused on implementing a complete user authentication system using Django, including traditional authentication and social login via OAuth providers.",
+
+        "project_type": "Learning",
+        "role": "Individual Contributor (Learning Project)",
+
+        "summary": "A Django-based learning project that demonstrates core authentication concepts such as user registration, login, session management, and third-party OAuth authentication using Google, Facebook, and Github.",
+
+        "problem_statement": "Learning how to implement secure user authentication in a backend framework, understand Django’s authentication system, and integrate third-party OAuth providers using industry-standard practices.",
+
+        "stack": {
+          "backend": ["Python", "Django"],
+          "frontend": ["Django Templates", "HTML", "CSS"],
+          "database": ["SQLite (Default Django DB)"],
+          "containerization": []
+        },
+
+        "architecture": {
+          "style": "MVC (MTV in Django)",
+          "notes": [
+            "Utilized Django’s built-in authentication and session management",
+            "Separated concerns between views, templates, and authentication logic",
+            "OAuth handled through third-party Django packages"
+          ]
+        },
+
         "features": [
-          "User Registration",
-          "User Login",
-          "Login/Registration with Google Account",
-          "Login/Registration with Facebook Account",
-          "Login/Registration with Github Account"
+          "User Registration with form validation",
+          "User Login and Logout using Django authentication system",
+          "Social Login and Registration with Google Account (OAuth)",
+          "Social Login and Registration with Facebook Account (OAuth)",
+          "Social Login and Registration with Github Account (OAuth)",
+          "Session-based authentication and access control"
         ],
-        "contribution": "Implemented a Django-based authentication system, including OAuth integration for Google, Facebook, and Github.",
+
+        "contribution": {
+          "scope": [
+            "Backend",
+            "Authentication",
+            "OAuth Integration",
+            "Database"
+          ],
+          "details": [
+            "Implemented user registration and login using Django’s authentication framework",
+            "Integrated OAuth providers (Google, Facebook, Github) for social authentication",
+            "Configured authentication workflows and callback handling",
+            "Managed user sessions and protected routes",
+            "Structured database models using Django ORM"
+          ]
+        },
+
+        "testing": {
+          "level": ["Manual Testing"],
+          "notes": "Authentication flows tested manually, including registration, login, logout, and OAuth callback handling."
+        },
+
+        "tradeoffs": [
+          "Limited frontend styling to keep focus on backend authentication logic",
+          "SQLite used for simplicity instead of production-grade databases",
+          "No automated tests implemented to reduce project complexity"
+        ],
+
+        "impact": [
+          "Improved understanding of Django authentication and authorization mechanisms",
+          "Hands-on experience with OAuth 2.0 and third-party identity providers",
+          "Gained practical knowledge of session management and secure login flows"
+        ],
+
+        "scale": {
+          "users": "Not defined",
+          "environment": "Local development"
+        },
+
+        "deployment": {
+          "status": "Not deployed",
+          "notes": "Built and tested locally as a backend-focused learning project"
+        },
+
         "links": [
           {
             "text": "Live",
@@ -1059,30 +1184,90 @@
       },
       {
         "name": "webapp",
-        "title": "User OAuth with Google (Node.js)",
+        "id": "auth-node-google-001",
         "helper_text": "Tap the card for more details",
+        "title": "User OAuth with Google (Node.js)",
         "image": "auth-js.svg",
-        "description": "This project demonstrates user authentication using a Google account with Node.js, Express, and Passport.",
-        "technologies": [
-          "Node.js",
-          "Express",
-          "Passport",
-          "Google OAuth",
-          "EJS",
-          "Express Session"
-        ],
+        "description": "A backend-focused learning project that demonstrates Google OAuth-based user authentication using Node.js, Express, and Passport, with session-based login management.",
+
+        "project_type": "Learning",
+        "role": "Individual Contributor (Learning Project)",
+
+        "summary": "A Node.js learning project designed to explore OAuth 2.0 authentication flows using Google as an identity provider, implemented with Express, Passport.js, and session-based authentication.",
+
+        "problem_statement": "Learning how to implement third-party authentication using OAuth 2.0 in a Node.js environment, manage user sessions securely, and structure authentication logic in an Express application.",
+
+        "stack": {
+          "backend": ["Node.js", "Express", "Passport.js"],
+          "frontend": ["EJS", "HTML", "CSS"],
+          "database": ["(In-memory / Session-based)"],
+          "containerization": []
+        },
+
+        "architecture": {
+          "style": "MVC (Express-based)",
+          "notes": [
+            "Authentication logic handled by Passport strategies",
+            "Session management implemented using Express Session",
+            "Views rendered server-side using EJS templates"
+          ]
+        },
+
         "features": [
-          "User Authentication using Google Account",
-          "Session Management with Express Session",
-          "OAuth Authentication with Passport",
-          "Dynamic Views using EJS",
-          "Google OAuth Implementation for Login"
+          "User Authentication using Google Account (OAuth 2.0)",
+          "Secure OAuth flow implementation with Passport Google Strategy",
+          "Session-based login and logout management",
+          "Protected routes accessible only to authenticated users",
+          "Dynamic server-rendered views using EJS"
         ],
-        "contribution": "Developed Google OAuth-based authentication features, including integration with Passport and session management using Express Session.",
+
+        "contribution": {
+          "scope": [
+            "Backend",
+            "Authentication",
+            "OAuth Integration",
+            "Session Management"
+          ],
+          "details": [
+            "Implemented Google OAuth authentication using Passport.js",
+            "Configured Express Session for user session persistence",
+            "Defined authentication routes and callback handlers",
+            "Integrated Passport middleware into Express application flow",
+            "Developed server-rendered views using EJS"
+          ]
+        },
+
+        "testing": {
+          "level": ["Manual Testing"],
+          "notes": "OAuth login flow, session persistence, and protected routes tested manually during development."
+        },
+
+        "tradeoffs": [
+          "No database integration to keep focus on OAuth and session handling",
+          "Session data stored in memory, not suitable for production environments",
+          "Minimal frontend styling to prioritize backend authentication concepts"
+        ],
+
+        "impact": [
+          "Hands-on experience implementing OAuth 2.0 with Passport.js",
+          "Improved understanding of session-based authentication in Express",
+          "Gained practical knowledge of integrating third-party identity providers"
+        ],
+
+        "scale": {
+          "users": "Not defined",
+          "environment": "Local development"
+        },
+
+        "deployment": {
+          "status": "Not deployed",
+          "notes": "Used locally for learning and experimentation with OAuth authentication flows"
+        },
+
         "links": [
           {
             "text": "Live",
-            "href": "",
+            "href": "https://github.com/arizdn234/user-auth-with-google-account-js",
             "class": "btn btn-sm"
           },
           {
@@ -1094,19 +1279,81 @@
       },
       {
         "name": "webapp",
-        "title": "Kanban App - Modern Theme",
+        "id": "kanban-app-modern-001",
         "helper_text": "Tap the card for more details",
+        "title": "Kanban App – Modern Theme",
         "image": "kanban-app.svg",
-        "description": "Kanban App is a web-based task management application with a modern theme. It allows users to create, edit, move, and delete tasks on a Kanban board with three columns: Backlog, On Progress, and Done.",
-        "technologies": ["HTML", "CSS", "JavaScript"],
+        "description": "A frontend-focused learning project that implements a modern Kanban board application for task management using pure web technologies.",
+
+        "project_type": "Learning",
+        "role": "Individual Contributor (Learning Project)",
+
+        "summary": "A web-based Kanban application designed to practice state management, DOM manipulation, and drag-and-drop interactions using vanilla JavaScript, featuring a modern and responsive user interface.",
+
+        "problem_statement": "Learning how to build an interactive task management application without external libraries, handle dynamic UI updates, and implement drag-and-drop functionality efficiently in the browser.",
+
+        "stack": {
+          "backend": [],
+          "frontend": ["HTML", "CSS", "Vanilla JavaScript"],
+          "database": ["Local Storage (Optional / In-browser state)"],
+          "containerization": []
+        },
+
+        "architecture": {
+          "style": "Component-based (Vanilla JS)",
+          "notes": [
+            "Application state managed on the client side",
+            "DOM updates handled through modular JavaScript functions",
+            "Drag-and-drop implemented using native HTML5 APIs"
+          ]
+        },
+
         "features": [
-          "Create New Task: Enter a task name and click the 'Create' button to add it to the Backlog column.",
-          "Edit Task: Double-click on the task name to edit it.",
-          "Move Task: Use the 'move' button to move tasks between columns.",
-          "Delete Task: Click the 'delete' button to remove a task from the board.",
-          "Drag and Drop: Drag and drop tasks between columns."
+          "Create new tasks in the Backlog column",
+          "Edit task title via inline editing",
+          "Move tasks between Backlog, On Progress, and Done columns",
+          "Delete tasks from the board",
+          "Drag-and-drop interaction between columns",
+          "Responsive layout with a modern UI theme"
         ],
-        "contribution": "Added important features like drag and drop to move tasks between columns. Fixed several bugs in the previous version. Optimize code to improve application performance. Improved the user interface to be more responsive and intuitive.",
+
+        "contribution": {
+          "scope": ["Frontend", "UI/UX", "State Management", "Bug Fixing"],
+          "details": [
+            "Implemented drag-and-drop functionality for moving tasks between columns",
+            "Refactored existing codebase to improve performance and readability",
+            "Fixed multiple UI and interaction bugs from the previous version",
+            "Improved responsiveness and usability across different screen sizes"
+          ]
+        },
+
+        "testing": {
+          "level": ["Manual Testing"],
+          "notes": "All task interactions and drag-and-drop behavior tested manually in multiple browsers."
+        },
+
+        "tradeoffs": [
+          "No backend or persistent database integration",
+          "Application state stored in memory or browser storage",
+          "Limited scalability for large numbers of tasks"
+        ],
+
+        "impact": [
+          "Improved understanding of DOM manipulation and event handling",
+          "Hands-on experience with HTML5 drag-and-drop APIs",
+          "Better grasp of frontend state management without frameworks"
+        ],
+
+        "scale": {
+          "users": "Not defined",
+          "environment": "Local development & static hosting"
+        },
+
+        "deployment": {
+          "status": "Deployed (Static Hosting)",
+          "notes": "Deployed using GitHub Pages as a frontend demonstration project"
+        },
+
         "links": [
           {
             "text": "Live",
@@ -1122,45 +1369,88 @@
       },
       {
         "name": "webapp",
-        "title": "Music Fetch (Express, Multer)",
+        "id": "modern-business-landing-001",
         "helper_text": "Tap the card for more details",
-        "image": "music-fetch.svg",
-        "description": "Music Fetch is a Nodejs web application for managing music data with CRUD operations using Expressjs and Multer for file handling. This application provides a simple interface for efficient music data manipulation.",
-        "technologies": ["Node.js", "Express.js", "Multer", "JSON"],
-        "features": [
-          "CRUD operations for music data in JSON",
-          "File uploads with Multer",
-          "Intuitive user interface",
-          "Efficient data and request processing"
-        ],
-        "contribution": "Developed Music Fetch using Node.js and Express.js for music data management and file uploads with Multer. Focused on creating an efficient application architecture and a user-friendly interface.",
-        "links": [
-          {
-            "text": "Live",
-            "href": "",
-            "class": "btn btn-sm"
-          },
-          {
-            "text": "Github",
-            "href": "https://github.com/arizdn234/Music-fetch",
-            "class": "btn btn-sm btn-white"
-          }
-        ]
-      },
-      {
-        "name": "webapp",
         "title": "Modern Business Landing Page Project",
-        "helper_text": "Tap the card for more details",
         "image": "business-landing-page.svg",
-        "description": "This project aims to replicate and enhance the quality of a landing page designed visually in Figma. By utilizing modern web technologies such as HTML, CSS, and JavaScript, we are developing a landing page that not only reflects the set design but also adds touches of additional functionality and aesthetics. The focus is on creating visually engaging elements, smooth interactions, and a pleasant user experience. The page is also designed to be responsive and optimized for various devices, with the implementation of smooth animations and transitions that enhance the overall visual experience.",
-        "technologies": ["HTML", "CSS", "JavaScript"],
+        "description": "A frontend learning project focused on translating a Figma-based landing page design into a responsive and visually engaging website using modern web technologies.",
+
+        "project_type": "Learning",
+        "role": "Frontend Contributor (Team Learning Project)",
+
+        "summary": "A collaborative learning project that recreates and enhances a modern business landing page originally designed in Figma, emphasizing visual accuracy, smooth animations, responsive layouts, and user-friendly interactions.",
+
+        "problem_statement": "Learning how to convert a static UI design from Figma into a fully functional and responsive landing page while maintaining design consistency, performance, and smooth user interactions.",
+
+        "stack": {
+          "backend": [],
+          "frontend": ["HTML", "CSS", "Vanilla JavaScript"],
+          "database": [],
+          "containerization": []
+        },
+
+        "architecture": {
+          "style": "Component-based (Section-driven)",
+          "notes": [
+            "Each landing page section developed as a logical UI component",
+            "Client-side interactions handled using vanilla JavaScript",
+            "Animations and transitions implemented using CSS and JS"
+          ]
+        },
+
         "features": [
-          "Section A: Header & Banner",
-          "Section B: Product Features 1 & Features",
-          "Section C: About & Pricing",
-          "Section D: Contact & Footer"
+          "Header and Banner section with call-to-action elements",
+          "Product Features sections with visual highlights",
+          "About and Pricing sections with structured content layout",
+          "Contact form and Footer section",
+          "Smooth scrolling navigation between sections",
+          "CSS-based animations and transitions for enhanced user experience",
+          "Fully responsive layout for desktop, tablet, and mobile devices"
         ],
-        "contribution": "Responsible for working on Header & Banner, Product Features 1 & Features, About & Pricing, and Contact & Footer. Additionally, handled transitions, animations, and smooth scroll on the landing page. We collaborated to improve the style, functionality, and features of the landing page, and integrated changes into the GitHub repository.",
+
+        "contribution": {
+          "scope": [
+            "Frontend",
+            "UI Implementation",
+            "Animation",
+            "Collaboration"
+          ],
+          "details": [
+            "Implemented Header and Banner section based on Figma design",
+            "Developed Product Features and pricing-related sections",
+            "Built About, Contact, and Footer sections",
+            "Added smooth scrolling, transitions, and interactive animations",
+            "Collaborated with team members to review, refine, and merge changes via GitHub"
+          ]
+        },
+
+        "testing": {
+          "level": ["Manual Testing"],
+          "notes": "UI consistency, responsiveness, and interaction behavior tested manually across multiple screen sizes."
+        },
+
+        "tradeoffs": [
+          "No backend or form submission handling implemented",
+          "Focus placed on UI accuracy and visual experience rather than dynamic data",
+          "Manual testing only without automated UI tests"
+        ],
+
+        "impact": [
+          "Improved ability to translate Figma designs into real-world web interfaces",
+          "Enhanced skills in responsive layout and animation techniques",
+          "Gained experience collaborating via GitHub in a team environment"
+        ],
+
+        "scale": {
+          "users": "Not defined",
+          "environment": "Local development & static hosting"
+        },
+
+        "deployment": {
+          "status": "Deployed (Static Hosting)",
+          "notes": "Deployed using GitHub Pages as a demonstration of frontend design implementation"
+        },
+
         "links": [
           {
             "text": "Live",
@@ -1176,16 +1466,88 @@
       },
       {
         "name": "webapp",
-        "title": "Task Tracker Plus",
+        "id": "task-tracker-plus",
         "helper_text": "Tap the card for more details",
+        "title": "Task Tracker Plus",
         "image": "ttp.png",
-        "description": "Task Tracker Plus is a monolithic application built using Go (Golang) for managing study schedules. It provides REST APIs with full CRUD capabilities for managing users, tasks, and categories, and follows the MVC (Model-View-Controller) architecture.",
-        "technologies": ["Go (Golang)", "REST API", "MVC Architecture"],
+
+        "description": "A monolithic task and study schedule management application built with Golang, providing RESTful APIs and a simple web interface for managing users, tasks, and categories.",
+
+        "project_type": "Learning",
+        "role": "Individual Contributor (Learning Project)",
+
+        "summary": "A learning project focused on building a monolithic backend application using Golang, covering REST API design, authentication, and CRUD operations within an MVC architecture.",
+
+        "problem_statement": "Learning how to design and implement a monolithic web application with a clear MVC structure, including user authentication, data modeling, and RESTful API development.",
+
+        "stack": {
+          "backend": ["Golang"],
+          "frontend": ["Server-rendered views"],
+          "database": [],
+          "architecture": ["MVC"],
+          "containerization": []
+        },
+
+        "architecture": {
+          "style": "Monolithic MVC",
+          "notes": [
+            "Application structured using MVC to separate business logic, request handling, and data models",
+            "REST APIs and server-rendered views coexist within the same application",
+            "Authentication logic centralized within controllers and middleware"
+          ]
+        },
+
         "features": [
-          "Backend Development (Server): Developed and implemented REST APIs to manage Users, Tasks, and Categories with full CRUD operations and user authentication.",
-          "Frontend Development (Client): Built user interfaces with MVC pattern including login, registration, dashboard, and management pages for tasks and categories."
+          "User Authentication and Authorization",
+          "RESTful APIs with full CRUD operations for Users, Tasks, and Categories",
+          "Task and Category management with relational data handling",
+          "Server-rendered pages for login, registration, dashboard, and management views",
+          "Consistent request validation and error handling"
         ],
-        "contribution": "I contributed to the backend development by implementing REST APIs for managing users, tasks, and categories. I ensured secure user authentication and full CRUD functionality using the Go programming language and MVC architecture.",
+
+        "contribution": {
+          "scope": [
+            "Backend",
+            "API Design",
+            "Authentication",
+            "Frontend (Server-rendered)"
+          ],
+          "details": [
+            "Designed and implemented RESTful APIs for managing users, tasks, and categories",
+            "Implemented user authentication and authorization flows",
+            "Structured the application using an MVC architecture",
+            "Developed server-rendered views for core user flows such as login, dashboard, and task management",
+            "Handled request validation and error handling across controllers"
+          ]
+        },
+
+        "testing": {
+          "level": [],
+          "notes": "No automated tests implemented; functionality was validated manually during development."
+        },
+
+        "tradeoffs": [
+          "Monolithic architecture chosen for simplicity and ease of learning",
+          "Server-rendered frontend used instead of a SPA to reduce complexity",
+          "Limited focus on scalability in favor of understanding core backend concepts"
+        ],
+
+        "impact": [
+          "Improved understanding of monolithic backend architectures in Golang",
+          "Hands-on experience with REST API design and MVC patterns",
+          "Learned how authentication, business logic, and data flow interact in a full backend application"
+        ],
+
+        "scale": {
+          "users": "Learning-scale / single-user",
+          "environment": "Local development"
+        },
+
+        "deployment": {
+          "status": "Not deployed",
+          "notes": "Built as a local learning project for academic and self-learning purposes"
+        },
+
         "links": [
           {
             "text": "Live",
@@ -1201,25 +1563,85 @@
       },
       {
         "name": "webapp",
-        "title": "AI-Enhanced CSV Query Web App",
+        "id": "aitapas",
         "helper_text": "Tap the card for more details",
-        "image": "",
-        "description": "This web application allows users to interact with CSV data using AI models. Users can log in, view the parsed CSV data, and ask questions answered by AI models, integrating Google’s Gemini and Hugging Face’s Tapas for data-driven responses.",
-        "technologies": [
-          "Go (Golang)",
-          "Gin Web Framework",
-          "Google Generative AI Go SDK",
-          "Hugging Face API for Tapas model",
-          "Google Tapas Model",
-          "Google Gemini Model"
-        ],
+        "title": "AI-Enhanced CSV Query Web App",
+        "image": "aitapas.svg",
+
+        "description": "This web application allows users to explore and query CSV data using AI models. Users can upload or view parsed CSV data and ask natural language questions, which are answered using Hugging Face’s TAPAS model for table-based reasoning and Google Gemini for conversational insights.",
+
+        "project_type": "Learning",
+        "role": "Individual Contributor (Learning Project)",
+
+        "summary": "A learning project focused on building a backend-driven web application that integrates AI models to query and analyze structured CSV data through a simple web interface.",
+
+        "problem_statement": "Understanding how to bridge structured tabular data with natural language queries using AI models, while designing a maintainable backend architecture and basic frontend integration.",
+
+        "stack": {
+          "backend": ["Gin (Golang)"],
+          "frontend": ["Native HTML", "JavaScript", "TailwindCSS"],
+          "database": [],
+          "containerization": []
+        },
+
+        "architecture": {
+          "style": "MVC",
+          "notes": [
+            "Backend structured using MVC to separate request handling, business logic, and data processing",
+            "AI model interactions abstracted into service layers for easier experimentation"
+          ]
+        },
+
         "features": [
           "User Authentication and Verification: Secure login system with a verification step.",
-          "CSV Data Parsing and Display: Reads CSV files, parses them into a map format, and displays column data with example rows.",
-          "AI Model Integration: Uses Hugging Face’s Tapas model to answer natural language queries from CSV data and Google’s Gemini model to provide conversational recommendations.",
-          "Dynamic Interaction: Users can ask questions to AI for insights or recommendations based on CSV data."
+          "CSV Data Parsing and Display: Reads CSV files, parses them into structured maps, and displays column data with sample rows.",
+          "AI Model Integration: Uses Hugging Face’s TAPAS model to answer natural language queries over CSV data and Google Gemini for conversational responses and recommendations.",
+          "Dynamic Interaction: Users can ask questions and receive AI-generated insights based on the uploaded CSV data."
         ],
-        "contribution": "I developed the web application to read CSV data, implement AI models for answering questions and providing recommendations, and manage user interactions effectively using Go and related technologies.",
+
+        "contribution": {
+          "scope": [
+            "Backend",
+            "Frontend",
+            "Infrastructure",
+            "AI Model Integration"
+          ],
+          "details": [
+            "Designed and implemented backend services using Gin (Golang) following an MVC architecture",
+            "Implemented CSV parsing and data normalization logic for AI consumption",
+            "Integrated Hugging Face TAPAS and Google Gemini APIs for table-based QA and conversational responses",
+            "Built a lightweight frontend using native HTML, JavaScript, and TailwindCSS",
+            "Handled authentication flow and session management"
+          ]
+        },
+
+        "testing": {
+          "level": [],
+          "notes": "No automated tests implemented; features were tested manually during development to validate data parsing, API responses, and AI integration."
+        },
+
+        "tradeoffs": [
+          "No database layer implemented to keep the focus on CSV processing and AI integration",
+          "Manual testing chosen to prioritize learning core system design over test automation",
+          "Simple frontend approach used instead of a framework to reduce complexity"
+        ],
+
+        "impact": [
+          "Improved understanding of integrating AI models with structured tabular data",
+          "Gained hands-on experience designing backend architectures in Go",
+          "Learned practical limitations of AI models when handling real-world CSV data"
+        ],
+
+        "scale": {
+          "users": "Single-user / learning use case",
+          "environment": "Local development"
+        },
+
+        "deployment": {
+          "status": "Not deployed",
+          "notes": "Built as a local learning project to explore backend design and AI integration"
+        },
+
         "links": [
           {
             "text": "Live",
@@ -1235,25 +1657,80 @@
       },
       {
         "name": "webapp",
-        "title": "Integrated E-Commerce Platform",
+        "id": "uni-sell",
         "helper_text": "Tap the card for more details",
+        "title": "Integrated E-Commerce Platform",
         "image": "uni-sell-1.svg",
-        "description": "Our e-commerce platform is a comprehensive solution designed to facilitate both physical and digital product sales. It features a robust backend built with Laravel, a dynamic frontend developed with Vue.js, and specialized microservices handled by Express.js. The platform is containerized using Docker for consistent deployment and scalability. Key functionalities include product management, real-time inventory tracking, secure checkout, payment processing, and user reviews. This architecture ensures a scalable, maintainable, and user-friendly experience for managing and purchasing products online.",
-        "technologies": [
-          "Laravel (PHP Framework)",
-          "Vue.js (JavaScript Framework)",
-          "Express.js (Node.js Framework)",
-          "Docker (Containerization)",
-          "MySQL (Database)"
-        ],
+        "description": "A full-featured e-commerce platform supporting physical and digital products. Built with Laravel for backend services, Vue.js for a responsive frontend, and Express.js for API microservices. Containerized using Docker to ensure scalable and consistent deployment. Key features include product management, real-time inventory, secure checkout, payment processing, and user reviews.",
+        "project_type": "Learning",
+        "role": "Individual Contributor (Learning Project)",
+
+        "summary": "A learning-focused full-stack e-commerce project aimed at understanding backend–frontend integration, MVC architecture, and core business flows such as product management, checkout, and order processing.",
+
+        "problem_statement": "Learning how to design and implement a complete e-commerce system using a modern PHP framework, while managing frontend integration and development environment consistency.",
+
+        "stack": {
+          "backend": ["Laravel"],
+          "frontend": ["Vue.js", "Vite", "TailwindCSS"],
+          "database": ["MySQL"],
+          "containerization": "Docker (Laravel Sail)"
+        },
+
+        "architecture": {
+          "style": "MVC",
+          "notes": [
+            "Monolithic Laravel application",
+            "Vue.js integrated via Vite",
+            "Laravel Sail for local Docker environment",
+            "SSR-style Blade views with Vue components"
+          ]
+        },
+
         "features": [
-          "Product Catalog: Comprehensive management of product listings and categories.",
-          "Shopping Cart and Checkout: Real-time cart updates, secure checkout, and multiple payment gateways.",
-          "Payment Integration: Supports Stripe, PayPal, and other payment processors.",
-          "Order and Inventory Management: Real-time order tracking and automatic inventory updates.",
-          "Review and Rating System: Allows user reviews and ratings with moderation features."
+          "Product and category management",
+          "Shopping cart and secure checkout",
+          "Multiple payment gateway integration",
+          "Real-time order and inventory tracking",
+          "User reviews and ratings"
         ],
-        "contribution": "I developed the integrated e-commerce platform, implementing Laravel for backend services, Vue.js for frontend, and Express.js for API microservices. I also managed Docker containerization for consistent deployment environments and integrated various technologies to ensure scalability and maintainability.",
+
+        "contribution": {
+          "scope": ["Backend", "Frontend", "Infrastructure", "Database"],
+          "details": [
+            "Implemented backend logic using Laravel MVC",
+            "Built frontend components with Vue.js, Vite, and TailwindCSS",
+            "Configured Vite for asset bundling and development workflow",
+            "Managed database schema and Docker-based local environment using Laravel Sail"
+          ]
+        },
+
+        "testing": {
+          "level": [],
+          "notes": "No automated testing implemented; testing performed manually during development."
+        },
+
+        "tradeoffs": [
+          "Chose monolithic architecture for simplicity and faster learning",
+          "Skipped automated testing to focus on feature implementation and architecture understanding"
+        ],
+
+        "impact": [
+          "Improved understanding of full-stack web development",
+          "Hands-on experience with Laravel MVC architecture",
+          "Learned Docker-based local development workflow",
+          "Better grasp of e-commerce domain logic"
+        ],
+
+        "scale": {
+          "users": "Not defined",
+          "environment": "Local development"
+        },
+
+        "deployment": {
+          "status": "Not deployed",
+          "notes": "Built as a local learning project"
+        },
+
         "links": [
           {
             "text": "Live",
@@ -1291,30 +1768,87 @@
       },
       {
         "name": "webapi",
+        "id": "auth-gin",
+        "helper_text": "Tap the card for more details",
         "title": "Authentication System (Golang, Gin)",
-        "helper_text": "Tap the card for more details",
         "image": "web-api-default.svg",
-        "description": "A user authentication system built with the Gin framework in Golang, featuring JWT-based authorization and CRUD operations for user data using SQLite and GORM.",
-        "technologies": [
-          "Golang",
-          "Gin Framework",
-          "GORM",
-          "SQLite",
-          "JWT",
-          "Ginkgo",
-          "Gomega"
-        ],
+
+        "description": "A backend-focused authentication system built with Golang and the Gin framework, providing JWT-based authentication, user management APIs, and persistent storage using SQLite and GORM.",
+
+        "project_type": "Learning",
+        "role": "Individual Contributor (Learning Project)",
+
+        "summary": "A learning project focused on building a secure and maintainable authentication system using Golang, covering authentication flows, authorization, database integration, and automated testing.",
+
+        "problem_statement": "Learning how to design and implement a secure authentication and authorization system, including JWT handling, password security, database persistence, and testable backend architecture.",
+
+        "stack": {
+          "backend": ["Golang", "Gin Framework"],
+          "database": ["SQLite", "GORM"],
+          "authentication": ["JWT"],
+          "testing": ["Ginkgo", "Gomega"],
+          "frontend": [],
+          "containerization": []
+        },
+
+        "architecture": {
+          "style": "Layered / MVC-inspired",
+          "notes": [
+            "Separation between handlers, services, and data access layers",
+            "Authentication and authorization logic isolated from request handlers",
+            "Middleware-based access control for protected routes"
+          ]
+        },
+
         "features": [
-          "JWT-based Authentication and Authorization",
-          "Password Hashing for Secure Data Storage",
-          "SQLite Database with GORM ORM",
-          "Comprehensive CRUD Operations for User Management",
-          "Unit Testing with Ginkgo and Gomega",
-          "Modular Project Structure with Clear Separation of Concerns",
-          "RESTful API Endpoints with Secure Access Controls",
-          "User Session Management with Cookie-based JWT Tokens"
+          "JWT-based Authentication and Authorization for secure API access",
+          "Password Hashing to ensure secure credential storage",
+          "User Management APIs with full CRUD operations",
+          "SQLite database integration using GORM ORM",
+          "Middleware for protected routes and access control",
+          "Cookie-based JWT session handling",
+          "Unit and integration testing using Ginkgo and Gomega"
         ],
-        "contribution": "Designed and implemented a robust authentication and user management system in Golang using the Gin framework. Key contributions include developing JWT-based authentication for secure access control, integrating SQLite with GORM for effective database management, and setting up comprehensive testing frameworks (Ginkgo and Gomega) to ensure code reliability. Structured the project to follow best practices with modular components, ensuring maintainability and scalability.",
+
+        "contribution": {
+          "scope": ["Backend", "Database", "Authentication", "Testing"],
+          "details": [
+            "Designed and implemented RESTful authentication and user management APIs using Gin",
+            "Implemented JWT-based authentication and authorization with middleware support",
+            "Integrated SQLite database using GORM for user persistence",
+            "Implemented password hashing and secure credential handling",
+            "Wrote automated tests using Ginkgo and Gomega to validate authentication flows and CRUD operations",
+            "Structured the codebase with modular components to improve maintainability"
+          ]
+        },
+
+        "testing": {
+          "level": ["Unit", "Integration"],
+          "notes": "Core authentication flows, user CRUD operations, and middleware behavior are covered with automated tests using Ginkgo and Gomega."
+        },
+
+        "tradeoffs": [
+          "SQLite chosen for simplicity and local development instead of a production-grade database",
+          "JWT stored in cookies for simplicity, without advanced refresh token rotation",
+          "Focused on backend functionality rather than frontend integration"
+        ],
+
+        "impact": [
+          "Improved understanding of secure authentication flows in backend systems",
+          "Hands-on experience with JWT, middleware design, and ORM usage in Golang",
+          "Practical exposure to writing testable backend code using behavior-driven testing frameworks"
+        ],
+
+        "scale": {
+          "users": "Learning-scale / local usage",
+          "environment": "Local development"
+        },
+
+        "deployment": {
+          "status": "Not deployed",
+          "notes": "Built as a local learning project focused on backend design and testing practices"
+        },
+
         "links": [
           {
             "text": "Live",
@@ -1330,29 +1864,92 @@
       },
       {
         "name": "webapi",
+        "id": "auth-system-golang-001",
+        "helper_text": "Tap the card for more details",
         "title": "Authentication System (Golang)",
-        "helper_text": "Tap the card for more details",
         "image": "web-api-default.svg",
-        "description": "A comprehensive user management system that includes login, registration, logout, and CRUD operations for user data, using JWT for secure access.",
-        "technologies": [
-          "Golang",
-          "Gin Framework",
-          "GORM",
-          "SQLite",
-          "JWT",
-          "Ginkgo",
-          "Gomega"
-        ],
+        "description": "A backend-focused learning project that implements a secure authentication and user management system using Golang, JWT, and RESTful APIs.",
+
+        "project_type": "Learning",
+        "role": "Backend Developer (Learning Project)",
+
+        "summary": "A RESTful authentication system built with Golang and the Gin framework, providing user registration, login, logout, and full CRUD operations for user data, secured with JWT-based authentication.",
+
+        "problem_statement": "Learning how to design and implement secure authentication and authorization mechanisms in a REST API, manage user data persistence, and ensure code quality through automated testing.",
+
+        "stack": {
+          "backend": ["Golang", "Gin Framework"],
+          "database": ["SQLite", "GORM ORM"],
+          "authentication": ["JWT"],
+          "testing": ["Ginkgo", "Gomega"],
+          "containerization": []
+        },
+
+        "architecture": {
+          "style": "Layered Architecture (MVC-inspired)",
+          "notes": [
+            "Gin used for HTTP routing and middleware",
+            "JWT middleware for authentication and protected routes",
+            "GORM used for database abstraction and migrations",
+            "Clear separation between handlers, services, and models"
+          ]
+        },
+
         "features": [
-          "JWT-based Authentication and Authorization",
-          "Password Hashing for Secure Data Storage",
-          "SQLite Database with GORM ORM",
-          "CRUD Operations for User Data",
-          "Comprehensive Testing with Ginkgo and Gomega",
-          "Server Setup with Routing and Middleware",
-          "Database Migration Management"
+          "JWT-based authentication and authorization",
+          "Secure password hashing for user credentials",
+          "User registration, login, and logout endpoints",
+          "Full CRUD operations for user management",
+          "Protected routes using middleware",
+          "Database migration handling with GORM",
+          "Automated testing using Ginkgo and Gomega"
         ],
-        "contribution": "Developed a scalable and secure user management system with JWT-based authentication, comprehensive CRUD operations, and ensured code quality through testing frameworks.",
+
+        "contribution": {
+          "scope": [
+            "Backend",
+            "Authentication",
+            "REST API",
+            "Testing",
+            "Database"
+          ],
+          "details": [
+            "Designed and implemented RESTful endpoints for user authentication and management",
+            "Implemented JWT generation, validation, and middleware protection",
+            "Integrated SQLite database using GORM ORM",
+            "Applied password hashing for secure credential storage",
+            "Wrote automated tests using Ginkgo and Gomega to validate core functionality"
+          ]
+        },
+
+        "testing": {
+          "level": ["Automated Testing", "Manual Testing"],
+          "notes": "Core authentication flows and CRUD endpoints covered by automated tests; additional validation performed manually."
+        },
+
+        "tradeoffs": [
+          "SQLite used for simplicity instead of production-grade databases",
+          "No refresh token implementation for JWT",
+          "Monolithic API structure for learning purposes"
+        ],
+
+        "impact": [
+          "Improved understanding of secure authentication patterns using JWT",
+          "Hands-on experience building REST APIs with Gin",
+          "Practical exposure to automated testing in Golang",
+          "Better understanding of database migrations and ORM usage"
+        ],
+
+        "scale": {
+          "users": "Not defined",
+          "environment": "Local development"
+        },
+
+        "deployment": {
+          "status": "Not deployed (Repository-based)",
+          "notes": "Developed as a backend learning project and shared via GitHub repository"
+        },
+
         "links": [
           {
             "text": "Live",
@@ -1368,27 +1965,83 @@
       },
       {
         "name": "webapi",
+        "id": "bookstore-rest-api",
+        "helper_text": "Tap the card for more details",
         "title": "Bookstore REST API",
-        "helper_text": "Tap the card for more details",
         "image": "web-api-default.svg",
-        "description": "A robust and versatile Nodejs-based RESTful API designed to manage a bookstore, providing endpoints for user account management, and CRUD operations for books.",
-        "technologies": [
-          "Node.js",
-          "Express",
-          "PostgreSQL",
-          "Sequelize",
-          "bcryptjs",
-          "jsonwebtoken"
-        ],
+
+        "description": "A backend-focused RESTful API built with Node.js and Express to manage a bookstore system, providing user authentication and CRUD operations for book resources with a PostgreSQL database.",
+
+        "project_type": "Learning",
+        "role": "Individual Contributor (Learning Project)",
+
+        "summary": "A learning project focused on designing and implementing a RESTful API using Node.js, covering authentication, database modeling, and CRUD operations with a relational database.",
+
+        "problem_statement": "Learning how to build a structured REST API with proper authentication, data persistence, and secure access control using Node.js and PostgreSQL.",
+
+        "stack": {
+          "backend": ["Node.js", "Express"],
+          "database": ["PostgreSQL", "Sequelize"],
+          "authentication": ["JWT", "bcryptjs"],
+          "frontend": [],
+          "containerization": []
+        },
+
+        "architecture": {
+          "style": "Layered REST API",
+          "notes": [
+            "Clear separation between routes, controllers, services, and models",
+            "Middleware-based authentication and request validation",
+            "Relational data modeling using Sequelize ORM"
+          ]
+        },
+
         "features": [
-          "User account registration and login",
-          "Retrieve a list of all books",
-          "Access detailed information about specific books",
-          "Add new books to the inventory",
-          "Update book details",
-          "Remove books from the inventory"
+          "User Registration and Login with JWT-based authentication",
+          "RESTful CRUD operations for managing book resources",
+          "Protected routes with middleware-based access control",
+          "PostgreSQL database integration using Sequelize ORM",
+          "Request validation and structured error handling"
         ],
-        "contribution": "Developed the entire API from scratch, including setting up the Node.js environment, configuring the database with Sequelize, creating routes for user authentication and book operations, and implementing middleware for security and validation.",
+
+        "contribution": {
+          "scope": ["Backend", "API Design", "Database", "Authentication"],
+          "details": [
+            "Designed and implemented RESTful API endpoints using Express",
+            "Implemented user authentication and authorization using JWT",
+            "Modeled relational data and integrated PostgreSQL using Sequelize",
+            "Implemented middleware for authentication, validation, and error handling",
+            "Developed the project from scratch with a structured and maintainable codebase"
+          ]
+        },
+
+        "testing": {
+          "level": [],
+          "notes": "No automated tests implemented; endpoints were tested manually using API clients during development."
+        },
+
+        "tradeoffs": [
+          "Focused on core REST API functionality without implementing advanced features such as pagination or role-based access control",
+          "Manual testing chosen to prioritize understanding API design and data flow",
+          "No frontend client included as the focus was on backend development"
+        ],
+
+        "impact": [
+          "Strengthened understanding of REST API design principles",
+          "Hands-on experience with Node.js, Express, and PostgreSQL",
+          "Learned how authentication and database layers interact in a backend system"
+        ],
+
+        "scale": {
+          "users": "Learning-scale / local usage",
+          "environment": "Local development"
+        },
+
+        "deployment": {
+          "status": "Not deployed",
+          "notes": "Built as a local learning project for backend development practice"
+        },
+
         "links": [
           {
             "text": "Live",
@@ -1404,27 +2057,86 @@
       },
       {
         "name": "webapi",
-        "title": "B2C E-Commerce API (Node.js)",
+        "id": "b2c-ecommerce-api-node-001",
         "helper_text": "Tap the card for more details",
+        "title": "B2C E-Commerce API (Node.js)",
         "image": "web-api-default.svg",
-        "description": "A back-end e-commerce API for a B2C application built using Nodejs, Prisma, Express, and PostgreSQL. This API handles product management, user authentication, shopping cart management, order processing, and payment handling.",
-        "technologies": [
-          "Node.js",
-          "Prisma",
-          "Express",
-          "PostgreSQL",
-          "JWT Authentication"
-        ],
+        "description": "A backend-focused learning project that implements a B2C e-commerce REST API using Node.js, Express, Prisma, and PostgreSQL, covering core e-commerce workflows.",
+
+        "project_type": "Learning",
+        "role": "Backend Developer (Learning Project)",
+
+        "summary": "A RESTful e-commerce API designed to handle common B2C workflows such as user authentication, product management, shopping cart handling, order processing, and payment integration using a modern Node.js backend stack.",
+
+        "problem_statement": "Learning how to design scalable REST APIs for an e-commerce domain, manage relational data using an ORM, implement authentication and authorization, and structure backend logic for real-world business workflows.",
+
+        "stack": {
+          "backend": ["Node.js", "Express"],
+          "database": ["PostgreSQL", "Prisma ORM"],
+          "authentication": ["JWT"],
+          "testing": [],
+          "containerization": []
+        },
+
+        "architecture": {
+          "style": "Layered Architecture (Controller–Service–Repository)",
+          "notes": [
+            "Express used for routing and middleware management",
+            "JWT used for authentication and role-based access control",
+            "Prisma ORM used for schema definition and database access",
+            "Clear separation between controllers, services, and data access layers"
+          ]
+        },
+
         "features": [
-          "User Registration and Login",
-          "Product Management (CRUD operations)",
-          "User Management for Admins",
-          "Order Management",
-          "Payment Processing",
-          "Search and Filtering Products",
-          "Shopping Cart Management"
+          "User registration and login with JWT-based authentication",
+          "Role-based user management for admin and customers",
+          "Product management with full CRUD operations",
+          "Shopping cart creation and management",
+          "Order creation and order status management",
+          "Payment processing integration",
+          "Product search and filtering capabilities"
         ],
-        "contribution": "Developed and integrated RESTful API endpoints for various e-commerce functionalities. Implemented user authentication, product management, order handling, and payment processing. Set up PostgreSQL database schema and Prisma ORM for data modeling.",
+
+        "contribution": {
+          "scope": ["Backend", "REST API", "Authentication", "Database Design"],
+          "details": [
+            "Designed and implemented RESTful API endpoints for e-commerce workflows",
+            "Implemented JWT-based authentication and authorization",
+            "Developed product, cart, order, and user management logic",
+            "Designed PostgreSQL database schema using Prisma ORM",
+            "Handled data validation and basic error handling across endpoints"
+          ]
+        },
+
+        "testing": {
+          "level": ["Manual Testing"],
+          "notes": "API endpoints tested manually using API testing tools to validate authentication, cart flow, order creation, and payment handling."
+        },
+
+        "tradeoffs": [
+          "No automated test suite implemented due to learning scope",
+          "Simplified payment flow without advanced transaction handling",
+          "Monolithic API structure instead of microservices"
+        ],
+
+        "impact": [
+          "Improved understanding of e-commerce backend architecture",
+          "Hands-on experience with relational database modeling using Prisma",
+          "Stronger grasp of authentication and authorization in Node.js",
+          "Practical exposure to designing APIs for real-world business logic"
+        ],
+
+        "scale": {
+          "users": "Not defined",
+          "environment": "Local development & cloud deployment"
+        },
+
+        "deployment": {
+          "status": "Deployed",
+          "notes": "Deployed to a cloud environment for API accessibility and testing"
+        },
+
         "links": [
           {
             "text": "Live",
@@ -1440,23 +2152,83 @@
       },
       {
         "name": "webapi",
-        "title": "Hotel Mawar Indah Availability API",
+        "id": "hotel-mawar-indah-api-001",
         "helper_text": "Tap the card for more details",
+        "title": "Hotel Mawar Indah Availability API",
         "image": "web-api-default.svg",
-        "description": "Hotel Mawar Indah Availability API is a backend service that provides information about hotel room availability. This API allows clients to check room availability, make reservations, cancel reservations, and get detailed room information.",
-        "technologies": [
-          "Go (Golang) v1.22",
-          "Gin Web Framework",
-          "GORM",
-          "PostgreSQL"
-        ],
+        "description": "A backend-focused learning project that provides a RESTful API for managing hotel room availability, reservations, and cancellations using Golang and PostgreSQL.",
+
+        "project_type": "Learning",
+        "role": "Backend Developer (Learning Project)",
+
+        "summary": "A REST API built with Golang and the Gin framework to handle hotel room availability checks, reservations, cancellations, and detailed room information, designed to simulate real-world booking workflows.",
+
+        "problem_statement": "Learning how to design backend services that handle availability-based business logic, manage transactional data, and ensure data consistency in a reservation system.",
+
+        "stack": {
+          "backend": ["Go (Golang)", "Gin"],
+          "database": ["PostgreSQL", "GORM"],
+          "authentication": [],
+          "containerization": []
+        },
+
+        "architecture": {
+          "style": "Layered Architecture (Controller–Service–Repository)",
+          "notes": [
+            "Gin used for HTTP routing and request handling",
+            "Service layer manages availability and reservation business logic",
+            "GORM used for database interaction and migrations",
+            "PostgreSQL ensures relational data consistency"
+          ]
+        },
+
         "features": [
-          "Room Availability Check: Clients can check the availability of hotel rooms that are currently unbooked.",
-          "Room Reservation: Clients can make reservations for available hotel rooms.",
-          "Reservation Cancellation: Clients can cancel reservations that have been made.",
-          "Room Information: Clients can obtain detailed information about hotel rooms, such as facilities, prices, and more."
+          "Room availability check for unbooked rooms",
+          "Room reservation creation with availability validation",
+          "Reservation cancellation handling",
+          "Detailed room information including facilities and pricing",
+          "RESTful endpoints for hotel booking workflows"
         ],
-        "contribution": "I contributed by developing the core backend functionality for checking room availability, handling room reservations, and implementing the reservation cancellation logic using Go and Gin framework. Additionally, I integrated the GORM ORM for seamless interaction with the PostgreSQL database and ensured the API adheres to best practices for performance and security.",
+
+        "contribution": {
+          "scope": ["Backend", "Business Logic", "Database Integration"],
+          "details": [
+            "Implemented room availability checking logic",
+            "Developed reservation creation and cancellation workflows",
+            "Integrated GORM ORM with PostgreSQL database",
+            "Designed data models for rooms and reservations",
+            "Ensured API performance and basic security best practices"
+          ]
+        },
+
+        "testing": {
+          "level": ["Manual Testing"],
+          "notes": "API endpoints tested manually to validate booking, cancellation, and availability scenarios."
+        },
+
+        "tradeoffs": [
+          "No authentication or user management implemented",
+          "No automated testing implemented",
+          "Simplified reservation logic without advanced concurrency handling"
+        ],
+
+        "impact": [
+          "Improved understanding of reservation-based backend systems",
+          "Hands-on experience with transactional data handling",
+          "Strengthened backend skills using Golang and Gin",
+          "Practical exposure to designing APIs for real-world business domains"
+        ],
+
+        "scale": {
+          "users": "Not defined",
+          "environment": "Local development"
+        },
+
+        "deployment": {
+          "status": "Not deployed (Repository-based)",
+          "notes": "Developed as a backend learning project and shared via GitHub repository"
+        },
+
         "links": [
           {
             "text": "Live",
@@ -1472,19 +2244,89 @@
       },
       {
         "name": "webapi",
-        "title": "TransactHub",
+        "id": "transacthub-api-001",
         "helper_text": "Tap the card for more details",
+        "title": "TransactHub",
         "image": "web-api-default.svg",
-        "description": "TransactHub is a backend application built with Node.js and Express that handles user authentication, transactions, and item data management using MySQL and Sequelize ORM.",
-        "technologies": ["Node.js", "Express", "MySQL", "Sequelize"],
+        "description": "A backend-focused learning project that implements a transaction management system with user authentication, item management, and transaction processing using Node.js and MySQL.",
+
+        "project_type": "Learning",
+        "role": "Backend Developer (Learning Project)",
+
+        "summary": "TransactHub is a RESTful backend application built using Node.js and Express that manages user authentication, item data, and user-to-user transactions, designed to simulate transactional business workflows.",
+
+        "problem_statement": "Learning how to design backend systems that manage transactional data between users, implement authentication and authorization, and structure relational database models for transaction tracking.",
+
+        "stack": {
+          "backend": ["Node.js", "Express"],
+          "database": ["MySQL", "Sequelize"],
+          "authentication": [],
+          "containerization": []
+        },
+
+        "architecture": {
+          "style": "Layered Architecture (Controller–Service–Repository)",
+          "notes": [
+            "Express used for routing and middleware handling",
+            "Sequelize ORM used for relational database modeling",
+            "Service layer manages business logic for transactions and items",
+            "Token-based authentication protects user-specific endpoints"
+          ]
+        },
+
         "features": [
-          "User Authentication: Handles user login, registration, and token-based authentication.",
-          "Dashboard Management: Provides data for user-specific dashboard views.",
-          "Item Management: Handles CRUD operations for items.",
-          "Transaction Handling: Manages transactions between users.",
-          "User Management: Handles user-related data operations."
+          "User registration, login, and authentication",
+          "User dashboard data handling",
+          "Item management with full CRUD operations",
+          "Transaction handling between users",
+          "User management and profile-related operations",
+          "RESTful API endpoints for transaction workflows"
         ],
-        "contribution": "I contributed by developing backend functionalities, implementing RESTful API endpoints for user authentication, item management, transactions, and user-related operations using Node.js, Express, and Sequelize.",
+
+        "contribution": {
+          "scope": [
+            "Backend",
+            "REST API",
+            "Authentication",
+            "Database Modeling"
+          ],
+          "details": [
+            "Implemented RESTful API endpoints for authentication, items, and transactions",
+            "Developed user-to-user transaction handling logic",
+            "Designed relational database schema using Sequelize ORM",
+            "Implemented token-based authentication and protected routes",
+            "Handled validation and error management across API endpoints"
+          ]
+        },
+
+        "testing": {
+          "level": ["Manual Testing"],
+          "notes": "API flows tested manually to validate authentication, transaction processing, and item management."
+        },
+
+        "tradeoffs": [
+          "No automated test implementation",
+          "Simplified transaction validation without advanced concurrency or rollback handling",
+          "Monolithic API structure for learning scope"
+        ],
+
+        "impact": [
+          "Improved understanding of transactional backend systems",
+          "Hands-on experience designing relational data models using Sequelize",
+          "Strengthened skills in building secure REST APIs using Node.js",
+          "Gained practical experience implementing multi-entity business workflows"
+        ],
+
+        "scale": {
+          "users": "Not defined",
+          "environment": "Local development"
+        },
+
+        "deployment": {
+          "status": "Not deployed (Repository-based)",
+          "notes": "Developed as a backend learning project and shared via GitHub repository"
+        },
+
         "links": [
           {
             "text": "Live",
@@ -1522,20 +2364,82 @@
       },
       {
         "name": "other",
-        "title": "Snake Game",
+        "id": "snake-game-001",
         "helper_text": "Tap the card for more details",
+        "title": "Snake Game",
         "image": "snake-game.svg",
-        "description": "A snake game where players control a snake to eat items, avoid bombs, and achieve the highest score.",
-        "technologies": ["HTML", "CSS", "JavaScript", "Local Storage"],
+        "description": "A browser-based Snake game built using vanilla web technologies, featuring multiple difficulty levels, score tracking, and interactive gameplay elements.",
+
+        "project_type": "Learning",
+        "role": "Game Developer (Learning Project)",
+
+        "summary": "A classic Snake game recreated as a learning project to practice game logic, real-time state updates, and browser-based persistence using JavaScript and Local Storage.",
+
+        "problem_statement": "Learning how to implement game loops, collision detection, score tracking, and persistent data storage in a browser-based game environment.",
+
+        "stack": {
+          "frontend": ["HTML", "CSS", "Vanilla JavaScript"],
+          "storage": ["Local Storage"],
+          "backend": [],
+          "containerization": []
+        },
+
+        "architecture": {
+          "style": "Game Loop–based (Client-side)",
+          "notes": [
+            "Game state managed entirely in the browser",
+            "Real-time updates handled via JavaScript intervals",
+            "Persistent leaderboard stored using Local Storage"
+          ]
+        },
+
         "features": [
-          "3 Difficulty Levels: Easy, Medium, Hard",
-          "Leaderboard for Top 5 Players",
-          "Various Items with Specific Effects",
-          "Pause, Play, and Replay Features",
-          "Sound Effects and Music",
-          "Player data stored in local storage"
+          "Three difficulty levels: Easy, Medium, and Hard",
+          "Leaderboard showing top 5 high scores",
+          "Multiple item types with different gameplay effects",
+          "Pause, play, and replay controls",
+          "Sound effects and background music",
+          "Player score and data persistence using Local Storage"
         ],
-        "contribution": "Developed game logic, designed the user interface, and implemented the leaderboard and player data storage.",
+
+        "contribution": {
+          "scope": ["Game Logic", "UI Design", "State Management"],
+          "details": [
+            "Implemented core snake movement and collision logic",
+            "Designed and built the game user interface",
+            "Developed leaderboard system using Local Storage",
+            "Integrated sound effects and gameplay controls",
+            "Handled difficulty scaling and item effects"
+          ]
+        },
+
+        "testing": {
+          "level": ["Manual Testing"],
+          "notes": "Gameplay mechanics and leaderboard functionality tested manually across multiple sessions."
+        },
+
+        "tradeoffs": [
+          "No multiplayer or online leaderboard support",
+          "Limited scalability for extended game modes",
+          "No automated testing for game logic"
+        ],
+
+        "impact": [
+          "Improved understanding of game loops and real-time updates",
+          "Hands-on experience with browser-based persistence",
+          "Strengthened JavaScript skills through interactive game development"
+        ],
+
+        "scale": {
+          "users": "Not defined",
+          "environment": "Static hosting"
+        },
+
+        "deployment": {
+          "status": "Deployed (Static Hosting)",
+          "notes": "Deployed using GitHub Pages as a playable web game"
+        },
+
         "links": [
           {
             "text": "Live",
@@ -1551,22 +2455,83 @@
       },
       {
         "name": "other",
-        "title": "Smart Home EMS (CLI)",
+        "id": "smart-home-ems-cli-001",
         "helper_text": "Tap the card for more details",
+        "title": "Smart Home EMS (CLI)",
         "image": "",
-        "description": "Smart Home Energy Management System (EMS) CLI is a command-line tool that allows users to interact with CSV data, ask questions, and get AI-driven recommendations using Google's TAPAS model and Mistral AI's Mixtral model via the Hugging Face API.",
-        "technologies": [
-          "Go (Golang)",
-          "Google TAPAS model",
-          "Mistral AI Mixtral model",
-          "Hugging Face API"
-        ],
+        "description": "A command-line based Smart Home Energy Management System that processes CSV data and provides AI-powered insights and recommendations using modern language models.",
+
+        "project_type": "Learning",
+        "role": "Backend & CLI Developer (Learning Project)",
+
+        "summary": "A Go-based CLI application that analyzes smart home energy data from CSV files and leverages AI models to answer questions and generate recommendations.",
+
+        "problem_statement": "Learning how to integrate AI models into a CLI application, process structured tabular data, and design user-friendly command-line interactions.",
+
+        "stack": {
+          "backend": ["Go (Golang)"],
+          "ai_models": [
+            "Google TAPAS",
+            "Mistral AI Mixtral"
+          ],
+          "api": ["Hugging Face API"],
+          "containerization": []
+        },
+
+        "architecture": {
+          "style": "CLI-based Modular Architecture",
+          "notes": [
+            "CSV parsing module for structured data processing",
+            "AI inference handled via external APIs",
+            "Command-based user interaction flow"
+          ]
+        },
+
         "features": [
-          "CSV Parsing: Reads and processes data from a CSV file to provide insights.",
-          "AI-Powered Answers: Uses Google's TAPAS model to answer questions about tabular data.",
-          "AI Recommendations: Provides recommendations using Mistral AI's Mixtral model."
+          "CSV file parsing and data preprocessing",
+          "AI-powered question answering over tabular data using TAPAS",
+          "AI-driven energy usage recommendations using Mixtral",
+          "Interactive CLI commands for querying and insights"
         ],
-        "contribution": "I developed the CLI tool to read CSV data, implement AI models for answering questions and providing recommendations, and manage user interactions effectively using Go.",
+
+        "contribution": {
+          "scope": ["CLI Development", "AI Integration", "Data Processing"],
+          "details": [
+            "Developed CLI tool using Go for interactive user input",
+            "Implemented CSV parsing and data handling logic",
+            "Integrated Google TAPAS model for tabular question answering",
+            "Integrated Mixtral model for generating recommendations",
+            "Managed API communication via Hugging Face"
+          ]
+        },
+
+        "testing": {
+          "level": ["Manual Testing"],
+          "notes": "CLI commands and AI responses tested manually with different CSV datasets."
+        },
+
+        "tradeoffs": [
+          "Dependent on external AI APIs for inference",
+          "No offline AI processing support",
+          "Limited error handling for malformed CSV files"
+        ],
+
+        "impact": [
+          "Hands-on experience integrating AI models into applications",
+          "Improved understanding of tabular data analysis using LLMs",
+          "Strengthened Go skills for CLI-based application development"
+        ],
+
+        "scale": {
+          "users": "Not defined",
+          "environment": "Local development"
+        },
+
+        "deployment": {
+          "status": "Not deployed (CLI Tool)",
+          "notes": "Distributed as a source-based CLI application via GitHub"
+        },
+
         "links": [
           {
             "text": "Live",
